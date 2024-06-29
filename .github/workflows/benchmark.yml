@@ -52,7 +52,7 @@ jobs:
   # the `base` job below. If the data already exists for this commit, it will be
   # skipped.
   determine_base:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     outputs:
       head: ${{ steps.base.outputs.head }}
       date: ${{ steps.base.outputs.date }}
