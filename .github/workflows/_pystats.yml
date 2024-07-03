@@ -73,7 +73,7 @@ on:
 jobs:
   collect-stats:
     # TODO: Replace "azure" with "cloud"
-    runs-on: [self-hosted, linux, azure]
+    runs-on: ubuntu-latest
     steps:
     - name: Checkout benchmarking
       uses: actions/checkout@v4
