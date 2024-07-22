@@ -85,7 +85,7 @@ on:
         default: false
 jobs:
   benchmark-linux-x86_64-linux:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux, bare-metal, linux-x86_64-linux]
     timeout-minutes: 1440
 
     steps:
