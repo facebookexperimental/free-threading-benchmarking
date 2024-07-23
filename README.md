@@ -1,68 +1,29 @@
-# Faster CPython Benchmark Infrastructure
+# Results
 
-🔒 [▶️ START A BENCHMARK RUN](../../actions/workflows/benchmark.yml)
+- fork: python
+- version: 3.11.0a1
+- config: 
+- commit hash: [7c12e48](https://github.com/python/cpython/commit/7c12e48)
+- commit date: 2021-10-05T13:44:05+01:00
+- ref: 7c12e4835ebe52287acd
 
-## Results
+## linux x86_64 (linux)
 
-Here are some recent and important revisions. 👉 [Complete list of results](RESULTS.md).
+- cpu model: Intel(R) Xeon(R) W-2255 CPU @ 3.70GHz
+- platform: Linux-5.4.0-122-generic-x86_64-with-glibc2.31
+- [raw results](bm-20211005-linux-x86_64-python-7c12e4835ebe52287acd-3.11.0a1-7c12e48.json)
 
-<!-- START table -->
+## linux x86_64 (pythonperf2)
 
-<!-- END table -->
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/4513535079)
+- cpu model: 12th Gen Intel(R) Core(TM) i9-12900
+- platform: Linux-5.15.0-67-generic-x86_64-with-glibc2.35
+- [raw results](bm-20211005-pythonperf2-x86_64-python-7c12e4835ebe52287acd-3.11.0a1-7c12e48.json)
 
-`*` indicates that the exact same versions of pyperformance was not used.
+## windows amd64 (pythonperf1)
 
-![Longitudinal speed improvement](/longitudinal.svg)
+- [GitHub Action run](https://github.com/faster-cpython/benchmarking/actions/runs/4483410660)
+- cpu model: missing
+- platform: Windows-10-10.0.22000-SP0
+- [raw results](bm-20211005-pythonperf1-amd64-python-7c12e4835ebe52287acd-3.11.0a1-7c12e48.json)
 
-Improvement of the geometric mean of key merged benchmarks, computed with `pyperf compare`.
-The results have a resolution of 0.01 (1%).
-
-![Configuration speed improvement](/configs.svg)
-
-## Documentation
-
-### Running benchmarks from the GitHub web UI
-
-Visit the 🔒 [benchmark action](../../actions/workflows/benchmark.yml) and click the "Run Workflow" button.
-
-The available parameters are:
-
-- `fork`: The fork of CPython to benchmark.
-  If benchmarking a pull request, this would normally be your GitHub username.
-- `ref`: The branch, tag or commit SHA to benchmark.
-  If a SHA, it must be the full SHA, since finding it by a prefix is not supported.
-- `machine`: The machine to run on.
-  One of `linux-amd64` (default), `windows-amd64`, `darwin-arm64` or `all`.
-- `benchmark_base`: If checked, the base of the selected branch will also be benchmarked.
-  The base is determined by running `git merge-base upstream/main $ref`.
-- `pystats`: If checked, collect the pystats from running the benchmarks.
-
-To watch the progress of the benchmark, select it from the 🔒 [benchmark action page](../../actions/workflows/benchmark.yml).
-It may be canceled from there as well.
-To show only your benchmark workflows, select your GitHub ID from the "Actor" dropdown.
-
-When the benchmarking is complete, the results are published to this repository and will appear in the [complete table](RESULTS.md).
-Each set of benchmarks will have:
-
-- The raw `.json` results from pyperformance.
-- Comparisons against important reference releases, as well as the merge base of the branch if `benchmark_base` was selected. These include
-  - A markdown table produced by `pyperf compare_to`.
-  - A set of "violin" plots showing the distribution of results for each benchmark.
-
-The most convenient way to get results locally is to clone this repo and `git pull` from it.
-
-### Running benchmarks from the GitHub CLI
-
-To automate benchmarking runs, it may be more convenient to use the [GitHub CLI](https://cli.github.com/).
-Once you have `gh` installed and configured, you can run benchmarks by cloning this repository and then from inside it:
-
-```bash session
-gh workflow run benchmark.yml -f fork=me -f ref=my_branch
-```
-
-Any of the parameters described above are available at the commandline using the `-f key=value` syntax.
-
-### Collecting Linux perf profiling data
-
-To collect Linux perf sampling profile data for a benchmarking run, run the `_benchmark` action and check the `perf` checkbox.
-Follow this by a run of the `_generate` action to regenerate the plots.
