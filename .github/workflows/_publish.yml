@@ -28,13 +28,6 @@ jobs:
         path: private
         ref: main
         fetch-depth: 0
-    - name: Checkout benchmarking-public
-      uses: actions/checkout@v4
-      with:
-        path: public
-        ref: main
-        repository: ${{ github.repository }}-public
-        token: ${{ secrets.BENCHMARK_MIRROR }}
     - name: Mirror
       run: |
         cd public
