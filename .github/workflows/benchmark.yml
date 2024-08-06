@@ -1,7 +1,7 @@
 # Generated file: !!! DO NOT EDIT !!!
 ---
 env:
-  PYPERFORMANCE_HASH: f0546b583fdcd613930513fb7443a08bd325b35f
+  PYPERFORMANCE_HASH: ebb37f3583e26ea22cee34126b3b8a815112370b
   PYSTON_BENCHMARKS_HASH: 004743ccbd9e54598c543d7eb71fd3b8e10d5750
 name: benchmark
 run-name: benchmarking ${{ inputs.fork }}/${{ inputs.ref }} ${{ inputs.tier2 == true

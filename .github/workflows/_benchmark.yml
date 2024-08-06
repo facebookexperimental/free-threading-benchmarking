@@ -1,7 +1,7 @@
 # Generated file: !!! DO NOT EDIT !!!
 ---
 env:
-  PYPERFORMANCE_HASH: f0546b583fdcd613930513fb7443a08bd325b35f
+  PYPERFORMANCE_HASH: ebb37f3583e26ea22cee34126b3b8a815112370b
   PYSTON_BENCHMARKS_HASH: 004743ccbd9e54598c543d7eb71fd3b8e10d5750
 name: _benchmark
 on:
@@ -94,6 +94,9 @@ jobs:
         echo "BENCHMARK_MACHINE_NICKNAME=linux" >> $GITHUB_ENV
     - name: Checkout benchmarking
       uses: actions/checkout@v4
+    - name: git gc
+      run: |
+        git gc
     - uses: fregante/setup-git-user@v2
     - name: Setup system Python
       if: ${{ runner.arch == 'X64' }}
@@ -109,7 +112,9 @@ jobs:
         fetch-depth: 50
     - name: Install dependencies from PyPI
       run: |
+        rm -rf venv
         python -m venv venv
+        venv/bin/python -m pip install --upgrade pip
         venv/bin/python -m pip install -r requirements.txt
     - name: Should we run?
       if: ${{ always() }}
@@ -139,7 +144,7 @@ jobs:
     - name: Install pyperformance
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
-        venv/bin/python -m pip install --no-binary :all: ./pyperformance
+        venv/bin/python -m pip install ./pyperformance
     - name: Tune system
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
