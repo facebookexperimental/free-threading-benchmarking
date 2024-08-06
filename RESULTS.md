@@ -4,6 +4,10 @@
 ## linux x86_64 (linux)
 | date | fork/ref | hash/flags | vs. 3.11.0: | vs. base: |
 | --- | --- | --- | ---: | ---: |
+| [2024-08-04](results/bm-20240804-3.14.0a0-151934a-NOGIL) | python/151934a324789c58cca9 | 151934a (NOGIL) |  | 1.42x ↓<br>[📄](results/bm-20240804-3.14.0a0-151934a-NOGIL/bm-20240804-linux-x86_64-python-151934a324789c58cca9-3.14.0a0-151934a-vs-base.md)[📈](results/bm-20240804-3.14.0a0-151934a-NOGIL/bm-20240804-linux-x86_64-python-151934a324789c58cca9-3.14.0a0-151934a-vs-base.svg)[🧠](results/bm-20240804-3.14.0a0-151934a-NOGIL/bm-20240804-linux-x86_64-python-151934a324789c58cca9-3.14.0a0-151934a-vs-base-mem.svg) |
+| [2024-08-04](results/bm-20240804-3.14.0a0-151934a) | python/151934a324789c58cca9 | 151934a |  |  |
+| [2024-07-27](results/bm-20240727-3.14.0a0-04eb5c8-NOGIL) | python/04eb5c8db1e24cabd0cb | 04eb5c8 (NOGIL) |  | 1.44x ↓<br>[📄](results/bm-20240727-3.14.0a0-04eb5c8-NOGIL/bm-20240727-linux-x86_64-python-04eb5c8db1e24cabd0cb-3.14.0a0-04eb5c8-vs-base.md)[📈](results/bm-20240727-3.14.0a0-04eb5c8-NOGIL/bm-20240727-linux-x86_64-python-04eb5c8db1e24cabd0cb-3.14.0a0-04eb5c8-vs-base.svg)[🧠](results/bm-20240727-3.14.0a0-04eb5c8-NOGIL/bm-20240727-linux-x86_64-python-04eb5c8db1e24cabd0cb-3.14.0a0-04eb5c8-vs-base-mem.svg) |
+| [2024-07-27](results/bm-20240727-3.14.0a0-04eb5c8) | python/04eb5c8db1e24cabd0cb | 04eb5c8 |  |  |
 | [2024-07-25](results/bm-20240725-3.14.0a0-d9efa45-NOGIL) | python/main | d9efa45 (NOGIL) |  | 1.01x ↓<br>[📄](results/bm-20240725-3.14.0a0-d9efa45-NOGIL/bm-20240725-linux-x86_64-python-main-3.14.0a0-d9efa45-vs-base.md)[📈](results/bm-20240725-3.14.0a0-d9efa45-NOGIL/bm-20240725-linux-x86_64-python-main-3.14.0a0-d9efa45-vs-base.svg)[🧠](results/bm-20240725-3.14.0a0-d9efa45-NOGIL/bm-20240725-linux-x86_64-python-main-3.14.0a0-d9efa45-vs-base-mem.svg) |
 | [2024-07-25](results/bm-20240725-3.14.0a0-1d607fe-NOGIL) | python/1d607fe759ef22177b50 | 1d607fe (NOGIL) |  |  |
 | [2024-07-24](results/bm-20240724-3.14.0a0-9ac6060-NOGIL) | python/9ac606080a0074cdf758 | 9ac6060 (NOGIL) |  |  |
