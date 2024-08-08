@@ -10,9 +10,9 @@ Here are some recent and important revisions. 👉 [Complete list of results](RE
 ## linux x86_64 (linux)
 | date | fork/ref | hash/flags | vs. 3.11.0: | vs. base: |
 | --- | --- | --- | ---: | ---: |
+| [2024-08-08](results/bm-20240808-3.14.0a0-e006c73-NOGIL) | python/e006c7371d8e57db2625 | e006c73 (NOGIL) |  |  |
+| [2024-08-07](results/bm-20240807-3.14.0a0-f483286-NOGIL) | mpage/gh_122712_fix_call_a | f483286 (NOGIL) |  | 1.00x ↓<br>[📄](results/bm-20240807-3.14.0a0-f483286-NOGIL/bm-20240807-linux-x86_64-mpage-gh_122712_fix_call_a-3.14.0a0-f483286-vs-base.md)[📈](results/bm-20240807-3.14.0a0-f483286-NOGIL/bm-20240807-linux-x86_64-mpage-gh_122712_fix_call_a-3.14.0a0-f483286-vs-base.svg)[🧠](results/bm-20240807-3.14.0a0-f483286-NOGIL/bm-20240807-linux-x86_64-mpage-gh_122712_fix_call_a-3.14.0a0-f483286-vs-base-mem.svg) |
 | [2024-08-06](results/bm-20240806-3.14.0a0-4767a6e-NOGIL) | python/main | 4767a6e (NOGIL) |  |  |
-| [2024-08-04](results/bm-20240804-3.14.0a0-151934a-NOGIL) | python/151934a324789c58cca9 | 151934a (NOGIL) |  | 1.42x ↓<br>[📄](results/bm-20240804-3.14.0a0-151934a-NOGIL/bm-20240804-linux-x86_64-python-151934a324789c58cca9-3.14.0a0-151934a-vs-base.md)[📈](results/bm-20240804-3.14.0a0-151934a-NOGIL/bm-20240804-linux-x86_64-python-151934a324789c58cca9-3.14.0a0-151934a-vs-base.svg)[🧠](results/bm-20240804-3.14.0a0-151934a-NOGIL/bm-20240804-linux-x86_64-python-151934a324789c58cca9-3.14.0a0-151934a-vs-base-mem.svg) |
-| [2024-08-04](results/bm-20240804-3.14.0a0-151934a) | python/151934a324789c58cca9 | 151934a |  |  |
 
 
 <!-- END table -->
