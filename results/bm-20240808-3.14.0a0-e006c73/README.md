@@ -15,3 +15,11 @@
 - platform: Linux-5.15.0-1063-aws-x86_64-with-glibc2.31
 - [raw results](bm-20240808-linux-x86_64-python-e006c7371d8e57db2625-3.14.0a0-e006c73.json)
 
+### vs. base
+
+- Geometric mean: 1.03x faster (HPT: reliability of 99.98%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20240808-linux-x86_64-python-e006c7371d8e57db2625-3.14.0a0-e006c73-vs-base-mem.svg)
+- [📄table](bm-20240808-linux-x86_64-python-e006c7371d8e57db2625-3.14.0a0-e006c73-vs-base.md)
+- [📈time plot](bm-20240808-linux-x86_64-python-e006c7371d8e57db2625-3.14.0a0-e006c73-vs-base.svg)
+
