@@ -4,6 +4,8 @@
 ## linux x86_64 (linux)
 | date | fork/ref | hash/flags | vs. 3.10.4: | vs. 3.12.0: | vs. 3.13.0b2: | vs. base: |
 | --- | --- | --- | ---: | ---: | ---: | ---: |
+| [2024-08-15](results/bm-20240815-3.14.0a0-e001027-NOGIL) | python/main | e001027 (NOGIL) |  |  |  | 1.01x ↓<br>[📄](results/bm-20240815-3.14.0a0-e001027-NOGIL/bm-20240815-linux-x86_64-python-main-3.14.0a0-e001027-vs-base.md)[📈](results/bm-20240815-3.14.0a0-e001027-NOGIL/bm-20240815-linux-x86_64-python-main-3.14.0a0-e001027-vs-base.svg)[🧠](results/bm-20240815-3.14.0a0-e001027-NOGIL/bm-20240815-linux-x86_64-python-main-3.14.0a0-e001027-vs-base-mem.svg) |
+| [2024-08-15](results/bm-20240815-3.14.0a0-1dad23e-NOGIL) | python/1dad23edbc9db3a13268 | 1dad23e (NOGIL) |  |  |  |  |
 | [2024-08-13](results/bm-20240813-3.14.0a0-901d949-NOGIL) | python/901d94992eddd84ded2e | 901d949 (NOGIL) |  |  |  |  |
 | [2024-08-13](results/bm-20240813-3.14.0a0-5f68511-NOGIL) | python/main | 5f68511 (NOGIL) |  |  |  | 1.02x ↓<br>[📄](results/bm-20240813-3.14.0a0-5f68511-NOGIL/bm-20240813-linux-x86_64-python-main-3.14.0a0-5f68511-vs-base.md)[📈](results/bm-20240813-3.14.0a0-5f68511-NOGIL/bm-20240813-linux-x86_64-python-main-3.14.0a0-5f68511-vs-base.svg)[🧠](results/bm-20240813-3.14.0a0-5f68511-NOGIL/bm-20240813-linux-x86_64-python-main-3.14.0a0-5f68511-vs-base-mem.svg) |
 | [2024-08-10](results/bm-20240810-3.14.0a0-363374c) | python/363374cf69a7e2292fe3 | 363374c |  |  |  |  |
