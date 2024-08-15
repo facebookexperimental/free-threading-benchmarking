@@ -13,7 +13,9 @@ Here are some recent and important revisions. 👉 [Complete list of results](RE
 | [2024-08-13](results/bm-20240813-3.14.0a0-901d949-NOGIL) | python/901d94992eddd84ded2e | 901d949 (NOGIL) |  |  |  |  |
 | [2024-08-13](results/bm-20240813-3.14.0a0-5f68511-NOGIL) | python/main | 5f68511 (NOGIL) |  |  |  | 1.02x ↓<br>[📄](results/bm-20240813-3.14.0a0-5f68511-NOGIL/bm-20240813-linux-x86_64-python-main-3.14.0a0-5f68511-vs-base.md)[📈](results/bm-20240813-3.14.0a0-5f68511-NOGIL/bm-20240813-linux-x86_64-python-main-3.14.0a0-5f68511-vs-base.svg)[🧠](results/bm-20240813-3.14.0a0-5f68511-NOGIL/bm-20240813-linux-x86_64-python-main-3.14.0a0-5f68511-vs-base-mem.svg) |
 | [2024-08-10](results/bm-20240810-3.14.0a0-363374c) | python/363374cf69a7e2292fe3 | 363374c |  |  |  |  |
-| [2024-08-10](results/bm-20240810-3.14.0a0-363374c-NOGIL) | python/363374cf69a7e2292fe3 | 363374c (NOGIL) |  |  |  | 1.43x ↓<br>[📄](results/bm-20240810-3.14.0a0-363374c-NOGIL/bm-20240810-linux-x86_64-python-363374cf69a7e2292fe3-3.14.0a0-363374c-vs-base.md)[📈](results/bm-20240810-3.14.0a0-363374c-NOGIL/bm-20240810-linux-x86_64-python-363374cf69a7e2292fe3-3.14.0a0-363374c-vs-base.svg)[🧠](results/bm-20240810-3.14.0a0-363374c-NOGIL/bm-20240810-linux-x86_64-python-363374cf69a7e2292fe3-3.14.0a0-363374c-vs-base-mem.svg) |
+| [2024-08-14](results/bm-20240814-3.13.0rc1%2B-79452b1) | python/3.13 | 79452b1 |  |  |  |  |
+| [2024-08-14](results/bm-20240814-3.12.5%2B-9f153a2) | python/3.12 | 9f153a2 |  |  |  |  |
+| [2023-05-22](results/bm-20230522-3.12.0b1-5612078) | python/5612078f68e9688fbf3b | 5612078 |  |  |  |  |
 
 
 <!-- END table -->

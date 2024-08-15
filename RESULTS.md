@@ -30,6 +30,9 @@
 | [2024-07-23](results/bm-20240723-3.14.0a0-a9bb3c7-NOGIL) | python/main | a9bb3c7 (NOGIL) |  |  |  | 1.02x ↑<br>[📄](results/bm-20240723-3.14.0a0-a9bb3c7-NOGIL/bm-20240723-linux-x86_64-python-main-3.14.0a0-a9bb3c7-vs-base.md)[📈](results/bm-20240723-3.14.0a0-a9bb3c7-NOGIL/bm-20240723-linux-x86_64-python-main-3.14.0a0-a9bb3c7-vs-base.svg)[🧠](results/bm-20240723-3.14.0a0-a9bb3c7-NOGIL/bm-20240723-linux-x86_64-python-main-3.14.0a0-a9bb3c7-vs-base-mem.svg) |
 | [2024-07-23](results/bm-20240723-3.14.0a0-a9bb3c7) | python/main | a9bb3c7 |  |  |  |  |
 | [2024-07-22](results/bm-20240722-3.14.0a0-2762c6c-NOGIL) | python/2762c6cc5e4c1c0d6305 | 2762c6c (NOGIL) |  |  |  |  |
+| [2024-08-14](results/bm-20240814-3.13.0rc1%2B-79452b1) | python/3.13 | 79452b1 |  |  |  |  |
+| [2024-08-14](results/bm-20240814-3.12.5%2B-9f153a2) | python/3.12 | 9f153a2 |  |  |  |  |
+| [2023-05-22](results/bm-20230522-3.12.0b1-5612078) | python/5612078f68e9688fbf3b | 5612078 |  |  |  |  |
 
 
 <!-- END table -->
