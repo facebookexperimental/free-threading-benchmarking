@@ -15,6 +15,38 @@
 - platform: Linux-5.15.0-1063-aws-x86_64-with-glibc2.31
 - [raw results](bm-20240723-linux-x86_64-python-main-3.14.0a0-a9bb3c7.json)
 
+### vs. 3.12.0b1
+
+- Geometric mean: 1.30x slower (HPT: reliability of 100.00%, 1.21x slower at 99th %ile)
+- Memory usage: 2.27x
+- missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
+- [📄table](bm-20240723-linux-x86_64-python-main-3.14.0a0-a9bb3c7-vs-3.12.0b1.md)
+- [📈time plot](bm-20240723-linux-x86_64-python-main-3.14.0a0-a9bb3c7-vs-3.12.0b1.svg)
+
+### vs. 3.12.5+
+
+- Geometric mean: 1.32x slower (HPT: reliability of 100.00%, 1.22x slower at 99th %ile)
+- Memory usage: 1.16x
+- missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
+- [📄table](bm-20240723-linux-x86_64-python-main-3.14.0a0-a9bb3c7-vs-3.12.5%2B.md)
+- [📈time plot](bm-20240723-linux-x86_64-python-main-3.14.0a0-a9bb3c7-vs-3.12.5%2B.svg)
+
+### vs. 3.13.0b1
+
+- Geometric mean: 1.31x slower (HPT: reliability of 100.00%, 1.24x slower at 99th %ile)
+- Memory usage: 1.16x
+- missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn
+- [📄table](bm-20240723-linux-x86_64-python-main-3.14.0a0-a9bb3c7-vs-3.13.0b1.md)
+- [📈time plot](bm-20240723-linux-x86_64-python-main-3.14.0a0-a9bb3c7-vs-3.13.0b1.svg)
+
+### vs. 3.13.0rc1+
+
+- Geometric mean: 1.36x slower (HPT: reliability of 100.00%, 1.26x slower at 99th %ile)
+- Memory usage: 1.15x
+- missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn
+- [📄table](bm-20240723-linux-x86_64-python-main-3.14.0a0-a9bb3c7-vs-3.13.0rc1%2B.md)
+- [📈time plot](bm-20240723-linux-x86_64-python-main-3.14.0a0-a9bb3c7-vs-3.13.0rc1%2B.svg)
+
 ### vs. base
 
 - Geometric mean: 1.02x faster (HPT: reliability of 99.08%, 1.00x faster at 99th %ile)

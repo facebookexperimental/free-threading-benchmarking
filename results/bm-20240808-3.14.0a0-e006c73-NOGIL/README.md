@@ -15,6 +15,38 @@
 - platform: Linux-5.15.0-1063-aws-x86_64-with-glibc2.31
 - [raw results](bm-20240808-linux-x86_64-python-e006c7371d8e57db2625-3.14.0a0-e006c73.json)
 
+### vs. 3.12.0b1
+
+- Geometric mean: 1.36x slower (HPT: reliability of 100.00%, 1.24x slower at 99th %ile)
+- Memory usage: 2.27x
+- missing benchmarks: aiohttp, chameleon, dask, dulwich_log, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
+- [📄table](bm-20240808-linux-x86_64-python-e006c7371d8e57db2625-3.14.0a0-e006c73-vs-3.12.0b1.md)
+- [📈time plot](bm-20240808-linux-x86_64-python-e006c7371d8e57db2625-3.14.0a0-e006c73-vs-3.12.0b1.svg)
+
+### vs. 3.12.5+
+
+- Geometric mean: 1.37x slower (HPT: reliability of 100.00%, 1.26x slower at 99th %ile)
+- Memory usage: 1.16x
+- missing benchmarks: aiohttp, chameleon, dask, dulwich_log, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
+- [📄table](bm-20240808-linux-x86_64-python-e006c7371d8e57db2625-3.14.0a0-e006c73-vs-3.12.5%2B.md)
+- [📈time plot](bm-20240808-linux-x86_64-python-e006c7371d8e57db2625-3.14.0a0-e006c73-vs-3.12.5%2B.svg)
+
+### vs. 3.13.0b1
+
+- Geometric mean: 1.36x slower (HPT: reliability of 100.00%, 1.26x slower at 99th %ile)
+- Memory usage: 1.15x
+- missing benchmarks: aiohttp, chameleon, dask, dulwich_log, flaskblogging, gunicorn
+- [📄table](bm-20240808-linux-x86_64-python-e006c7371d8e57db2625-3.14.0a0-e006c73-vs-3.13.0b1.md)
+- [📈time plot](bm-20240808-linux-x86_64-python-e006c7371d8e57db2625-3.14.0a0-e006c73-vs-3.13.0b1.svg)
+
+### vs. 3.13.0rc1+
+
+- Geometric mean: 1.41x slower (HPT: reliability of 100.00%, 1.28x slower at 99th %ile)
+- Memory usage: 1.15x
+- missing benchmarks: aiohttp, chameleon, dask, dulwich_log, flaskblogging, gunicorn
+- [📄table](bm-20240808-linux-x86_64-python-e006c7371d8e57db2625-3.14.0a0-e006c73-vs-3.13.0rc1%2B.md)
+- [📈time plot](bm-20240808-linux-x86_64-python-e006c7371d8e57db2625-3.14.0a0-e006c73-vs-3.13.0rc1%2B.svg)
+
 ### vs. base
 
 - Geometric mean: 1.45x slower (HPT: reliability of 100.00%, 1.31x slower at 99th %ile)
