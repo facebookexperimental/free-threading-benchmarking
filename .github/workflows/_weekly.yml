@@ -92,6 +92,7 @@ jobs:
 
   generate:
     uses: ./.github/workflows/_generate.yml
+    if: ${{ always() }}
     with:
       force: false
     needs: [weekly, weekly-jit, weekly-nogil, pystats, pystats-tier2]
@@ -99,5 +100,6 @@ jobs:
 
   publish:
     uses: ./.github/workflows/_publish.yml
+    if: ${{ always() }}
     needs: [generate]
     secrets: inherit
