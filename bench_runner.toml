@@ -34,3 +34,6 @@ names = ["linux"]
 colors = ["C0"]
 styles = ["-"]
 markers = ["s"]
+
+[publish_mirror]
+skip = true
