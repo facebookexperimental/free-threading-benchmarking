@@ -22,6 +22,7 @@ on:
         type: choice
         options:
         - linux-x86_64-linux
+        - linux-x86_64-vultr
         - all
       benchmarks:
         description: Benchmarks to run (comma-separated; empty runs all benchmarks)
