@@ -20,6 +20,7 @@ Here are some recent and important revisions. 👉 [Complete list of results](RE
 | date | fork/ref | hash/flags | vs. 3.12.0b1: | vs. 3.12.5+: | vs. 3.13.0b1: | vs. 3.13.0rc1+: | vs. base: |
 | --- | --- | --- | ---: | ---: | ---: | ---: | ---: |
 | [2024-09-20](results/bm-20240920-3.14.0a0-342e654) | python/main | 342e654 |  |  |  |  |  |
+| [2024-09-06](results/bm-20240906-3.12.6-a4a2d2b) | python/v3.12.6 | a4a2d2b |  |  |  |  |  |
 
 
 <!-- END table -->
