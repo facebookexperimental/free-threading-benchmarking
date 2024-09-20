@@ -57,6 +57,7 @@ on:
         type: choice
         options:
         - linux-x86_64-linux
+        - linux-x86_64-vultr
         - all
       benchmarks:
         description: Benchmarks to run (comma-separated; empty runs all benchmarks)
@@ -189,6 +190,114 @@ jobs:
           profiling/results
 
     if: ${{ (inputs.machine == 'linux-x86_64-linux' || inputs.machine == 'all') }}
+    env:
+      flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
+        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }}
+  benchmark-linux-x86_64-vultr:
+    runs-on: [self-hosted, linux, bare-metal, linux-x86_64-vultr]
+    timeout-minutes: 1440
+
+    steps:
+    - name: Setup environment
+      run: |-
+        echo "BENCHMARK_MACHINE_NICKNAME=vultr" >> $GITHUB_ENV
+    - name: Checkout benchmarking
+      uses: actions/checkout@v4
+    - name: git gc
+      run: |
+        git gc
+    - uses: fregante/setup-git-user@v2
+    - name: Setup system Python
+      if: ${{ runner.arch == 'X64' }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    - name: Checkout CPython
+      uses: actions/checkout@v4
+      with:
+        repository: ${{ inputs.fork }}/cpython
+        path: cpython
+        ref: ${{ inputs.ref }}
+        fetch-depth: 50
+    - name: Install dependencies from PyPI
+      run: |
+        rm -rf venv
+        python -m venv venv
+        venv/bin/python -m pip install --upgrade pip
+        venv/bin/python -m pip install -r requirements.txt
+    - name: Should we run?
+      if: ${{ always() }}
+      id: should_run
+      run: |
+        venv/bin/python -m bench_runner should_run ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} false ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }} >> $GITHUB_OUTPUT
+    - name: Checkout python-macrobenchmarks
+      uses: actions/checkout@v4
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      with:
+        repository: pyston/python-macrobenchmarks
+        path: pyston-benchmarks
+        ref: ${{ env.PYSTON_BENCHMARKS_HASH }}
+    - name: Checkout pyperformance
+      uses: actions/checkout@v4
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      with:
+        repository: mdboom/pyperformance
+        path: pyperformance
+        ref: ${{ env.PYPERFORMANCE_HASH }}
+    - name: Build Python
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      run: |
+        cd cpython
+        ./configure ${{ inputs.pgo == true && '--enable-optimizations --with-lto=yes' || '' }} ${{ inputs.tier2 == true && '--enable-experimental-jit=interpreter' || '' }} ${{ inputs.jit == true && '--enable-experimental-jit=yes' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }}
+        make ${{ runner.arch == 'ARM64' && '-j' || '-j4' }}
+    - name: Install pyperformance
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      run: |
+        venv/bin/python -m pip install ./pyperformance
+    - name: Tune system
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      run: |
+        sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH venv/bin/python -m pyperf system tune
+    - name: Tune for (Linux) perf
+      if: ${{ steps.should_run.outputs.should_run != 'false' && inputs.perf }}
+      run: |
+        sudo bash -c "echo 100000 > /proc/sys/kernel/perf_event_max_sample_rate"
+    - name: Running pyperformance
+      if: ${{ steps.should_run.outputs.should_run != 'false' }}
+      run: |
+        rm -rf ~/.debug/*
+        venv/bin/python -m bench_runner run_benchmarks ${{ inputs.perf && 'perf' || 'benchmark' }} cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }} --run_id ${{ github.run_id }}
+      # Pull again, since another job may have committed results in the meantime
+    - name: Pull benchmarking
+      if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.perf }}
+      run: |
+        # Another benchmarking task may have created results for the same
+        # commit while the above was running. This "magic" incantation means
+        # that any local results for this commit will override anything we
+        # just pulled in in that case.
+        git pull -s recursive -X ours --autostash --rebase
+    - name: Adding data to repo
+      if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.perf }}
+      uses: EndBug/add-and-commit@v9
+      with:
+        add: results
+    - name: Upload benchmark artifacts
+      if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.perf }}
+      uses: actions/upload-artifact@v4
+      with:
+        name: benchmark
+        path: |
+          benchmark.json
+        overwrite: true
+    - name: Upload perf artifacts
+      if: ${{ steps.should_run.outputs.should_run != 'false' && inputs.perf }}
+      uses: actions/upload-artifact@v4
+      with:
+        name: perf
+        path: |
+          profiling/results
+
+    if: ${{ (inputs.machine == 'linux-x86_64-vultr' || inputs.machine == 'all') }}
     env:
       flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
         'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }}

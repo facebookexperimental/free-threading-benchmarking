@@ -26,6 +26,12 @@ arch = "x86_64"
 hostname = "pyperf"
 available = true
 
+[runners.vultr]
+os = "linux"
+arch = "x86_64"
+hostname = "pyperf"
+available = true
+
 [plot]
 bases = ["3.12.0b1", "3.12.5+", "3.13.0b1", "3.13.0rc1+"]
 versions = [[3, 13], [3, 13], [3, 14], [3, 14]]
