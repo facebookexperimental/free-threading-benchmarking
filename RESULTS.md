@@ -85,6 +85,7 @@
 | --- | --- | --- | ---: | ---: | ---: | ---: | ---: |
 | [2024-09-20](results/bm-20240920-3.14.0a0-342e654) | python/main | 342e654 |  |  |  |  |  |
 | [2024-09-06](results/bm-20240906-3.13.0rc2-ec61006) | python/v3.13.0rc2 | ec61006 |  |  |  |  |  |
+| [2024-09-06](results/bm-20240906-3.13.0rc2-ec61006-NOGIL) | python/v3.13.0rc2 | ec61006 (NOGIL) |  |  |  |  | 1.49x ↓<br>[📄](results/bm-20240906-3.13.0rc2-ec61006-NOGIL/bm-20240906-vultr-x86_64-python-v3.13.0rc2-3.13.0rc2-ec61006-vs-base.md)[📈](results/bm-20240906-3.13.0rc2-ec61006-NOGIL/bm-20240906-vultr-x86_64-python-v3.13.0rc2-3.13.0rc2-ec61006-vs-base.svg)[🧠](results/bm-20240906-3.13.0rc2-ec61006-NOGIL/bm-20240906-vultr-x86_64-python-v3.13.0rc2-3.13.0rc2-ec61006-vs-base-mem.svg) |
 | [2024-09-06](results/bm-20240906-3.12.6-a4a2d2b) | python/v3.12.6 | a4a2d2b |  |  |  |  |  |
 
 

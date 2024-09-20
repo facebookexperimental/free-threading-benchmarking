@@ -55,3 +55,19 @@
 - [📄table](bm-20240906-linux-x86_64-python-v3.13.0rc2-3.13.0rc2-ec61006-vs-base.md)
 - [📈time plot](bm-20240906-linux-x86_64-python-v3.13.0rc2-3.13.0rc2-ec61006-vs-base.svg)
 
+## linux x86_64 (vultr)
+
+- [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/10966676301)
+- cpu model: Intel(R) Xeon(R) E-2286G CPU @ 4.00GHz
+- platform: Linux-6.8.0-45-generic-x86_64-with-glibc2.39
+- [raw results](bm-20240906-vultr-x86_64-python-v3.13.0rc2-3.13.0rc2-ec61006.json)
+
+### vs. base
+
+- Geometric mean: 1.49x slower (HPT: reliability of 100.00%, 1.32x slower at 99th %ile)
+- Memory usage: 1.16x
+- missing benchmarks: 🔴 dask
+- [🧠memory plot](bm-20240906-vultr-x86_64-python-v3.13.0rc2-3.13.0rc2-ec61006-vs-base-mem.svg)
+- [📄table](bm-20240906-vultr-x86_64-python-v3.13.0rc2-3.13.0rc2-ec61006-vs-base.md)
+- [📈time plot](bm-20240906-vultr-x86_64-python-v3.13.0rc2-3.13.0rc2-ec61006-vs-base.svg)
+
