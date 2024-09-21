@@ -4,7 +4,7 @@
 
 [bases]
 # List the base versions you want to compare every benchmark run to
-versions = ["3.12.0b1", "3.12.5+", "3.13.0b1", "3.13.0rc1+"]
+versions = ["3.12.6", "3.13.0rc2"]
 
 [benchmarks]
 # List any benchmarks you want to exclude from results here
