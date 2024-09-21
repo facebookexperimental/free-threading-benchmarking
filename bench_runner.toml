@@ -33,13 +33,13 @@ hostname = "pyperf"
 available = true
 
 [plot]
-bases = ["3.12.0b1", "3.12.5+", "3.13.0b1", "3.13.0rc1+"]
-versions = [[3, 13], [3, 13], [3, 14], [3, 14]]
-runners = ["linux"]
-names = ["linux"]
-colors = ["C0"]
-styles = ["-"]
-markers = ["s"]
+bases = ["3.12.6", "3.13.0rc2"]
+versions = [[3, 13], [3, 14]]
+runners = ["linux", "vultr"]
+names = ["linux", "linux-vultr"]
+colors = ["C0", "C0"]
+styles = ["-", ":"]
+markers = ["s", "s"]
 
 [publish_mirror]
 skip = true
