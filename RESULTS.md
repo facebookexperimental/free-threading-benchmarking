@@ -83,6 +83,7 @@
 ## linux x86_64 (vultr)
 | date | fork/ref | hash/flags | vs. 3.12.0b1: | vs. 3.12.5+: | vs. 3.13.0b1: | vs. 3.13.0rc1+: | vs. base: |
 | --- | --- | --- | ---: | ---: | ---: | ---: | ---: |
+| [2024-09-20](results/bm-20240920-3.14.0a0-342e654) | mpage/342e654b8eda24c68da6 | 342e654 |  |  |  |  |  |
 | [2024-09-20](results/bm-20240920-3.14.0a0-342e654) | python/main | 342e654 |  |  |  |  |  |
 | [2024-09-06](results/bm-20240906-3.13.0rc2-ec61006) | python/v3.13.0rc2 | ec61006 |  |  |  |  |  |
 | [2024-09-06](results/bm-20240906-3.13.0rc2-ec61006-NOGIL) | python/v3.13.0rc2 | ec61006 (NOGIL) |  |  |  |  | 1.49x ↓<br>[📄](results/bm-20240906-3.13.0rc2-ec61006-NOGIL/bm-20240906-vultr-x86_64-python-v3.13.0rc2-3.13.0rc2-ec61006-vs-base.md)[📈](results/bm-20240906-3.13.0rc2-ec61006-NOGIL/bm-20240906-vultr-x86_64-python-v3.13.0rc2-3.13.0rc2-ec61006-vs-base.svg)[🧠](results/bm-20240906-3.13.0rc2-ec61006-NOGIL/bm-20240906-vultr-x86_64-python-v3.13.0rc2-3.13.0rc2-ec61006-vs-base-mem.svg) |
