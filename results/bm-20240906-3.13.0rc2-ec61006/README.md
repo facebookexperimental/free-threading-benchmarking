@@ -57,3 +57,10 @@
 - [📄table](bm-20240906-vultr-x86_64-python-v3.13.0rc2-3.13.0rc2-ec61006-vs-3.12.6.md)
 - [📈time plot](bm-20240906-vultr-x86_64-python-v3.13.0rc2-3.13.0rc2-ec61006-vs-3.12.6.svg)
 
+### vs. 3.13.0rc2
+
+- Geometric mean: 1.00x slower (HPT: reliability of 98.90%, 1.00x slower at 99th %ile)
+- Memory usage: 0.99x
+- [📄table](bm-20240906-vultr-x86_64-python-v3.13.0rc2-3.13.0rc2-ec61006-vs-3.13.0rc2.md)
+- [📈time plot](bm-20240906-vultr-x86_64-python-v3.13.0rc2-3.13.0rc2-ec61006-vs-3.13.0rc2.svg)
+
