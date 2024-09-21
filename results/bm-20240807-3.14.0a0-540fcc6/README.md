@@ -15,37 +15,21 @@
 - platform: Linux-5.15.0-1063-aws-x86_64-with-glibc2.31
 - [raw results](bm-20240807-linux-x86_64-python-540fcc62f5da982b7950-3.14.0a0-540fcc6.json)
 
-### vs. 3.12.0b1
+### vs. 3.12.6
 
-- Geometric mean: 1.03x faster (HPT: reliability of 99.53%, 1.00x faster at 99th %ile)
-- Memory usage: 1.88x
-- missing benchmarks: aiohttp, chameleon, dask, dulwich_log, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
-- [📄table](bm-20240807-linux-x86_64-python-540fcc62f5da982b7950-3.14.0a0-540fcc6-vs-3.12.0b1.md)
-- [📈time plot](bm-20240807-linux-x86_64-python-540fcc62f5da982b7950-3.14.0a0-540fcc6-vs-3.12.0b1.svg)
-
-### vs. 3.12.5+
-
-- Geometric mean: 1.02x faster (HPT: reliability of 70.06%, 1.00x faster at 99th %ile)
-- Memory usage: 1.02x
-- missing benchmarks: aiohttp, chameleon, dask, dulwich_log, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
-- [📄table](bm-20240807-linux-x86_64-python-540fcc62f5da982b7950-3.14.0a0-540fcc6-vs-3.12.5%2B.md)
-- [📈time plot](bm-20240807-linux-x86_64-python-540fcc62f5da982b7950-3.14.0a0-540fcc6-vs-3.12.5%2B.svg)
-
-### vs. 3.13.0b1
-
-- Geometric mean: 1.03x faster (HPT: reliability of 84.95%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.02x faster (HPT: reliability of 80.88%, 1.00x faster at 99th %ile)
 - Memory usage: 1.01x
-- missing benchmarks: aiohttp, chameleon, dask, dulwich_log, flaskblogging, gunicorn
-- [📄table](bm-20240807-linux-x86_64-python-540fcc62f5da982b7950-3.14.0a0-540fcc6-vs-3.13.0b1.md)
-- [📈time plot](bm-20240807-linux-x86_64-python-540fcc62f5da982b7950-3.14.0a0-540fcc6-vs-3.13.0b1.svg)
+- missing benchmarks: aiohttp, chameleon, dask, dulwich_log, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
+- [📄table](bm-20240807-linux-x86_64-python-540fcc62f5da982b7950-3.14.0a0-540fcc6-vs-3.12.6.md)
+- [📈time plot](bm-20240807-linux-x86_64-python-540fcc62f5da982b7950-3.14.0a0-540fcc6-vs-3.12.6.svg)
 
-### vs. 3.13.0rc1+
+### vs. 3.13.0rc2
 
-- Geometric mean: 1.01x slower (HPT: reliability of 87.81%, 1.00x slower at 99th %ile)
+- Geometric mean: 1.02x slower (HPT: reliability of 93.44%, 1.00x slower at 99th %ile)
 - Memory usage: 1.00x
 - missing benchmarks: aiohttp, chameleon, dask, dulwich_log, flaskblogging, gunicorn
-- [📄table](bm-20240807-linux-x86_64-python-540fcc62f5da982b7950-3.14.0a0-540fcc6-vs-3.13.0rc1%2B.md)
-- [📈time plot](bm-20240807-linux-x86_64-python-540fcc62f5da982b7950-3.14.0a0-540fcc6-vs-3.13.0rc1%2B.svg)
+- [📄table](bm-20240807-linux-x86_64-python-540fcc62f5da982b7950-3.14.0a0-540fcc6-vs-3.13.0rc2.md)
+- [📈time plot](bm-20240807-linux-x86_64-python-540fcc62f5da982b7950-3.14.0a0-540fcc6-vs-3.13.0rc2.svg)
 
 ### vs. base
 
@@ -54,4 +38,24 @@
 - [🧠memory plot](bm-20240807-linux-x86_64-python-540fcc62f5da982b7950-3.14.0a0-540fcc6-vs-base-mem.svg)
 - [📄table](bm-20240807-linux-x86_64-python-540fcc62f5da982b7950-3.14.0a0-540fcc6-vs-base.md)
 - [📈time plot](bm-20240807-linux-x86_64-python-540fcc62f5da982b7950-3.14.0a0-540fcc6-vs-base.svg)
+
+### vs. 3.12.0b1
+
+- [📄table](bm-20240807-linux-x86_64-python-540fcc62f5da982b7950-3.14.0a0-540fcc6-vs-3.12.0b1.md)
+- [📈time plot](bm-20240807-linux-x86_64-python-540fcc62f5da982b7950-3.14.0a0-540fcc6-vs-3.12.0b1.svg)
+
+### vs. 3.12.5+
+
+- [📄table](bm-20240807-linux-x86_64-python-540fcc62f5da982b7950-3.14.0a0-540fcc6-vs-3.12.5%2B.md)
+- [📈time plot](bm-20240807-linux-x86_64-python-540fcc62f5da982b7950-3.14.0a0-540fcc6-vs-3.12.5%2B.svg)
+
+### vs. 3.13.0b1
+
+- [📄table](bm-20240807-linux-x86_64-python-540fcc62f5da982b7950-3.14.0a0-540fcc6-vs-3.13.0b1.md)
+- [📈time plot](bm-20240807-linux-x86_64-python-540fcc62f5da982b7950-3.14.0a0-540fcc6-vs-3.13.0b1.svg)
+
+### vs. 3.13.0rc1+
+
+- [📄table](bm-20240807-linux-x86_64-python-540fcc62f5da982b7950-3.14.0a0-540fcc6-vs-3.13.0rc1%2B.md)
+- [📈time plot](bm-20240807-linux-x86_64-python-540fcc62f5da982b7950-3.14.0a0-540fcc6-vs-3.13.0rc1%2B.svg)
 

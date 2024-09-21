@@ -15,35 +15,39 @@
 - platform: Linux-5.15.0-1063-aws-x86_64-with-glibc2.31
 - [raw results](bm-20240904-linux-x86_64-mpage-4a8e3ba765dc0858d743-3.14.0a0-4a8e3ba.json)
 
+### vs. 3.12.6
+
+- Geometric mean: 1.19x slower (HPT: reliability of 100.00%, 1.09x slower at 99th %ile)
+- Memory usage: 1.00x
+- missing benchmarks: aiohttp, chameleon, dask, dulwich_log, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
+- [📄table](bm-20240904-linux-x86_64-mpage-4a8e3ba765dc0858d743-3.14.0a0-4a8e3ba-vs-3.12.6.md)
+- [📈time plot](bm-20240904-linux-x86_64-mpage-4a8e3ba765dc0858d743-3.14.0a0-4a8e3ba-vs-3.12.6.svg)
+
+### vs. 3.13.0rc2
+
+- Geometric mean: 1.23x slower (HPT: reliability of 100.00%, 1.13x slower at 99th %ile)
+- Memory usage: 1.00x
+- missing benchmarks: aiohttp, chameleon, dask, dulwich_log, flaskblogging, gunicorn
+- [📄table](bm-20240904-linux-x86_64-mpage-4a8e3ba765dc0858d743-3.14.0a0-4a8e3ba-vs-3.13.0rc2.md)
+- [📈time plot](bm-20240904-linux-x86_64-mpage-4a8e3ba765dc0858d743-3.14.0a0-4a8e3ba-vs-3.13.0rc2.svg)
+
 ### vs. 3.12.0b1
 
-- Geometric mean: 1.17x slower (HPT: reliability of 100.00%, 1.07x slower at 99th %ile)
-- Memory usage: 1.87x
-- missing benchmarks: aiohttp, chameleon, dask, dulwich_log, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - [📄table](bm-20240904-linux-x86_64-mpage-4a8e3ba765dc0858d743-3.14.0a0-4a8e3ba-vs-3.12.0b1.md)
 - [📈time plot](bm-20240904-linux-x86_64-mpage-4a8e3ba765dc0858d743-3.14.0a0-4a8e3ba-vs-3.12.0b1.svg)
 
 ### vs. 3.12.5+
 
-- Geometric mean: 1.18x slower (HPT: reliability of 100.00%, 1.08x slower at 99th %ile)
-- Memory usage: 1.01x
-- missing benchmarks: aiohttp, chameleon, dask, dulwich_log, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - [📄table](bm-20240904-linux-x86_64-mpage-4a8e3ba765dc0858d743-3.14.0a0-4a8e3ba-vs-3.12.5%2B.md)
 - [📈time plot](bm-20240904-linux-x86_64-mpage-4a8e3ba765dc0858d743-3.14.0a0-4a8e3ba-vs-3.12.5%2B.svg)
 
 ### vs. 3.13.0b1
 
-- Geometric mean: 1.18x slower (HPT: reliability of 100.00%, 1.13x slower at 99th %ile)
-- Memory usage: 1.00x
-- missing benchmarks: aiohttp, chameleon, dask, dulwich_log, flaskblogging, gunicorn
 - [📄table](bm-20240904-linux-x86_64-mpage-4a8e3ba765dc0858d743-3.14.0a0-4a8e3ba-vs-3.13.0b1.md)
 - [📈time plot](bm-20240904-linux-x86_64-mpage-4a8e3ba765dc0858d743-3.14.0a0-4a8e3ba-vs-3.13.0b1.svg)
 
 ### vs. 3.13.0rc1+
 
-- Geometric mean: 1.22x slower (HPT: reliability of 100.00%, 1.13x slower at 99th %ile)
-- Memory usage: 1.00x
-- missing benchmarks: aiohttp, chameleon, dask, dulwich_log, flaskblogging, gunicorn
 - [📄table](bm-20240904-linux-x86_64-mpage-4a8e3ba765dc0858d743-3.14.0a0-4a8e3ba-vs-3.13.0rc1%2B.md)
 - [📈time plot](bm-20240904-linux-x86_64-mpage-4a8e3ba765dc0858d743-3.14.0a0-4a8e3ba-vs-3.13.0rc1%2B.svg)
 
