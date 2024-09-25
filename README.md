@@ -82,3 +82,7 @@ Any of the parameters described above are available at the commandline using the
 
 To collect Linux perf sampling profile data for a benchmarking run, run the `_benchmark` action and check the `perf` checkbox.
 Follow this by a run of the `_generate` action to regenerate the plots.
+
+## License
+
+This repo is licensed under the BSD 3-Clause License, as found in the LICENSE file.
