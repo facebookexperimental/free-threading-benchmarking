@@ -39,6 +39,13 @@
 - [📄table](bm-20240808-linux-x86_64-python-e006c7371d8e57db2625-3.14.0a0-e006c73-vs-base.md)
 - [📈time plot](bm-20240808-linux-x86_64-python-e006c7371d8e57db2625-3.14.0a0-e006c73-vs-base.svg)
 
+### vs. default_base_vs_NOGIL
+
+- Geometric mean: 1.40x slower (HPT: reliability of 100.00%, 1.24x slower at 99th %ile)
+- Memory usage: 1.14x
+- [📄table](bm-20240808-linux-x86_64-python-e006c7371d8e57db2625-3.14.0a0-e006c73-vs-default_base_vs_NOGIL.md)
+- [📈time plot](bm-20240808-linux-x86_64-python-e006c7371d8e57db2625-3.14.0a0-e006c73-vs-default_base_vs_NOGIL.svg)
+
 ### vs. 3.12.0b1
 
 - [📄table](bm-20240808-linux-x86_64-python-e006c7371d8e57db2625-3.14.0a0-e006c73-vs-3.12.0b1.md)
