@@ -31,3 +31,11 @@
 - [📄table](bm-20240930-linux-x86_64-python-fac5e7aa171f8547fcb5-3.14.0a0-fac5e7a-vs-3.13.0rc2.md)
 - [📈time plot](bm-20240930-linux-x86_64-python-fac5e7aa171f8547fcb5-3.14.0a0-fac5e7a-vs-3.13.0rc2.svg)
 
+### vs. base
+
+- Geometric mean: not sig (HPT: reliability of 84.13%, 1.00x slower at 99th %ile)
+- Memory usage: 1.12x
+- [🧠memory plot](bm-20240930-linux-x86_64-python-fac5e7aa171f8547fcb5-3.14.0a0-fac5e7a-vs-base-mem.svg)
+- [📄table](bm-20240930-linux-x86_64-python-fac5e7aa171f8547fcb5-3.14.0a0-fac5e7a-vs-base.md)
+- [📈time plot](bm-20240930-linux-x86_64-python-fac5e7aa171f8547fcb5-3.14.0a0-fac5e7a-vs-base.svg)
+
