@@ -10,20 +10,20 @@
 
 ## linux x86_64 (linux)
 
-- [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/10709484612)
+- [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/10713067943)
 - cpu model: Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz
 - platform: Linux-5.15.0-1063-aws-x86_64-with-glibc2.31
-- [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/10713067943)
+- [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/10709484612)
 - [raw results](bm-20240904-linux-x86_64-mpage-aa5b4de610fb986be298-3.14.0a0-aa5b4de.json)
 - [raw results](bm-20240904-linux-x86_64-mpage-gh_115999_measure_sp-3.14.0a0-aa5b4de.json)
 
 ### vs. 3.12.6
 
-- Geometric mean: 1.20x slower (HPT: reliability of 100.00%, 1.10x slower at 99th %ile)
-- Memory usage: 1.01x
-- missing benchmarks: aiohttp, chameleon, dask, dulwich_log, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - Geometric mean: 1.17x slower (HPT: reliability of 100.00%, 1.08x slower at 99th %ile)
 - Memory usage: 1.00x
+- missing benchmarks: aiohttp, chameleon, dask, dulwich_log, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
+- Geometric mean: 1.20x slower (HPT: reliability of 100.00%, 1.10x slower at 99th %ile)
+- Memory usage: 1.01x
 - [📄table](bm-20240904-linux-x86_64-mpage-aa5b4de610fb986be298-3.14.0a0-aa5b4de-vs-3.12.6.md)
 - [📈time plot](bm-20240904-linux-x86_64-mpage-aa5b4de610fb986be298-3.14.0a0-aa5b4de-vs-3.12.6.svg)
 - [📄table](bm-20240904-linux-x86_64-mpage-gh_115999_measure_sp-3.14.0a0-aa5b4de-vs-3.12.6.md)
@@ -31,10 +31,10 @@
 
 ### vs. 3.13.0rc2
 
-- Geometric mean: 1.25x slower (HPT: reliability of 100.00%, 1.16x slower at 99th %ile)
+- Geometric mean: 1.22x slower (HPT: reliability of 100.00%, 1.13x slower at 99th %ile)
 - Memory usage: 1.00x
 - missing benchmarks: aiohttp, chameleon, dask, dulwich_log, flaskblogging, gunicorn
-- Geometric mean: 1.22x slower (HPT: reliability of 100.00%, 1.13x slower at 99th %ile)
+- Geometric mean: 1.25x slower (HPT: reliability of 100.00%, 1.16x slower at 99th %ile)
 - [📄table](bm-20240904-linux-x86_64-mpage-aa5b4de610fb986be298-3.14.0a0-aa5b4de-vs-3.13.0rc2.md)
 - [📈time plot](bm-20240904-linux-x86_64-mpage-aa5b4de610fb986be298-3.14.0a0-aa5b4de-vs-3.13.0rc2.svg)
 - [📄table](bm-20240904-linux-x86_64-mpage-gh_115999_measure_sp-3.14.0a0-aa5b4de-vs-3.13.0rc2.md)
