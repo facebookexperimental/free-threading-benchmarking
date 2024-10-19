@@ -13,6 +13,8 @@
 - [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/11372918029)
 - cpu model: Intel(R) Xeon(R) E-2286G CPU @ 4.00GHz
 - platform: Linux-6.8.0-45-generic-x86_64-with-glibc2.39
+- [pystats raw](bm-20241016-vultr-x86_64-python-760872efecb95017db8e-3.14.0a1%2B-760872e-pystats.json)
+- [pystats table](bm-20241016-vultr-x86_64-python-760872efecb95017db8e-3.14.0a1%2B-760872e-pystats.md)
 - [raw results](bm-20241016-vultr-x86_64-python-760872efecb95017db8e-3.14.0a1%2B-760872e.json)
 
 ### vs. 3.12.6
