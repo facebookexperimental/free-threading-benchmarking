@@ -39,6 +39,13 @@
 - [📄table](bm-20241108-linux-x86_64-mpage-gh_115999_tlbc_load_-3.14.0a1%2B-0e50451-vs-base.md)
 - [📈time plot](bm-20241108-linux-x86_64-mpage-gh_115999_tlbc_load_-3.14.0a1%2B-0e50451-vs-base.svg)
 
+### vs. default_base_vs_NOGIL
+
+- Geometric mean: 1.44x slower (HPT: reliability of 100.00%, 1.32x slower at 99th %ile)
+- Memory usage: 1.18x
+- [📄table](bm-20241108-linux-x86_64-mpage-gh_115999_tlbc_load_-3.14.0a1%2B-0e50451-vs-default_base_vs_NOGIL.md)
+- [📈time plot](bm-20241108-linux-x86_64-mpage-gh_115999_tlbc_load_-3.14.0a1%2B-0e50451-vs-default_base_vs_NOGIL.svg)
+
 ## linux x86_64 (vultr)
 
 - [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/11749360862)
@@ -69,4 +76,11 @@
 - [🧠memory plot](bm-20241108-vultr-x86_64-mpage-gh_115999_tlbc_load_-3.14.0a1%2B-0e50451-vs-base-mem.svg)
 - [📄table](bm-20241108-vultr-x86_64-mpage-gh_115999_tlbc_load_-3.14.0a1%2B-0e50451-vs-base.md)
 - [📈time plot](bm-20241108-vultr-x86_64-mpage-gh_115999_tlbc_load_-3.14.0a1%2B-0e50451-vs-base.svg)
+
+### vs. default_base_vs_NOGIL
+
+- Geometric mean: 1.48x slower (HPT: reliability of 100.00%, 1.35x slower at 99th %ile)
+- Memory usage: 1.21x
+- [📄table](bm-20241108-vultr-x86_64-mpage-gh_115999_tlbc_load_-3.14.0a1%2B-0e50451-vs-default_base_vs_NOGIL.md)
+- [📈time plot](bm-20241108-vultr-x86_64-mpage-gh_115999_tlbc_load_-3.14.0a1%2B-0e50451-vs-default_base_vs_NOGIL.svg)
 
