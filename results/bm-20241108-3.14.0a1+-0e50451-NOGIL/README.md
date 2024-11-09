@@ -31,6 +31,14 @@
 - [📄table](bm-20241108-linux-x86_64-mpage-gh_115999_tlbc_load_-3.14.0a1%2B-0e50451-vs-3.13.0rc2.md)
 - [📈time plot](bm-20241108-linux-x86_64-mpage-gh_115999_tlbc_load_-3.14.0a1%2B-0e50451-vs-3.13.0rc2.svg)
 
+### vs. base
+
+- Geometric mean: 1.03x faster (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20241108-linux-x86_64-mpage-gh_115999_tlbc_load_-3.14.0a1%2B-0e50451-vs-base-mem.svg)
+- [📄table](bm-20241108-linux-x86_64-mpage-gh_115999_tlbc_load_-3.14.0a1%2B-0e50451-vs-base.md)
+- [📈time plot](bm-20241108-linux-x86_64-mpage-gh_115999_tlbc_load_-3.14.0a1%2B-0e50451-vs-base.svg)
+
 ## linux x86_64 (vultr)
 
 - [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/11749360862)
