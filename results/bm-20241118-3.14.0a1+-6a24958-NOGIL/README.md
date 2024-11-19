@@ -39,3 +39,10 @@
 - [📄table](bm-20241118-vultr-x86_64-mpage-gh_115999_tlbc_call-3.14.0a1%2B-6a24958-vs-base.md)
 - [📈time plot](bm-20241118-vultr-x86_64-mpage-gh_115999_tlbc_call-3.14.0a1%2B-6a24958-vs-base.svg)
 
+### vs. default_base_vs_NOGIL
+
+- Geometric mean: 1.49x slower (HPT: reliability of 100.00%, 1.36x slower at 99th %ile)
+- Memory usage: 1.21x
+- [📄table](bm-20241118-vultr-x86_64-mpage-gh_115999_tlbc_call-3.14.0a1%2B-6a24958-vs-default_base_vs_NOGIL.md)
+- [📈time plot](bm-20241118-vultr-x86_64-mpage-gh_115999_tlbc_call-3.14.0a1%2B-6a24958-vs-default_base_vs_NOGIL.svg)
+
