@@ -1,8 +1,8 @@
 # Generated file: !!! DO NOT EDIT !!!
 ---
 env:
-  PYPERFORMANCE_HASH: ebb37f3583e26ea22cee34126b3b8a815112370b
-  PYSTON_BENCHMARKS_HASH: 004743ccbd9e54598c543d7eb71fd3b8e10d5750
+  PYPERFORMANCE_HASH: 9164273e5504c410a5be08d8753c91be708fdd9a
+  PYSTON_BENCHMARKS_HASH: 265655e7f03ace13ec1e00e1ba299179e69f8a00
 name: _weekly
 on:
   schedule:
@@ -20,6 +20,7 @@ jobs:
     - name: Checkout CPython
       uses: actions/checkout@v4
       with:
+        persist-credentials: false
         repository: python/cpython
         path: cpython
         ref: main
