@@ -1,8 +1,8 @@
 # Generated file: !!! DO NOT EDIT !!!
 ---
 env:
-  PYPERFORMANCE_HASH: ebb37f3583e26ea22cee34126b3b8a815112370b
-  PYSTON_BENCHMARKS_HASH: 004743ccbd9e54598c543d7eb71fd3b8e10d5750
+  PYPERFORMANCE_HASH: 9164273e5504c410a5be08d8753c91be708fdd9a
+  PYSTON_BENCHMARKS_HASH: 265655e7f03ace13ec1e00e1ba299179e69f8a00
 name: _benchmark
 on:
   workflow_call:
@@ -107,6 +107,7 @@ jobs:
     - name: Checkout CPython
       uses: actions/checkout@v4
       with:
+        persist-credentials: false
         repository: ${{ inputs.fork }}/cpython
         path: cpython
         ref: ${{ inputs.ref }}
@@ -126,6 +127,7 @@ jobs:
       uses: actions/checkout@v4
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       with:
+        persist-credentials: false
         repository: pyston/python-macrobenchmarks
         path: pyston-benchmarks
         ref: ${{ env.PYSTON_BENCHMARKS_HASH }}
@@ -133,6 +135,7 @@ jobs:
       uses: actions/checkout@v4
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       with:
+        persist-credentials: false
         repository: mdboom/pyperformance
         path: pyperformance
         ref: ${{ env.PYPERFORMANCE_HASH }}
@@ -215,6 +218,7 @@ jobs:
     - name: Checkout CPython
       uses: actions/checkout@v4
       with:
+        persist-credentials: false
         repository: ${{ inputs.fork }}/cpython
         path: cpython
         ref: ${{ inputs.ref }}
@@ -234,6 +238,7 @@ jobs:
       uses: actions/checkout@v4
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       with:
+        persist-credentials: false
         repository: pyston/python-macrobenchmarks
         path: pyston-benchmarks
         ref: ${{ env.PYSTON_BENCHMARKS_HASH }}
@@ -241,6 +246,7 @@ jobs:
       uses: actions/checkout@v4
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       with:
+        persist-credentials: false
         repository: mdboom/pyperformance
         path: pyperformance
         ref: ${{ env.PYPERFORMANCE_HASH }}
