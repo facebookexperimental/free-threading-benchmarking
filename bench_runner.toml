@@ -9,7 +9,22 @@ compare_to_default = ["NOGIL"]
 
 [benchmarks]
 # List any benchmarks you want to exclude from results here
-excluded_benchmarks = []
+excluded_benchmarks = [
+    # Benchmarks where the mean execution count < 5
+    "aiohttp",
+    "asyncio_tcp",
+    "asyncio_tcp_ssl",
+    "bench_mp_pool",
+    "bench_thread_pool",
+    "deepcopy_reduce",
+    "logging_silent",
+    "pickle",
+    "pickle_dict",
+    "pickle_list",
+    "unpack_sequence",
+    "unpickle",
+    "unpickle_list",
+]
 
 # Each of the "runners" section has the following values:
 # os: one of 'linux', 'darwin', 'windows'
