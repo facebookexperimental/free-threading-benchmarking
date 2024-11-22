@@ -1,8 +1,8 @@
 # Generated file: !!! DO NOT EDIT !!!
 ---
 env:
-  PYPERFORMANCE_HASH: ebb37f3583e26ea22cee34126b3b8a815112370b
-  PYSTON_BENCHMARKS_HASH: 004743ccbd9e54598c543d7eb71fd3b8e10d5750
+  PYPERFORMANCE_HASH: 9164273e5504c410a5be08d8753c91be708fdd9a
+  PYSTON_BENCHMARKS_HASH: 265655e7f03ace13ec1e00e1ba299179e69f8a00
 name: _publish
 on:
   workflow_call:
@@ -25,24 +25,12 @@ jobs:
     - name: Checkout benchmarking
       uses: actions/checkout@v4
       with:
-        path: private
         ref: main
-        fetch-depth: 0
-    - name: Checkout benchmarking-public
-      uses: actions/checkout@v4
-      with:
-        path: public
-        ref: main
-        repository: ${{ github.repository }}-public
+          # This has to be enough depth to handle since the last time we published.
+          # As a rule of thumb, (number of machines * 2, plus the generated stuff) * 2
+        fetch-depth: 20
         token: ${{ secrets.BENCHMARK_MIRROR }}
     - name: Mirror
       run: |
-        cd public
-        git remote add upstream $PWD/../private
-        git fetch upstream
-        git reset --hard upstream/main
-    - name: Push
-      if: ${{ !inputs.dry_run }}
-      run: |
-        cd public
-        git push origin main
+        git remote add public https://github.com/${{ github.repository }}-public
+        git push -f public main
