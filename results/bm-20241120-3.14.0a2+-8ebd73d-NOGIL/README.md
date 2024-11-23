@@ -35,6 +35,8 @@
 
 - Geometric mean: 1.03x faster (HPT: reliability of 100.00%, 1.01x faster at 99th %ile)
 - Memory usage: 1.00x
+- missing benchmarks: 🔴 async_tree_cpu_io_mixed, async_tree_cpu_io_mixed_tg, async_tree_io, async_tree_io_tg, async_tree_memoization, async_tree_memoization_tg, async_tree_none, async_tree_none_tg, connected_components, k_core, many_optionals, shortest_path, sphinx, subparsers
+- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
 - [🧠memory plot](bm-20241120-vultr-x86_64-mpage-gh_115999_tlbc_call-3.14.0a2%2B-8ebd73d-vs-base-mem.svg)
 - [📄table](bm-20241120-vultr-x86_64-mpage-gh_115999_tlbc_call-3.14.0a2%2B-8ebd73d-vs-base.md)
 - [📈time plot](bm-20241120-vultr-x86_64-mpage-gh_115999_tlbc_call-3.14.0a2%2B-8ebd73d-vs-base.svg)
