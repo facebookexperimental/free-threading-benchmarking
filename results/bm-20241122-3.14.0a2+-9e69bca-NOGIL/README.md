@@ -17,7 +17,7 @@
 
 ### vs. 3.12.6
 
-- Geometric mean: 1.41x slower (HPT: reliability of 100.00%, 1.22x slower at 99th %ile)
+- Geometric mean: 1.263x slower (HPT: reliability of 100.00%, 1.22x slower at 99th %ile)
 - Memory usage: 1.34x
 - missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: connected_components, k_core, many_optionals, shortest_path, sphinx, subparsers
@@ -26,7 +26,7 @@
 
 ### vs. 3.13.0rc2
 
-- Geometric mean: 1.45x slower (HPT: reliability of 100.00%, 1.25x slower at 99th %ile)
+- Geometric mean: 1.288x slower (HPT: reliability of 100.00%, 1.25x slower at 99th %ile)
 - Memory usage: 1.32x
 - missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, flaskblogging, gunicorn, pickle, pickle_dict, pickle_list, tornado_http, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: connected_components, k_core, many_optionals, shortest_path, sphinx, subparsers
@@ -35,7 +35,7 @@
 
 ### vs. base
 
-- Geometric mean: 1.01x slower (HPT: reliability of 100.00%, 1.00x slower at 99th %ile)
+- Geometric mean: 1.010x slower (HPT: reliability of 100.00%, 1.00x slower at 99th %ile)
 - Memory usage: 1.01x
 - [🧠memory plot](bm-20241122-vultr-x86_64-colesbury-gh_127022_py_eval_fr-3.14.0a2%2B-9e69bca-vs-base-mem.svg)
 - [📄table](bm-20241122-vultr-x86_64-colesbury-gh_127022_py_eval_fr-3.14.0a2%2B-9e69bca-vs-base.md)

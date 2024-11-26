@@ -17,7 +17,7 @@
 
 ### vs. 3.12.6
 
-- Geometric mean: 1.41x slower (HPT: reliability of 100.00%, 1.31x slower at 99th %ile)
+- Geometric mean: 1.298x slower (HPT: reliability of 100.00%, 1.31x slower at 99th %ile)
 - Memory usage: 1.20x
 - missing benchmarks: aiohttp, async_tree_cpu_io_mixed, async_tree_cpu_io_mixed_tg, async_tree_io, async_tree_io_tg, async_tree_memoization, async_tree_memoization_tg, async_tree_none, async_tree_none_tg, chameleon, dask, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
 - [📄table](bm-20241119-linux-x86_64-python-c9b399fbdb01584dcfff-3.14.0a2%2B-c9b399f-vs-3.12.6.md)
@@ -25,7 +25,7 @@
 
 ### vs. 3.13.0rc2
 
-- Geometric mean: 1.43x slower (HPT: reliability of 100.00%, 1.35x slower at 99th %ile)
+- Geometric mean: 1.306x slower (HPT: reliability of 100.00%, 1.35x slower at 99th %ile)
 - Memory usage: 1.19x
 - missing benchmarks: aiohttp, async_tree_cpu_io_mixed, async_tree_cpu_io_mixed_tg, async_tree_io, async_tree_io_tg, async_tree_memoization, async_tree_memoization_tg, async_tree_none, async_tree_none_tg, chameleon, dask, flaskblogging, gunicorn, tornado_http
 - [📄table](bm-20241119-linux-x86_64-python-c9b399fbdb01584dcfff-3.14.0a2%2B-c9b399f-vs-3.13.0rc2.md)
@@ -33,7 +33,7 @@
 
 ### vs. base
 
-- Geometric mean: 1.43x slower (HPT: reliability of 100.00%, 1.35x slower at 99th %ile)
+- Geometric mean: 1.315x slower (HPT: reliability of 100.00%, 1.35x slower at 99th %ile)
 - Memory usage: 1.18x
 - [🧠memory plot](bm-20241119-linux-x86_64-python-c9b399fbdb01584dcfff-3.14.0a2%2B-c9b399f-vs-base-mem.svg)
 - [📄table](bm-20241119-linux-x86_64-python-c9b399fbdb01584dcfff-3.14.0a2%2B-c9b399f-vs-base.md)
@@ -48,7 +48,7 @@
 
 ### vs. 3.12.6
 
-- Geometric mean: 1.54x slower (HPT: reliability of 100.00%, 1.38x slower at 99th %ile)
+- Geometric mean: 1.344x slower (HPT: reliability of 100.00%, 1.38x slower at 99th %ile)
 - Memory usage: 1.23x
 - missing benchmarks: aiohttp, async_tree_cpu_io_mixed, async_tree_cpu_io_mixed_tg, async_tree_io, async_tree_io_tg, async_tree_memoization, async_tree_memoization_tg, async_tree_none, async_tree_none_tg, chameleon, dask, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
 - [📄table](bm-20241119-vultr-x86_64-python-c9b399fbdb01584dcfff-3.14.0a2%2B-c9b399f-vs-3.12.6.md)
@@ -56,7 +56,7 @@
 
 ### vs. 3.13.0rc2
 
-- Geometric mean: 1.56x slower (HPT: reliability of 100.00%, 1.40x slower at 99th %ile)
+- Geometric mean: 1.355x slower (HPT: reliability of 100.00%, 1.40x slower at 99th %ile)
 - Memory usage: 1.21x
 - missing benchmarks: aiohttp, async_tree_cpu_io_mixed, async_tree_cpu_io_mixed_tg, async_tree_io, async_tree_io_tg, async_tree_memoization, async_tree_memoization_tg, async_tree_none, async_tree_none_tg, chameleon, dask, flaskblogging, gunicorn, tornado_http
 - [📄table](bm-20241119-vultr-x86_64-python-c9b399fbdb01584dcfff-3.14.0a2%2B-c9b399f-vs-3.13.0rc2.md)
@@ -64,7 +64,7 @@
 
 ### vs. base
 
-- Geometric mean: 1.53x slower (HPT: reliability of 100.00%, 1.40x slower at 99th %ile)
+- Geometric mean: 1.356x slower (HPT: reliability of 100.00%, 1.40x slower at 99th %ile)
 - Memory usage: 1.20x
 - [🧠memory plot](bm-20241119-vultr-x86_64-python-c9b399fbdb01584dcfff-3.14.0a2%2B-c9b399f-vs-base-mem.svg)
 - [📄table](bm-20241119-vultr-x86_64-python-c9b399fbdb01584dcfff-3.14.0a2%2B-c9b399f-vs-base.md)

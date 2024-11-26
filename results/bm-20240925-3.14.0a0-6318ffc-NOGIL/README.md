@@ -17,7 +17,7 @@
 
 ### vs. 3.12.6
 
-- Geometric mean: 1.39x slower (HPT: reliability of 100.00%, 1.26x slower at 99th %ile)
+- Geometric mean: 1.286x slower (HPT: reliability of 100.00%, 1.26x slower at 99th %ile)
 - Memory usage: 1.15x
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - [📄table](bm-20240925-linux-x86_64-python-6318ffcba21f8fc155f5-3.14.0a0-6318ffc-vs-3.12.6.md)
@@ -25,7 +25,7 @@
 
 ### vs. 3.13.0rc2
 
-- Geometric mean: 1.45x slower (HPT: reliability of 100.00%, 1.32x slower at 99th %ile)
+- Geometric mean: 1.313x slower (HPT: reliability of 100.00%, 1.32x slower at 99th %ile)
 - Memory usage: 1.15x
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn
 - [📄table](bm-20240925-linux-x86_64-python-6318ffcba21f8fc155f5-3.14.0a0-6318ffc-vs-3.13.0rc2.md)
@@ -40,7 +40,7 @@
 
 ### vs. 3.12.6
 
-- Geometric mean: 1.43x slower (HPT: reliability of 100.00%, 1.29x slower at 99th %ile)
+- Geometric mean: 1.305x slower (HPT: reliability of 100.00%, 1.29x slower at 99th %ile)
 - Memory usage: 1.18x
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - [📄table](bm-20240925-vultr-x86_64-python-6318ffcba21f8fc155f5-3.14.0a0-6318ffc-vs-3.12.6.md)
@@ -48,7 +48,7 @@
 
 ### vs. 3.13.0rc2
 
-- Geometric mean: 1.47x slower (HPT: reliability of 100.00%, 1.33x slower at 99th %ile)
+- Geometric mean: 1.328x slower (HPT: reliability of 100.00%, 1.33x slower at 99th %ile)
 - Memory usage: 1.17x
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn
 - [📄table](bm-20240925-vultr-x86_64-python-6318ffcba21f8fc155f5-3.14.0a0-6318ffc-vs-3.13.0rc2.md)

@@ -17,7 +17,7 @@
 
 ### vs. 3.12.6
 
-- Geometric mean: 1.35x slower (HPT: reliability of 100.00%, 1.25x slower at 99th %ile)
+- Geometric mean: 1.258x slower (HPT: reliability of 100.00%, 1.25x slower at 99th %ile)
 - Memory usage: 1.18x
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - [📄table](bm-20240925-linux-x86_64-mpage-gh_115999_tlbc_load_-3.14.0a0-2613a14-vs-3.12.6.md)
@@ -25,7 +25,7 @@
 
 ### vs. 3.13.0rc2
 
-- Geometric mean: 1.40x slower (HPT: reliability of 100.00%, 1.27x slower at 99th %ile)
+- Geometric mean: 1.286x slower (HPT: reliability of 100.00%, 1.27x slower at 99th %ile)
 - Memory usage: 1.17x
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn
 - [📄table](bm-20240925-linux-x86_64-mpage-gh_115999_tlbc_load_-3.14.0a0-2613a14-vs-3.13.0rc2.md)
@@ -40,7 +40,7 @@
 
 ### vs. 3.12.6
 
-- Geometric mean: 1.39x slower (HPT: reliability of 100.00%, 1.26x slower at 99th %ile)
+- Geometric mean: 1.280x slower (HPT: reliability of 100.00%, 1.26x slower at 99th %ile)
 - Memory usage: 1.21x
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - [📄table](bm-20240925-vultr-x86_64-mpage-gh_115999_tlbc_load_-3.14.0a0-2613a14-vs-3.12.6.md)
@@ -48,7 +48,7 @@
 
 ### vs. 3.13.0rc2
 
-- Geometric mean: 1.43x slower (HPT: reliability of 100.00%, 1.29x slower at 99th %ile)
+- Geometric mean: 1.304x slower (HPT: reliability of 100.00%, 1.29x slower at 99th %ile)
 - Memory usage: 1.19x
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn
 - [📄table](bm-20240925-vultr-x86_64-mpage-gh_115999_tlbc_load_-3.14.0a0-2613a14-vs-3.13.0rc2.md)

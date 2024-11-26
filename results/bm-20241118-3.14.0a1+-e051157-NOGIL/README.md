@@ -17,7 +17,7 @@
 
 ### vs. 3.12.6
 
-- Geometric mean: 1.55x slower (HPT: reliability of 100.00%, 1.38x slower at 99th %ile)
+- Geometric mean: 1.324x slower (HPT: reliability of 100.00%, 1.38x slower at 99th %ile)
 - Memory usage: 1.23x
 - missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: connected_components, k_core, many_optionals, shortest_path, sphinx, subparsers
@@ -26,7 +26,7 @@
 
 ### vs. 3.13.0rc2
 
-- Geometric mean: 1.57x slower (HPT: reliability of 100.00%, 1.40x slower at 99th %ile)
+- Geometric mean: 1.347x slower (HPT: reliability of 100.00%, 1.40x slower at 99th %ile)
 - Memory usage: 1.21x
 - missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, flaskblogging, gunicorn, pickle, pickle_dict, pickle_list, tornado_http, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: connected_components, k_core, many_optionals, shortest_path, sphinx, subparsers
@@ -35,7 +35,7 @@
 
 ### vs. base
 
-- Geometric mean: 1.00x faster (HPT: reliability of 98.27%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.000x slower (HPT: reliability of 98.27%, 1.00x faster at 99th %ile)
 - Memory usage: 0.99x
 - [🧠memory plot](bm-20241118-vultr-x86_64-mpage-gh_115999_tlbc_call_-3.14.0a1%2B-e051157-vs-base-mem.svg)
 - [📄table](bm-20241118-vultr-x86_64-mpage-gh_115999_tlbc_call_-3.14.0a1%2B-e051157-vs-base.md)
@@ -43,7 +43,7 @@
 
 ### vs. default_base_vs_NOGIL
 
-- Geometric mean: 1.55x slower (HPT: reliability of 100.00%, 1.41x slower at 99th %ile)
+- Geometric mean: 1.373x slower (HPT: reliability of 100.00%, 1.41x slower at 99th %ile)
 - Memory usage: 1.20x
 - missing benchmarks: asyncio_tcp, asyncio_tcp_ssl, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: async_tree_cpu_io_mixed, async_tree_cpu_io_mixed_tg, async_tree_io, async_tree_io_tg, async_tree_memoization, async_tree_memoization_tg, async_tree_none, async_tree_none_tg, connected_components, k_core, many_optionals, shortest_path, sphinx, subparsers

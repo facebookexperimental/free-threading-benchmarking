@@ -17,7 +17,7 @@
 
 ### vs. 3.12.6
 
-- Geometric mean: 1.07x faster (HPT: reliability of 100.00%, 1.05x faster at 99th %ile)
+- Geometric mean: 1.091x faster (HPT: reliability of 100.00%, 1.05x faster at 99th %ile)
 - Memory usage: 1.13x
 - missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, tornado_http, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: connected_components, k_core, many_optionals, shortest_path, sphinx, subparsers
@@ -26,7 +26,7 @@
 
 ### vs. 3.13.0rc2
 
-- Geometric mean: 1.03x faster (HPT: reliability of 100.00%, 1.03x faster at 99th %ile)
+- Geometric mean: 1.047x faster (HPT: reliability of 100.00%, 1.03x faster at 99th %ile)
 - Memory usage: 1.12x
 - missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, flaskblogging, gunicorn, pickle, pickle_dict, pickle_list, tornado_http, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: connected_components, k_core, many_optionals, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative, subparsers
@@ -42,7 +42,7 @@
 
 ### vs. 3.12.6
 
-- Geometric mean: 1.01x faster (HPT: reliability of 99.93%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.032x faster (HPT: reliability of 99.93%, 1.00x faster at 99th %ile)
 - Memory usage: 1.11x
 - missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, flaskblogging, gunicorn, html5lib, mypy2, pickle, pickle_dict, pickle_list, tornado_http, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: connected_components, k_core, many_optionals, shortest_path, sphinx, subparsers
@@ -51,7 +51,7 @@
 
 ### vs. 3.13.0rc2
 
-- Geometric mean: 1.03x slower (HPT: reliability of 90.14%, 1.00x slower at 99th %ile)
+- Geometric mean: 1.005x slower (HPT: reliability of 90.14%, 1.00x slower at 99th %ile)
 - Memory usage: 1.09x
 - missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, flaskblogging, gunicorn, html5lib, pickle, pickle_dict, pickle_list, tornado_http, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: connected_components, k_core, many_optionals, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative, subparsers

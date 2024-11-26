@@ -17,7 +17,7 @@
 
 ### vs. 3.12.6
 
-- Geometric mean: 1.27x slower (HPT: reliability of 100.00%, 1.14x slower at 99th %ile)
+- Geometric mean: 1.197x slower (HPT: reliability of 100.00%, 1.14x slower at 99th %ile)
 - Memory usage: 1.34x
 - missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: connected_components, k_core, many_optionals, shortest_path, sphinx, subparsers
@@ -26,7 +26,7 @@
 
 ### vs. 3.13.0rc2
 
-- Geometric mean: 1.32x slower (HPT: reliability of 100.00%, 1.19x slower at 99th %ile)
+- Geometric mean: 1.227x slower (HPT: reliability of 100.00%, 1.19x slower at 99th %ile)
 - Memory usage: 1.33x
 - missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, flaskblogging, gunicorn, pickle, pickle_dict, pickle_list, tornado_http, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: connected_components, k_core, many_optionals, shortest_path, sphinx, subparsers
@@ -35,7 +35,7 @@
 
 ### vs. base
 
-- Geometric mean: 1.36x slower (HPT: reliability of 100.00%, 1.22x slower at 99th %ile)
+- Geometric mean: 1.260x slower (HPT: reliability of 100.00%, 1.22x slower at 99th %ile)
 - Memory usage: 1.18x
 - missing benchmarks: 🔴 sqlalchemy_declarative, sqlalchemy_imperative
 - [🧠memory plot](bm-20241122-linux-x86_64-python-39e60aeb3837f1f23d8b-3.14.0a2%2B-39e60ae-vs-base-mem.svg)
@@ -51,7 +51,7 @@
 
 ### vs. 3.12.6
 
-- Geometric mean: 1.40x slower (HPT: reliability of 100.00%, 1.21x slower at 99th %ile)
+- Geometric mean: 1.261x slower (HPT: reliability of 100.00%, 1.21x slower at 99th %ile)
 - Memory usage: 1.33x
 - missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: connected_components, k_core, many_optionals, shortest_path, sphinx, subparsers
@@ -60,7 +60,7 @@
 
 ### vs. 3.13.0rc2
 
-- Geometric mean: 1.45x slower (HPT: reliability of 100.00%, 1.24x slower at 99th %ile)
+- Geometric mean: 1.286x slower (HPT: reliability of 100.00%, 1.24x slower at 99th %ile)
 - Memory usage: 1.31x
 - missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, flaskblogging, gunicorn, pickle, pickle_dict, pickle_list, tornado_http, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: connected_components, k_core, many_optionals, shortest_path, sphinx, subparsers
@@ -69,7 +69,7 @@
 
 ### vs. base
 
-- Geometric mean: 1.00x faster (HPT: reliability of 66.59%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.002x faster (HPT: reliability of 66.59%, 1.00x faster at 99th %ile)
 - Memory usage: 0.99x
 - [🧠memory plot](bm-20241122-vultr-x86_64-python-39e60aeb3837f1f23d8b-3.14.0a2%2B-39e60ae-vs-base-mem.svg)
 - [📄table](bm-20241122-vultr-x86_64-python-39e60aeb3837f1f23d8b-3.14.0a2%2B-39e60ae-vs-base.md)
@@ -77,7 +77,7 @@
 
 ### vs. default_base_vs_NOGIL
 
-- Geometric mean: 1.40x slower (HPT: reliability of 100.00%, 1.24x slower at 99th %ile)
+- Geometric mean: 1.280x slower (HPT: reliability of 100.00%, 1.24x slower at 99th %ile)
 - Memory usage: 1.19x
 - missing benchmarks: sqlalchemy_declarative, sqlalchemy_imperative
 - [📄table](bm-20241122-vultr-x86_64-python-39e60aeb3837f1f23d8b-3.14.0a2%2B-39e60ae-vs-default_base_vs_NOGIL.md)

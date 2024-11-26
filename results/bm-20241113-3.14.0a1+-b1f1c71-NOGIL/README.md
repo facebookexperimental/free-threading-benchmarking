@@ -17,7 +17,7 @@
 
 ### vs. 3.12.6
 
-- Geometric mean: 1.55x slower (HPT: reliability of 100.00%, 1.38x slower at 99th %ile)
+- Geometric mean: 1.349x slower (HPT: reliability of 100.00%, 1.38x slower at 99th %ile)
 - Memory usage: 1.23x
 - missing benchmarks: aiohttp, async_tree_cpu_io_mixed, async_tree_cpu_io_mixed_tg, async_tree_io, async_tree_io_tg, async_tree_memoization, async_tree_memoization_tg, async_tree_none, async_tree_none_tg, chameleon, dask, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
 - [📄table](bm-20241113-vultr-x86_64-corona10-gh_115999_bool-3.14.0a1%2B-b1f1c71-vs-3.12.6.md)
@@ -25,7 +25,7 @@
 
 ### vs. 3.13.0rc2
 
-- Geometric mean: 1.57x slower (HPT: reliability of 100.00%, 1.40x slower at 99th %ile)
+- Geometric mean: 1.359x slower (HPT: reliability of 100.00%, 1.40x slower at 99th %ile)
 - Memory usage: 1.21x
 - missing benchmarks: aiohttp, async_tree_cpu_io_mixed, async_tree_cpu_io_mixed_tg, async_tree_io, async_tree_io_tg, async_tree_memoization, async_tree_memoization_tg, async_tree_none, async_tree_none_tg, chameleon, dask, flaskblogging, gunicorn, tornado_http
 - [📄table](bm-20241113-vultr-x86_64-corona10-gh_115999_bool-3.14.0a1%2B-b1f1c71-vs-3.13.0rc2.md)
@@ -33,7 +33,7 @@
 
 ### vs. base
 
-- Geometric mean: 1.01x faster (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.005x faster (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
 - Memory usage: 1.00x
 - [🧠memory plot](bm-20241113-vultr-x86_64-corona10-gh_115999_bool-3.14.0a1%2B-b1f1c71-vs-base-mem.svg)
 - [📄table](bm-20241113-vultr-x86_64-corona10-gh_115999_bool-3.14.0a1%2B-b1f1c71-vs-base.md)
@@ -41,7 +41,7 @@
 
 ### vs. default_base_vs_NOGIL
 
-- Geometric mean: 1.54x slower (HPT: reliability of 100.00%, 1.40x slower at 99th %ile)
+- Geometric mean: 1.360x slower (HPT: reliability of 100.00%, 1.40x slower at 99th %ile)
 - Memory usage: 1.20x
 - [📄table](bm-20241113-vultr-x86_64-corona10-gh_115999_bool-3.14.0a1%2B-b1f1c71-vs-default_base_vs_NOGIL.md)
 - [📈time plot](bm-20241113-vultr-x86_64-corona10-gh_115999_bool-3.14.0a1%2B-b1f1c71-vs-default_base_vs_NOGIL.svg)

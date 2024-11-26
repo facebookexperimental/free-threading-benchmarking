@@ -17,7 +17,7 @@
 
 ### vs. 3.12.6
 
-- Geometric mean: 1.37x slower (HPT: reliability of 100.00%, 1.25x slower at 99th %ile)
+- Geometric mean: 1.278x slower (HPT: reliability of 100.00%, 1.25x slower at 99th %ile)
 - Memory usage: 1.16x
 - missing benchmarks: aiohttp, chameleon, dask, dulwich_log, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - [📄table](bm-20240808-linux-x86_64-python-e006c7371d8e57db2625-3.14.0a0-e006c73-vs-3.12.6.md)
@@ -25,7 +25,7 @@
 
 ### vs. 3.13.0rc2
 
-- Geometric mean: 1.43x slower (HPT: reliability of 100.00%, 1.29x slower at 99th %ile)
+- Geometric mean: 1.306x slower (HPT: reliability of 100.00%, 1.29x slower at 99th %ile)
 - Memory usage: 1.15x
 - missing benchmarks: aiohttp, chameleon, dask, dulwich_log, flaskblogging, gunicorn
 - [📄table](bm-20240808-linux-x86_64-python-e006c7371d8e57db2625-3.14.0a0-e006c73-vs-3.13.0rc2.md)
@@ -33,7 +33,7 @@
 
 ### vs. base
 
-- Geometric mean: 1.45x slower (HPT: reliability of 100.00%, 1.31x slower at 99th %ile)
+- Geometric mean: 1.008x slower (HPT: reliability of 100.00%, 1.31x slower at 99th %ile)
 - Memory usage: 1.14x
 - [🧠memory plot](bm-20240808-linux-x86_64-python-e006c7371d8e57db2625-3.14.0a0-e006c73-vs-base-mem.svg)
 - [📄table](bm-20240808-linux-x86_64-python-e006c7371d8e57db2625-3.14.0a0-e006c73-vs-base.md)
@@ -41,7 +41,7 @@
 
 ### vs. default_base_vs_NOGIL
 
-- Geometric mean: 1.40x slower (HPT: reliability of 100.00%, 1.24x slower at 99th %ile)
+- Geometric mean: 1.297x slower (HPT: reliability of 100.00%, 1.24x slower at 99th %ile)
 - Memory usage: 1.14x
 - [📄table](bm-20240808-linux-x86_64-python-e006c7371d8e57db2625-3.14.0a0-e006c73-vs-default_base_vs_NOGIL.md)
 - [📈time plot](bm-20240808-linux-x86_64-python-e006c7371d8e57db2625-3.14.0a0-e006c73-vs-default_base_vs_NOGIL.svg)

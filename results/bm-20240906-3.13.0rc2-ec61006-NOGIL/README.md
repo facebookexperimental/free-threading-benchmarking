@@ -16,7 +16,7 @@
 
 ### vs. 3.12.6
 
-- Geometric mean: 1.37x slower (HPT: reliability of 100.00%, 1.24x slower at 99th %ile)
+- Geometric mean: 1.278x slower (HPT: reliability of 100.00%, 1.24x slower at 99th %ile)
 - Memory usage: 1.14x
 - missing benchmarks: dask, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - [📄table](bm-20240906-linux-x86_64-python-v3.13.0rc2-3.13.0rc2-ec61006-vs-3.12.6.md)
@@ -24,7 +24,7 @@
 
 ### vs. 3.13.0rc2
 
-- Geometric mean: 1.42x slower (HPT: reliability of 100.00%, 1.29x slower at 99th %ile)
+- Geometric mean: 1.303x slower (HPT: reliability of 100.00%, 1.29x slower at 99th %ile)
 - Memory usage: 1.14x
 - missing benchmarks: dask
 - [📄table](bm-20240906-linux-x86_64-python-v3.13.0rc2-3.13.0rc2-ec61006-vs-3.13.0rc2.md)
@@ -32,7 +32,7 @@
 
 ### vs. base
 
-- Geometric mean: 1.42x slower (HPT: reliability of 100.00%, 1.29x slower at 99th %ile)
+- Geometric mean: 1.303x slower (HPT: reliability of 100.00%, 1.29x slower at 99th %ile)
 - Memory usage: 1.14x
 - missing benchmarks: 🔴 dask
 - [🧠memory plot](bm-20240906-linux-x86_64-python-v3.13.0rc2-3.13.0rc2-ec61006-vs-base-mem.svg)
@@ -68,7 +68,7 @@
 
 ### vs. 3.12.6
 
-- Geometric mean: 1.45x slower (HPT: reliability of 100.00%, 1.31x slower at 99th %ile)
+- Geometric mean: 1.315x slower (HPT: reliability of 100.00%, 1.31x slower at 99th %ile)
 - Memory usage: 1.17x
 - missing benchmarks: dask, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - [📄table](bm-20240906-vultr-x86_64-python-v3.13.0rc2-3.13.0rc2-ec61006-vs-3.12.6.md)
@@ -76,7 +76,7 @@
 
 ### vs. 3.13.0rc2
 
-- Geometric mean: 1.49x slower (HPT: reliability of 100.00%, 1.32x slower at 99th %ile)
+- Geometric mean: 1.336x slower (HPT: reliability of 100.00%, 1.32x slower at 99th %ile)
 - Memory usage: 1.16x
 - missing benchmarks: dask
 - [📄table](bm-20240906-vultr-x86_64-python-v3.13.0rc2-3.13.0rc2-ec61006-vs-3.13.0rc2.md)
@@ -84,7 +84,7 @@
 
 ### vs. base
 
-- Geometric mean: 1.49x slower (HPT: reliability of 100.00%, 1.32x slower at 99th %ile)
+- Geometric mean: 1.336x slower (HPT: reliability of 100.00%, 1.32x slower at 99th %ile)
 - Memory usage: 1.16x
 - missing benchmarks: 🔴 dask
 - [🧠memory plot](bm-20240906-vultr-x86_64-python-v3.13.0rc2-3.13.0rc2-ec61006-vs-base-mem.svg)

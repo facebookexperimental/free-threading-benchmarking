@@ -17,7 +17,7 @@
 
 ### vs. 3.12.6
 
-- Geometric mean: 1.55x slower (HPT: reliability of 100.00%, 1.43x slower at 99th %ile)
+- Geometric mean: 1.365x slower (HPT: reliability of 100.00%, 1.43x slower at 99th %ile)
 - Memory usage: 1.17x
 - missing benchmarks: aiohttp, async_tree_cpu_io_mixed, async_tree_cpu_io_mixed_tg, async_tree_io, async_tree_io_tg, async_tree_memoization, async_tree_memoization_tg, async_tree_none, async_tree_none_tg, chameleon, dask, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - [📄table](bm-20241013-linux-x86_64-python-f1d33dbddd3496b062e1-3.14.0a0-f1d33db-vs-3.12.6.md)
@@ -25,7 +25,7 @@
 
 ### vs. 3.13.0rc2
 
-- Geometric mean: 1.57x slower (HPT: reliability of 100.00%, 1.44x slower at 99th %ile)
+- Geometric mean: 1.373x slower (HPT: reliability of 100.00%, 1.44x slower at 99th %ile)
 - Memory usage: 1.16x
 - missing benchmarks: aiohttp, async_tree_cpu_io_mixed, async_tree_cpu_io_mixed_tg, async_tree_io, async_tree_io_tg, async_tree_memoization, async_tree_memoization_tg, async_tree_none, async_tree_none_tg, chameleon, dask, flaskblogging, gunicorn
 - [📄table](bm-20241013-linux-x86_64-python-f1d33dbddd3496b062e1-3.14.0a0-f1d33db-vs-3.13.0rc2.md)
@@ -40,7 +40,7 @@
 
 ### vs. 3.12.6
 
-- Geometric mean: 1.54x slower (HPT: reliability of 100.00%, 1.39x slower at 99th %ile)
+- Geometric mean: 1.349x slower (HPT: reliability of 100.00%, 1.39x slower at 99th %ile)
 - Memory usage: 1.20x
 - missing benchmarks: aiohttp, async_tree_cpu_io_mixed, async_tree_cpu_io_mixed_tg, async_tree_io, async_tree_io_tg, async_tree_memoization, async_tree_memoization_tg, async_tree_none, async_tree_none_tg, chameleon, dask, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - [📄table](bm-20241013-vultr-x86_64-python-f1d33dbddd3496b062e1-3.14.0a0-f1d33db-vs-3.12.6.md)
@@ -48,7 +48,7 @@
 
 ### vs. 3.13.0rc2
 
-- Geometric mean: 1.57x slower (HPT: reliability of 100.00%, 1.41x slower at 99th %ile)
+- Geometric mean: 1.359x slower (HPT: reliability of 100.00%, 1.41x slower at 99th %ile)
 - Memory usage: 1.18x
 - missing benchmarks: aiohttp, async_tree_cpu_io_mixed, async_tree_cpu_io_mixed_tg, async_tree_io, async_tree_io_tg, async_tree_memoization, async_tree_memoization_tg, async_tree_none, async_tree_none_tg, chameleon, dask, flaskblogging, gunicorn
 - [📄table](bm-20241013-vultr-x86_64-python-f1d33dbddd3496b062e1-3.14.0a0-f1d33db-vs-3.13.0rc2.md)

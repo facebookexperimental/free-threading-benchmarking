@@ -17,7 +17,7 @@
 
 ### vs. 3.12.6
 
-- Geometric mean: 1.52x slower (HPT: reliability of 100.00%, 1.36x slower at 99th %ile)
+- Geometric mean: 1.340x slower (HPT: reliability of 100.00%, 1.36x slower at 99th %ile)
 - Memory usage: 1.24x
 - missing benchmarks: aiohttp, async_tree_cpu_io_mixed, async_tree_cpu_io_mixed_tg, async_tree_io, async_tree_io_tg, async_tree_memoization, async_tree_memoization_tg, async_tree_none, async_tree_none_tg, chameleon, dask, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
 - [📄table](bm-20241108-vultr-x86_64-Eclips4-ft_specialize_unpack-3.14.0a1%2B-d49e9e6-vs-3.12.6.md)
@@ -25,7 +25,7 @@
 
 ### vs. 3.13.0rc2
 
-- Geometric mean: 1.54x slower (HPT: reliability of 100.00%, 1.38x slower at 99th %ile)
+- Geometric mean: 1.351x slower (HPT: reliability of 100.00%, 1.38x slower at 99th %ile)
 - Memory usage: 1.22x
 - missing benchmarks: aiohttp, async_tree_cpu_io_mixed, async_tree_cpu_io_mixed_tg, async_tree_io, async_tree_io_tg, async_tree_memoization, async_tree_memoization_tg, async_tree_none, async_tree_none_tg, chameleon, dask, flaskblogging, gunicorn, tornado_http
 - [📄table](bm-20241108-vultr-x86_64-Eclips4-ft_specialize_unpack-3.14.0a1%2B-d49e9e6-vs-3.13.0rc2.md)
@@ -33,7 +33,7 @@
 
 ### vs. base
 
-- Geometric mean: 1.02x faster (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
+- Geometric mean: 1.015x faster (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
 - Memory usage: 1.01x
 - [🧠memory plot](bm-20241108-vultr-x86_64-Eclips4-ft_specialize_unpack-3.14.0a1%2B-d49e9e6-vs-base-mem.svg)
 - [📄table](bm-20241108-vultr-x86_64-Eclips4-ft_specialize_unpack-3.14.0a1%2B-d49e9e6-vs-base.md)
@@ -41,7 +41,7 @@
 
 ### vs. default_base_vs_NOGIL
 
-- Geometric mean: 1.51x slower (HPT: reliability of 100.00%, 1.39x slower at 99th %ile)
+- Geometric mean: 1.353x slower (HPT: reliability of 100.00%, 1.39x slower at 99th %ile)
 - Memory usage: 1.21x
 - [📄table](bm-20241108-vultr-x86_64-Eclips4-ft_specialize_unpack-3.14.0a1%2B-d49e9e6-vs-default_base_vs_NOGIL.md)
 - [📈time plot](bm-20241108-vultr-x86_64-Eclips4-ft_specialize_unpack-3.14.0a1%2B-d49e9e6-vs-default_base_vs_NOGIL.svg)
