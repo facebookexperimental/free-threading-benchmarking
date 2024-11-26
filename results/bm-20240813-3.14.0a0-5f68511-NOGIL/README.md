@@ -17,7 +17,7 @@
 
 ### vs. 3.12.6
 
-- Geometric mean: 1.292x slower (HPT: reliability of 100.00%, 1.29x slower at 99th %ile)
+- Geometric mean: not sig (HPT: reliability of 100.00%, 1.29x slower at 99th %ile)
 - Memory usage: 1.15x
 - missing benchmarks: aiohttp, chameleon, dask, dulwich_log, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - [📄table](bm-20240813-linux-x86_64-python-main-3.14.0a0-5f68511-vs-3.12.6.md)
@@ -25,7 +25,7 @@
 
 ### vs. 3.13.0rc2
 
-- Geometric mean: 1.319x slower (HPT: reliability of 100.00%, 1.33x slower at 99th %ile)
+- Geometric mean: not sig (HPT: reliability of 100.00%, 1.33x slower at 99th %ile)
 - Memory usage: 1.15x
 - missing benchmarks: aiohttp, chameleon, dask, dulwich_log, flaskblogging, gunicorn
 - [📄table](bm-20240813-linux-x86_64-python-main-3.14.0a0-5f68511-vs-3.13.0rc2.md)
@@ -33,7 +33,7 @@
 
 ### vs. base
 
-- Geometric mean: 1.012x slower (HPT: reliability of 99.95%, 1.00x slower at 99th %ile)
+- Geometric mean: not sig (HPT: reliability of 99.95%, 1.00x slower at 99th %ile)
 - Memory usage: 1.00x
 - [🧠memory plot](bm-20240813-linux-x86_64-python-main-3.14.0a0-5f68511-vs-base-mem.svg)
 - [📄table](bm-20240813-linux-x86_64-python-main-3.14.0a0-5f68511-vs-base.md)

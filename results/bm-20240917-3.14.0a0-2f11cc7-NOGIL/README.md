@@ -17,7 +17,7 @@
 
 ### vs. 3.12.6
 
-- Geometric mean: 1.299x slower (HPT: reliability of 100.00%, 1.29x slower at 99th %ile)
+- Geometric mean: not sig (HPT: reliability of 100.00%, 1.29x slower at 99th %ile)
 - Memory usage: 1.20x
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - [📄table](bm-20240917-vultr-x86_64-mpage-gh_115999_thread_loc-3.14.0a0-2f11cc7-vs-3.12.6.md)
@@ -25,7 +25,7 @@
 
 ### vs. 3.13.0rc2
 
-- Geometric mean: 1.323x slower (HPT: reliability of 100.00%, 1.30x slower at 99th %ile)
+- Geometric mean: not sig (HPT: reliability of 100.00%, 1.30x slower at 99th %ile)
 - Memory usage: 1.19x
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn
 - [📄table](bm-20240917-vultr-x86_64-mpage-gh_115999_thread_loc-3.14.0a0-2f11cc7-vs-3.13.0rc2.md)

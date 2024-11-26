@@ -17,7 +17,7 @@
 
 ### vs. 3.12.6
 
-- Geometric mean: 1.324x slower (HPT: reliability of 100.00%, 1.34x slower at 99th %ile)
+- Geometric mean: not sig (HPT: reliability of 100.00%, 1.34x slower at 99th %ile)
 - Memory usage: 1.24x
 - missing benchmarks: aiohttp, async_tree_cpu_io_mixed, async_tree_cpu_io_mixed_tg, async_tree_io, async_tree_io_tg, async_tree_memoization, async_tree_memoization_tg, async_tree_none, async_tree_none_tg, chameleon, dask, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
 - [📄table](bm-20241120-vultr-x86_64-mpage-gh_115999_tlbc_call-3.14.0a2%2B-8ebd73d-vs-3.12.6.md)
@@ -25,7 +25,7 @@
 
 ### vs. 3.13.0rc2
 
-- Geometric mean: 1.335x slower (HPT: reliability of 100.00%, 1.37x slower at 99th %ile)
+- Geometric mean: not sig (HPT: reliability of 100.00%, 1.37x slower at 99th %ile)
 - Memory usage: 1.22x
 - missing benchmarks: aiohttp, async_tree_cpu_io_mixed, async_tree_cpu_io_mixed_tg, async_tree_io, async_tree_io_tg, async_tree_memoization, async_tree_memoization_tg, async_tree_none, async_tree_none_tg, chameleon, dask, flaskblogging, gunicorn, tornado_http
 - [📄table](bm-20241120-vultr-x86_64-mpage-gh_115999_tlbc_call-3.14.0a2%2B-8ebd73d-vs-3.13.0rc2.md)
@@ -33,7 +33,7 @@
 
 ### vs. base
 
-- Geometric mean: 1.051x faster (HPT: reliability of 100.00%, 1.01x faster at 99th %ile)
+- Geometric mean: not sig (HPT: reliability of 100.00%, 1.01x faster at 99th %ile)
 - Memory usage: 1.00x
 - missing benchmarks: 🔴 async_tree_cpu_io_mixed, async_tree_cpu_io_mixed_tg, async_tree_io, async_tree_io_tg, async_tree_memoization, async_tree_memoization_tg, async_tree_none, async_tree_none_tg, connected_components, k_core, many_optionals, shortest_path, sphinx, subparsers
 - new benchmarks: asyncio_tcp, asyncio_tcp_ssl, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
@@ -43,7 +43,7 @@
 
 ### vs. default_base_vs_NOGIL
 
-- Geometric mean: 1.338x slower (HPT: reliability of 100.00%, 1.35x slower at 99th %ile)
+- Geometric mean: not sig (HPT: reliability of 100.00%, 1.35x slower at 99th %ile)
 - Memory usage: 1.21x
 - [📄table](bm-20241120-vultr-x86_64-mpage-gh_115999_tlbc_call-3.14.0a2%2B-8ebd73d-vs-default_base_vs_NOGIL.md)
 - [📈time plot](bm-20241120-vultr-x86_64-mpage-gh_115999_tlbc_call-3.14.0a2%2B-8ebd73d-vs-default_base_vs_NOGIL.svg)

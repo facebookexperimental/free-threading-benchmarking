@@ -17,7 +17,7 @@
 
 ### vs. 3.12.6
 
-- Geometric mean: 1.191x slower (HPT: reliability of 100.00%, 1.14x slower at 99th %ile)
+- Geometric mean: not sig (HPT: reliability of 100.00%, 1.14x slower at 99th %ile)
 - Memory usage: 1.01x
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - [📄table](bm-20240920-vultr-x86_64-mpage-cec1c0b3fa171b6ab3ca-3.14.0a0-cec1c0b-vs-3.12.6.md)
@@ -25,7 +25,7 @@
 
 ### vs. 3.13.0rc2
 
-- Geometric mean: 1.218x slower (HPT: reliability of 100.00%, 1.18x slower at 99th %ile)
+- Geometric mean: not sig (HPT: reliability of 100.00%, 1.18x slower at 99th %ile)
 - Memory usage: 0.99x
 - missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn
 - [📄table](bm-20240920-vultr-x86_64-mpage-cec1c0b3fa171b6ab3ca-3.14.0a0-cec1c0b-vs-3.13.0rc2.md)
@@ -33,7 +33,7 @@
 
 ### vs. base
 
-- Geometric mean: 1.253x slower (HPT: reliability of 91.01%, 1.00x slower at 99th %ile)
+- Geometric mean: not sig (HPT: reliability of 91.01%, 1.00x slower at 99th %ile)
 - Memory usage: 0.86x
 - [🧠memory plot](bm-20240920-vultr-x86_64-mpage-cec1c0b3fa171b6ab3ca-3.14.0a0-cec1c0b-vs-base-mem.svg)
 - [📄table](bm-20240920-vultr-x86_64-mpage-cec1c0b3fa171b6ab3ca-3.14.0a0-cec1c0b-vs-base.md)

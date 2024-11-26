@@ -17,7 +17,7 @@
 
 ### vs. 3.12.6
 
-- Geometric mean: 1.282x slower (HPT: reliability of 100.00%, 1.27x slower at 99th %ile)
+- Geometric mean: not sig (HPT: reliability of 100.00%, 1.27x slower at 99th %ile)
 - Memory usage: 1.15x
 - missing benchmarks: aiohttp, chameleon, dask, dulwich_log, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - [📄table](bm-20240807-linux-x86_64-mpage-gh_122712_fix_call_a-3.14.0a0-f483286-vs-3.12.6.md)
@@ -25,7 +25,7 @@
 
 ### vs. 3.13.0rc2
 
-- Geometric mean: 1.309x slower (HPT: reliability of 100.00%, 1.31x slower at 99th %ile)
+- Geometric mean: not sig (HPT: reliability of 100.00%, 1.31x slower at 99th %ile)
 - Memory usage: 1.14x
 - missing benchmarks: aiohttp, chameleon, dask, dulwich_log, flaskblogging, gunicorn
 - [📄table](bm-20240807-linux-x86_64-mpage-gh_122712_fix_call_a-3.14.0a0-f483286-vs-3.13.0rc2.md)
@@ -33,7 +33,7 @@
 
 ### vs. base
 
-- Geometric mean: 1.002x faster (HPT: reliability of 76.87%, 1.00x faster at 99th %ile)
+- Geometric mean: not sig (HPT: reliability of 76.87%, 1.00x faster at 99th %ile)
 - Memory usage: 0.99x
 - [🧠memory plot](bm-20240807-linux-x86_64-mpage-gh_122712_fix_call_a-3.14.0a0-f483286-vs-base-mem.svg)
 - [📄table](bm-20240807-linux-x86_64-mpage-gh_122712_fix_call_a-3.14.0a0-f483286-vs-base.md)
@@ -41,7 +41,7 @@
 
 ### vs. default_base_vs_NOGIL
 
-- Geometric mean: 1.319x slower (HPT: reliability of 100.00%, 1.31x slower at 99th %ile)
+- Geometric mean: not sig (HPT: reliability of 100.00%, 1.31x slower at 99th %ile)
 - Memory usage: 1.14x
 - [📄table](bm-20240807-linux-x86_64-mpage-gh_122712_fix_call_a-3.14.0a0-f483286-vs-default_base_vs_NOGIL.md)
 - [📈time plot](bm-20240807-linux-x86_64-mpage-gh_122712_fix_call_a-3.14.0a0-f483286-vs-default_base_vs_NOGIL.svg)

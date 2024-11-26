@@ -17,7 +17,7 @@
 
 ### vs. 3.12.6
 
-- Geometric mean: 1.255x slower (HPT: reliability of 100.00%, 1.21x slower at 99th %ile)
+- Geometric mean: not sig (HPT: reliability of 100.00%, 1.21x slower at 99th %ile)
 - Memory usage: 1.33x
 - missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: connected_components, k_core, many_optionals, shortest_path, sphinx, subparsers
@@ -26,7 +26,7 @@
 
 ### vs. 3.13.0rc2
 
-- Geometric mean: 1.280x slower (HPT: reliability of 100.00%, 1.24x slower at 99th %ile)
+- Geometric mean: not sig (HPT: reliability of 100.00%, 1.24x slower at 99th %ile)
 - Memory usage: 1.31x
 - missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, flaskblogging, gunicorn, pickle, pickle_dict, pickle_list, tornado_http, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: connected_components, k_core, many_optionals, shortest_path, sphinx, subparsers

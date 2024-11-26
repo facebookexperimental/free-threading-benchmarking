@@ -16,7 +16,7 @@
 
 ### vs. 3.12.6
 
-- Geometric mean: 1.041x faster (HPT: reliability of 99.95%, 1.00x faster at 99th %ile)
+- Geometric mean: not sig (HPT: reliability of 99.95%, 1.00x faster at 99th %ile)
 - Memory usage: 1.01x
 - missing benchmarks: mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - [📄table](bm-20240920-linux-x86_64-mpage-3ff07d95fb0878c32376-3.13.0rc2-3ff07d9-vs-3.12.6.md)
@@ -24,7 +24,7 @@
 
 ### vs. 3.13.0rc2
 
-- Geometric mean: 1.001x faster (HPT: reliability of 77.22%, 1.00x slower at 99th %ile)
+- Geometric mean: not sig (HPT: reliability of 77.22%, 1.00x slower at 99th %ile)
 - Memory usage: 1.00x
 - [📄table](bm-20240920-linux-x86_64-mpage-3ff07d95fb0878c32376-3.13.0rc2-3ff07d9-vs-3.13.0rc2.md)
 - [📈time plot](bm-20240920-linux-x86_64-mpage-3ff07d95fb0878c32376-3.13.0rc2-3ff07d9-vs-3.13.0rc2.svg)
@@ -38,7 +38,7 @@
 
 ### vs. 3.12.6
 
-- Geometric mean: 1.029x faster (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
+- Geometric mean: not sig (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
 - Memory usage: 1.01x
 - missing benchmarks: mypy2, sqlalchemy_declarative, sqlalchemy_imperative
 - [📄table](bm-20240920-vultr-x86_64-mpage-3ff07d95fb0878c32376-3.13.0rc2-3ff07d9-vs-3.12.6.md)
@@ -46,7 +46,7 @@
 
 ### vs. 3.13.0rc2
 
-- Geometric mean: 1.003x slower (HPT: reliability of 69.23%, 1.00x slower at 99th %ile)
+- Geometric mean: not sig (HPT: reliability of 69.23%, 1.00x slower at 99th %ile)
 - Memory usage: 0.99x
 - [📄table](bm-20240920-vultr-x86_64-mpage-3ff07d95fb0878c32376-3.13.0rc2-3ff07d9-vs-3.13.0rc2.md)
 - [📈time plot](bm-20240920-vultr-x86_64-mpage-3ff07d95fb0878c32376-3.13.0rc2-3ff07d9-vs-3.13.0rc2.svg)
