@@ -1,11 +1,11 @@
 # Results
 
-- fork: corona10
+- fork: corona10/gh_115999_binary_sub
 - version: 3.14.0a2+
 - config: 
 - commit hash: [f0b8a8f](https://github.com/corona10/cpython/commit/f0b8a8f)
 - commit date: 2024-12-01T16:09:12+09:00
-- commit merge base: [58e334e1431b2ed6b70ee42501ea73e08084e769](https://github.com/corona10/cpython/commit/58e334e1431b2ed6b70ee42501ea73e08084e769)
+- commit merge base: [58e334e1431b2ed6b70ee42501ea73e08084e769](https://github.com/python/cpython/commit/58e334e1431b2ed6b70ee42501ea73e08084e769)
 - ref: gh_115999_binary_sub
 
 ## linux x86_64 (vultr)

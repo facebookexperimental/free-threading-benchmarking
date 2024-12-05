@@ -1,6 +1,6 @@
 # Results
 
-- fork: python
+- fork: python/main
 - version: 3.14.0a0
 - config: NOGIL
 - commit hash: [44052b5](https://github.com/python/cpython/commit/44052b5)

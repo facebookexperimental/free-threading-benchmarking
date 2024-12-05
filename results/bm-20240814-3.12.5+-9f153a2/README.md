@@ -1,6 +1,6 @@
 # Results
 
-- fork: python
+- fork: python/3.12
 - version: 3.12.5+
 - config: 
 - commit hash: [9f153a2](https://github.com/python/cpython/commit/9f153a2)

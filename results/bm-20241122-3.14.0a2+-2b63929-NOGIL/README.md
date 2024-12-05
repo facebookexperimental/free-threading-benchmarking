@@ -1,11 +1,11 @@
 # Results
 
-- fork: colesbury
+- fork: colesbury/gh_115999_store_subs
 - version: 3.14.0a2+
 - config: NOGIL
 - commit hash: [2b63929](https://github.com/colesbury/cpython/commit/2b63929)
 - commit date: 2024-11-22T19:04:30+00:00
-- commit merge base: [a264637654f9d3ac3c140e66fd56ee32faf22431](https://github.com/colesbury/cpython/commit/a264637654f9d3ac3c140e66fd56ee32faf22431)
+- commit merge base: [a264637654f9d3ac3c140e66fd56ee32faf22431](https://github.com/python/cpython/commit/a264637654f9d3ac3c140e66fd56ee32faf22431)
 - ref: gh_115999_store_subs
 
 ## linux x86_64 (vultr)

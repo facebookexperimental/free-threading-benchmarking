@@ -1,11 +1,11 @@
 # Results
 
-- fork: nascheme
+- fork: nascheme/gh_127271_cell_get_s
 - version: 3.14.0a2+
 - config: 
 - commit hash: [b09c4cf](https://github.com/nascheme/cpython/commit/b09c4cf)
 - commit date: 2024-11-27T14:27:10-08:00
-- commit merge base: [6da9d252ac39d53342455a17bfec7b1087fba697](https://github.com/nascheme/cpython/commit/6da9d252ac39d53342455a17bfec7b1087fba697)
+- commit merge base: [6da9d252ac39d53342455a17bfec7b1087fba697](https://github.com/python/cpython/commit/6da9d252ac39d53342455a17bfec7b1087fba697)
 - ref: gh_127271_cell_get_s
 
 ## linux x86_64 (vultr)

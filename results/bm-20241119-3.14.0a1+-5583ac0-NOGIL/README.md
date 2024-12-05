@@ -1,11 +1,11 @@
 # Results
 
-- fork: colesbury
+- fork: colesbury/gh_127022_cheaper_st
 - version: 3.14.0a1+
 - config: NOGIL
 - commit hash: [5583ac0](https://github.com/colesbury/cpython/commit/5583ac0)
 - commit date: 2024-11-19T16:47:54+00:00
-- commit merge base: [29cbcbd73bbfd8c953c0b213fb33682c289934ff](https://github.com/colesbury/cpython/commit/29cbcbd73bbfd8c953c0b213fb33682c289934ff)
+- commit merge base: [29cbcbd73bbfd8c953c0b213fb33682c289934ff](https://github.com/python/cpython/commit/29cbcbd73bbfd8c953c0b213fb33682c289934ff)
 - ref: gh_127022_cheaper_st
 
 ## linux x86_64 (vultr)

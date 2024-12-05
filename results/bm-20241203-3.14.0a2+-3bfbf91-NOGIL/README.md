@@ -1,11 +1,11 @@
 # Results
 
-- fork: mpage
+- fork: mpage/gh_115999_load_attr
 - version: 3.14.0a2+
 - config: NOGIL
 - commit hash: [3bfbf91](https://github.com/mpage/cpython/commit/3bfbf91)
 - commit date: 2024-12-03T17:01:40-08:00
-- commit merge base: [dabcecfd6dadb9430733105ba36925b290343d31](https://github.com/mpage/cpython/commit/dabcecfd6dadb9430733105ba36925b290343d31)
+- commit merge base: [dabcecfd6dadb9430733105ba36925b290343d31](https://github.com/python/cpython/commit/dabcecfd6dadb9430733105ba36925b290343d31)
 - ref: gh_115999_load_attr
 
 ## linux x86_64 (vultr)

@@ -1,11 +1,11 @@
 # Results
 
-- fork: mpage
+- fork: mpage/revert_gc_changes
 - version: 3.14.0a2+
 - config: NOGIL
 - commit hash: [2923163](https://github.com/mpage/cpython/commit/2923163)
 - commit date: 2024-12-03T09:27:31-08:00
-- commit merge base: [8ba9f5bca9c0ce6130e1f4ba761a68f74f8457d0](https://github.com/mpage/cpython/commit/8ba9f5bca9c0ce6130e1f4ba761a68f74f8457d0)
+- commit merge base: [8ba9f5bca9c0ce6130e1f4ba761a68f74f8457d0](https://github.com/python/cpython/commit/8ba9f5bca9c0ce6130e1f4ba761a68f74f8457d0)
 - ref: revert_gc_changes
 
 ## linux x86_64 (vultr)

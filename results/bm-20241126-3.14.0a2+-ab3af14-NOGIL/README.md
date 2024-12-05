@@ -1,11 +1,11 @@
 # Results
 
-- fork: nascheme
+- fork: nascheme/gh_115999_load_super
 - version: 3.14.0a2+
 - config: NOGIL
 - commit hash: [ab3af14](https://github.com/nascheme/cpython/commit/ab3af14)
 - commit date: 2024-11-26T11:44:04-08:00
-- commit merge base: [09c240f20c47db126ad7e162df41e5c2596962d4](https://github.com/nascheme/cpython/commit/09c240f20c47db126ad7e162df41e5c2596962d4)
+- commit merge base: [09c240f20c47db126ad7e162df41e5c2596962d4](https://github.com/python/cpython/commit/09c240f20c47db126ad7e162df41e5c2596962d4)
 - ref: gh_115999_load_super
 
 ## linux x86_64 (vultr)

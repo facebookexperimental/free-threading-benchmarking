@@ -1,11 +1,11 @@
 # Results
 
-- fork: colesbury
+- fork: colesbury/gh_127582_resurrecti
 - version: 3.14.0a2+
 - config: NOGIL
 - commit hash: [a7b41c8](https://github.com/colesbury/cpython/commit/a7b41c8)
 - commit date: 2024-12-04T19:01:42+00:00
-- commit merge base: [6bc3e830a518112a4e242217807681e3908602f4](https://github.com/colesbury/cpython/commit/6bc3e830a518112a4e242217807681e3908602f4)
+- commit merge base: [6bc3e830a518112a4e242217807681e3908602f4](https://github.com/python/cpython/commit/6bc3e830a518112a4e242217807681e3908602f4)
 - ref: gh_127582_resurrecti
 
 ## linux x86_64 (vultr)

@@ -1,11 +1,11 @@
 # Results
 
-- fork: nascheme
+- fork: nascheme/gh_115999_specialize
 - version: 3.14.0a2+
 - config: 
 - commit hash: [e517ccb](https://github.com/nascheme/cpython/commit/e517ccb)
 - commit date: 2024-12-02T11:34:10-08:00
-- commit merge base: [15d6506d175780bb29e5fcde654e3860408aa93e](https://github.com/nascheme/cpython/commit/15d6506d175780bb29e5fcde654e3860408aa93e)
+- commit merge base: [15d6506d175780bb29e5fcde654e3860408aa93e](https://github.com/python/cpython/commit/15d6506d175780bb29e5fcde654e3860408aa93e)
 - ref: gh_115999_specialize
 
 ## linux x86_64 (vultr)

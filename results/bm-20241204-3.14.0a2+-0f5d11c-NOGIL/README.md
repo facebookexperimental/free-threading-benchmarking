@@ -1,11 +1,11 @@
 # Results
 
-- fork: mpage
+- fork: mpage/measure_gc_changes
 - version: 3.14.0a2+
 - config: NOGIL
 - commit hash: [0f5d11c](https://github.com/mpage/cpython/commit/0f5d11c)
 - commit date: 2024-12-04T09:51:58-08:00
-- commit merge base: [bfb0788bfcaab7474c1be0605552744e15082ee9](https://github.com/mpage/cpython/commit/bfb0788bfcaab7474c1be0605552744e15082ee9)
+- commit merge base: [bfb0788bfcaab7474c1be0605552744e15082ee9](https://github.com/python/cpython/commit/bfb0788bfcaab7474c1be0605552744e15082ee9)
 - ref: measure_gc_changes
 
 ## linux x86_64 (vultr)
