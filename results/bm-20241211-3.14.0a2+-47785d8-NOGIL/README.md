@@ -41,3 +41,11 @@
 - [📄table](bm-20241211-vultr-x86_64-Yhg1s-compare_op-3.14.0a2%2B-47785d8-vs-base.md)
 - [📈time plot](bm-20241211-vultr-x86_64-Yhg1s-compare_op-3.14.0a2%2B-47785d8-vs-base.svg)
 
+### vs. default_base_vs_NOGIL
+
+- Geometric mean: 1.272x slower (HPT: reliability of 100.00%, 1.27x slower at 99th %ile)
+- Memory usage: 1.19x
+- new benchmarks: html5lib
+- [📄table](bm-20241211-vultr-x86_64-Yhg1s-compare_op-3.14.0a2%2B-47785d8-vs-default_base_vs_NOGIL.md)
+- [📈time plot](bm-20241211-vultr-x86_64-Yhg1s-compare_op-3.14.0a2%2B-47785d8-vs-default_base_vs_NOGIL.svg)
+
