@@ -33,3 +33,11 @@
 - [📄table](bm-20241213-vultr-x86_64-mpage-gh_115999_load_attr_-3.14.0a2%2B-0e874cd-vs-3.13.0rc2.md)
 - [📈time plot](bm-20241213-vultr-x86_64-mpage-gh_115999_load_attr_-3.14.0a2%2B-0e874cd-vs-3.13.0rc2.svg)
 
+### vs. base
+
+- Geometric mean: 1.004x faster (HPT: reliability of 95.92%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20241213-vultr-x86_64-mpage-gh_115999_load_attr_-3.14.0a2%2B-0e874cd-vs-base-mem.svg)
+- [📄table](bm-20241213-vultr-x86_64-mpage-gh_115999_load_attr_-3.14.0a2%2B-0e874cd-vs-base.md)
+- [📈time plot](bm-20241213-vultr-x86_64-mpage-gh_115999_load_attr_-3.14.0a2%2B-0e874cd-vs-base.svg)
+
