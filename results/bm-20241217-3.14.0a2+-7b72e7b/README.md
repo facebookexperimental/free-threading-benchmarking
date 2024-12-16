@@ -33,3 +33,11 @@
 - [📄table](bm-20241217-vultr-x86_64-corona10-gh_115999_BINARY_SUB-3.14.0a2%2B-7b72e7b-vs-3.13.0rc2.md)
 - [📈time plot](bm-20241217-vultr-x86_64-corona10-gh_115999_BINARY_SUB-3.14.0a2%2B-7b72e7b-vs-3.13.0rc2.svg)
 
+### vs. base
+
+- Geometric mean: 1.000x faster (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20241217-vultr-x86_64-corona10-gh_115999_BINARY_SUB-3.14.0a2%2B-7b72e7b-vs-base-mem.svg)
+- [📄table](bm-20241217-vultr-x86_64-corona10-gh_115999_BINARY_SUB-3.14.0a2%2B-7b72e7b-vs-base.md)
+- [📈time plot](bm-20241217-vultr-x86_64-corona10-gh_115999_BINARY_SUB-3.14.0a2%2B-7b72e7b-vs-base.svg)
+
