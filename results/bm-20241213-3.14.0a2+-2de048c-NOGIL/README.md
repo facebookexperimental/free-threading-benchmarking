@@ -10,7 +10,7 @@
 
 ## linux x86_64 (linux)
 
-- [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/12325090985)
+- [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/12341882270)
 - cpu model: Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz
 - platform: Linux-5.15.0-1071-aws-x86_64-with-glibc2.31
 - [raw results](bm-20241213-linux-x86_64-python-2de048ce79e621f5ae05-3.14.0a2%2B-2de048c.json)
@@ -43,7 +43,7 @@
 
 ## linux x86_64 (vultr)
 
-- [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/12325090985)
+- [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/12341882270)
 - cpu model: Intel(R) Xeon(R) E-2286G CPU @ 4.00GHz
 - platform: Linux-6.8.0-45-generic-x86_64-with-glibc2.39
 - [raw results](bm-20241213-vultr-x86_64-python-2de048ce79e621f5ae05-3.14.0a2%2B-2de048c.json)
