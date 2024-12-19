@@ -33,3 +33,11 @@
 - [📄table](bm-20241218-vultr-x86_64-nascheme-gh_115999_specialize-3.14.0a3%2B-9015a3f-vs-3.13.0rc2.md)
 - [📈time plot](bm-20241218-vultr-x86_64-nascheme-gh_115999_specialize-3.14.0a3%2B-9015a3f-vs-3.13.0rc2.svg)
 
+### vs. base
+
+- Geometric mean: 1.000x slower (HPT: reliability of 87.03%, 1.00x slower at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20241218-vultr-x86_64-nascheme-gh_115999_specialize-3.14.0a3%2B-9015a3f-vs-base-mem.svg)
+- [📄table](bm-20241218-vultr-x86_64-nascheme-gh_115999_specialize-3.14.0a3%2B-9015a3f-vs-base.md)
+- [📈time plot](bm-20241218-vultr-x86_64-nascheme-gh_115999_specialize-3.14.0a3%2B-9015a3f-vs-base.svg)
+
