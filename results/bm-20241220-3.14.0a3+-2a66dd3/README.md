@@ -2,7 +2,7 @@
 
 - fork: python/2a66dd33dfc0b845042d
 - version: 3.14.0a3+
-- config: NOGIL
+- config: 
 - commit hash: [2a66dd3](https://github.com/python/cpython/commit/2a66dd3)
 - commit date: 2024-12-20T11:40:58-08:00
 - commit merge base: [3879ca0100942ae15a09ac22889cbe3e46d424eb](https://github.com/python/cpython/commit/3879ca0100942ae15a09ac22889cbe3e46d424eb)
@@ -17,8 +17,8 @@
 
 ### vs. 3.12.6
 
-- Geometric mean: 1.147x slower (HPT: reliability of 100.00%, 1.11x slower at 99th %ile)
-- Memory usage: 1.34x
+- Geometric mean: 1.106x faster (HPT: reliability of 100.00%, 1.03x faster at 99th %ile)
+- Memory usage: 1.13x
 - missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, tornado_http, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: connected_components, k_core, many_optionals, shortest_path, sphinx, subparsers
 - [📄table](bm-20241220-linux-x86_64-python-2a66dd33dfc0b845042d-3.14.0a3%2B-2a66dd3-vs-3.12.6.md)
@@ -26,20 +26,12 @@
 
 ### vs. 3.13.0rc2
 
-- Geometric mean: 1.175x slower (HPT: reliability of 100.00%, 1.13x slower at 99th %ile)
-- Memory usage: 1.33x
+- Geometric mean: 1.059x faster (HPT: reliability of 100.00%, 1.02x faster at 99th %ile)
+- Memory usage: 1.13x
 - missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, flaskblogging, gunicorn, pickle, pickle_dict, pickle_list, tornado_http, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: connected_components, k_core, many_optionals, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative, subparsers
 - [📄table](bm-20241220-linux-x86_64-python-2a66dd33dfc0b845042d-3.14.0a3%2B-2a66dd3-vs-3.13.0rc2.md)
 - [📈time plot](bm-20241220-linux-x86_64-python-2a66dd33dfc0b845042d-3.14.0a3%2B-2a66dd3-vs-3.13.0rc2.svg)
-
-### vs. base
-
-- Geometric mean: 1.215x slower (HPT: reliability of 100.00%, 1.20x slower at 99th %ile)
-- Memory usage: 1.18x
-- [🧠memory plot](bm-20241220-linux-x86_64-python-2a66dd33dfc0b845042d-3.14.0a3%2B-2a66dd3-vs-base-mem.svg)
-- [📄table](bm-20241220-linux-x86_64-python-2a66dd33dfc0b845042d-3.14.0a3%2B-2a66dd3-vs-base.md)
-- [📈time plot](bm-20241220-linux-x86_64-python-2a66dd33dfc0b845042d-3.14.0a3%2B-2a66dd3-vs-base.svg)
 
 ## linux x86_64 (vultr)
 
@@ -50,28 +42,19 @@
 
 ### vs. 3.12.6
 
-- Geometric mean: 1.193x slower (HPT: reliability of 100.00%, 1.15x slower at 99th %ile)
-- Memory usage: 1.33x
-- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, tornado_http, unpack_sequence, unpickle, unpickle_list
+- Geometric mean: 1.088x faster (HPT: reliability of 100.00%, 1.04x faster at 99th %ile)
+- Memory usage: 1.11x
+- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, flaskblogging, gunicorn, html5lib, mypy2, pickle, pickle_dict, pickle_list, tornado_http, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: connected_components, k_core, many_optionals, shortest_path, sphinx, subparsers
 - [📄table](bm-20241220-vultr-x86_64-python-2a66dd33dfc0b845042d-3.14.0a3%2B-2a66dd3-vs-3.12.6.md)
 - [📈time plot](bm-20241220-vultr-x86_64-python-2a66dd33dfc0b845042d-3.14.0a3%2B-2a66dd3-vs-3.12.6.svg)
 
 ### vs. 3.13.0rc2
 
-- Geometric mean: 1.219x slower (HPT: reliability of 100.00%, 1.16x slower at 99th %ile)
-- Memory usage: 1.31x
-- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, flaskblogging, gunicorn, pickle, pickle_dict, pickle_list, tornado_http, unpack_sequence, unpickle, unpickle_list
+- Geometric mean: 1.050x faster (HPT: reliability of 100.00%, 1.01x faster at 99th %ile)
+- Memory usage: 1.10x
+- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, flaskblogging, gunicorn, html5lib, pickle, pickle_dict, pickle_list, tornado_http, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: connected_components, k_core, many_optionals, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative, subparsers
 - [📄table](bm-20241220-vultr-x86_64-python-2a66dd33dfc0b845042d-3.14.0a3%2B-2a66dd3-vs-3.13.0rc2.md)
 - [📈time plot](bm-20241220-vultr-x86_64-python-2a66dd33dfc0b845042d-3.14.0a3%2B-2a66dd3-vs-3.13.0rc2.svg)
-
-### vs. base
-
-- Geometric mean: 1.252x slower (HPT: reliability of 100.00%, 1.24x slower at 99th %ile)
-- Memory usage: 1.18x
-- new benchmarks: html5lib
-- [🧠memory plot](bm-20241220-vultr-x86_64-python-2a66dd33dfc0b845042d-3.14.0a3%2B-2a66dd3-vs-base-mem.svg)
-- [📄table](bm-20241220-vultr-x86_64-python-2a66dd33dfc0b845042d-3.14.0a3%2B-2a66dd3-vs-base.md)
-- [📈time plot](bm-20241220-vultr-x86_64-python-2a66dd33dfc0b845042d-3.14.0a3%2B-2a66dd3-vs-base.svg)
 
