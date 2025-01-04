@@ -33,6 +33,14 @@
 - [📄table](bm-20250103-linux-x86_64-python-f1574859d7d6cd259f86-3.14.0a3%2B-f157485-vs-3.13.0rc2.md)
 - [📈time plot](bm-20250103-linux-x86_64-python-f1574859d7d6cd259f86-3.14.0a3%2B-f157485-vs-3.13.0rc2.svg)
 
+### vs. base
+
+- Geometric mean: 1.166x slower (HPT: reliability of 100.00%, 1.12x slower at 99th %ile)
+- Memory usage: 1.19x
+- [🧠memory plot](bm-20250103-linux-x86_64-python-f1574859d7d6cd259f86-3.14.0a3%2B-f157485-vs-base-mem.svg)
+- [📄table](bm-20250103-linux-x86_64-python-f1574859d7d6cd259f86-3.14.0a3%2B-f157485-vs-base.md)
+- [📈time plot](bm-20250103-linux-x86_64-python-f1574859d7d6cd259f86-3.14.0a3%2B-f157485-vs-base.svg)
+
 ## linux x86_64 (vultr)
 
 - [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/12604534528)
