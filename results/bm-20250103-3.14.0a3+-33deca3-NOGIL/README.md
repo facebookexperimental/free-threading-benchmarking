@@ -41,3 +41,11 @@
 - [📄table](bm-20250103-vultr-x86_64-mpage-gh_115999_integrate-3.14.0a3%2B-33deca3-vs-base.md)
 - [📈time plot](bm-20250103-vultr-x86_64-mpage-gh_115999_integrate-3.14.0a3%2B-33deca3-vs-base.svg)
 
+### vs. default_base_vs_NOGIL
+
+- Geometric mean: 1.136x slower (HPT: reliability of 100.00%, 1.11x slower at 99th %ile)
+- Memory usage: 1.20x
+- new benchmarks: html5lib
+- [📄table](bm-20250103-vultr-x86_64-mpage-gh_115999_integrate-3.14.0a3%2B-33deca3-vs-default_base_vs_NOGIL.md)
+- [📈time plot](bm-20250103-vultr-x86_64-mpage-gh_115999_integrate-3.14.0a3%2B-33deca3-vs-default_base_vs_NOGIL.svg)
+
