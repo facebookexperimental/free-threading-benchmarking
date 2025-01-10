@@ -33,3 +33,11 @@
 - [📄table](bm-20250109-vultr-x86_64-Yhg1s-list_realloc-3.14.0a3%2B-89c4629-vs-3.13.0rc2.md)
 - [📈time plot](bm-20250109-vultr-x86_64-Yhg1s-list_realloc-3.14.0a3%2B-89c4629-vs-3.13.0rc2.svg)
 
+### vs. base
+
+- Geometric mean: 1.003x faster (HPT: reliability of 91.72%, 1.00x faster at 99th %ile)
+- Memory usage: 1.03x
+- [🧠memory plot](bm-20250109-vultr-x86_64-Yhg1s-list_realloc-3.14.0a3%2B-89c4629-vs-base-mem.svg)
+- [📄table](bm-20250109-vultr-x86_64-Yhg1s-list_realloc-3.14.0a3%2B-89c4629-vs-base.md)
+- [📈time plot](bm-20250109-vultr-x86_64-Yhg1s-list_realloc-3.14.0a3%2B-89c4629-vs-base.svg)
+
