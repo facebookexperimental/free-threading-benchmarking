@@ -62,9 +62,3 @@ jobs:
       force: false
     needs: [nightly, nightly-nogil]
     secrets: inherit
-
-  publish:
-    uses: ./.github/workflows/_publish.yml
-    if: ${{ always() }}
-    needs: [generate]
-    secrets: inherit
