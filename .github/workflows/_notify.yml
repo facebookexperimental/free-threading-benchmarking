@@ -30,6 +30,10 @@ on:
         description: free threading
         type: boolean
         default: false
+      clang:
+        description: build with latest clang
+        type: boolean
+        default: false
 jobs:
   notify:
     runs-on: ubuntu-latest
@@ -52,9 +56,11 @@ jobs:
       run: python -m bench_runner notify --fork ${{ inputs.fork }} --ref ${{ inputs.ref
         }} --head ${{ inputs.head }} --date ${{ inputs.date }} --version ${{ inputs.version
         }} --flags ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit ==
-        true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }}
+        true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang
+        == true && 'clang' || '' }}
       env:
         GH_TOKEN: ${{ github.token }}
     env:
       flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
-        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }}
+        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang
+        == true && 'clang' || '' }}
