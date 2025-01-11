@@ -41,6 +41,10 @@ on:
         description: free threading
         type: boolean
         default: false
+      clang:
+        description: build with latest clang
+        type: boolean
+        default: false
   workflow_dispatch:
     inputs:
       fork:
@@ -62,9 +66,6 @@ on:
       benchmarks:
         description: Benchmarks to run (comma-separated; empty runs all benchmarks)
         type: string
-      pgo:
-        description: Build with PGO
-        type: boolean
       force:
         description: Rerun and replace results if commit already exists
         type: boolean
@@ -82,6 +83,10 @@ on:
         default: false
       nogil:
         description: free threading
+        type: boolean
+        default: false
+      clang:
+        description: build with latest clang
         type: boolean
         default: false
 jobs:
@@ -122,7 +127,7 @@ jobs:
       if: ${{ always() }}
       id: should_run
       run: |
-        venv/bin/python -m bench_runner should_run ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} false ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }} >> $GITHUB_OUTPUT
+        venv/bin/python -m bench_runner should_run ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} false ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang == true && 'clang' || '' }} >> $GITHUB_OUTPUT
     - name: Checkout python-macrobenchmarks
       uses: actions/checkout@v4
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
@@ -139,12 +144,19 @@ jobs:
         repository: mdboom/pyperformance
         path: pyperformance
         ref: ${{ env.PYPERFORMANCE_HASH }}
+    - name: Build with clang
+      if: ${{ inputs.clang }}
+      run: |
+        echo "CC=`which clang-19`" >> $GITHUB_ENV
+        echo "LLVM_AR=`which llvm-ar-19`" >> $GITHUB_ENV
+        echo "LLVM_PROFDATA=`which llvm-profdata-19`" >> $GITHUB_ENV
     - name: Build Python
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
         cd cpython
         ./configure ${{ inputs.pgo == true && '--enable-optimizations --with-lto=yes' || '' }} ${{ inputs.tier2 == true && '--enable-experimental-jit=interpreter' || '' }} ${{ inputs.jit == true && '--enable-experimental-jit=yes' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }}
         make ${{ runner.arch == 'ARM64' && '-j' || '-j4' }}
+        ./python -VV
     - name: Install pyperformance
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
@@ -161,7 +173,7 @@ jobs:
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
         rm -rf ~/.debug/*
-        venv/bin/python -m bench_runner run_benchmarks ${{ inputs.perf && 'perf' || 'benchmark' }} cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }} --run_id ${{ github.run_id }}
+        venv/bin/python -m bench_runner run_benchmarks ${{ inputs.perf && 'perf' || 'benchmark' }} cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang == true && 'clang' || '' }} --run_id ${{ github.run_id }}
       # Pull again, since another job may have committed results in the meantime
     - name: Pull benchmarking
       if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.perf }}
@@ -195,7 +207,8 @@ jobs:
     if: ${{ (inputs.machine == 'linux-x86_64-linux' || inputs.machine == 'all') }}
     env:
       flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
-        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }}
+        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang
+        == true && 'clang' || '' }}
   benchmark-linux-x86_64-vultr:
     runs-on: [self-hosted, linux, bare-metal, linux-x86_64-vultr]
     timeout-minutes: 1440
@@ -233,7 +246,7 @@ jobs:
       if: ${{ always() }}
       id: should_run
       run: |
-        venv/bin/python -m bench_runner should_run ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} false ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }} >> $GITHUB_OUTPUT
+        venv/bin/python -m bench_runner should_run ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.machine }} false ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang == true && 'clang' || '' }} >> $GITHUB_OUTPUT
     - name: Checkout python-macrobenchmarks
       uses: actions/checkout@v4
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
@@ -250,12 +263,19 @@ jobs:
         repository: mdboom/pyperformance
         path: pyperformance
         ref: ${{ env.PYPERFORMANCE_HASH }}
+    - name: Build with clang
+      if: ${{ inputs.clang }}
+      run: |
+        echo "CC=`which clang-19`" >> $GITHUB_ENV
+        echo "LLVM_AR=`which llvm-ar-19`" >> $GITHUB_ENV
+        echo "LLVM_PROFDATA=`which llvm-profdata-19`" >> $GITHUB_ENV
     - name: Build Python
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
         cd cpython
         ./configure ${{ inputs.pgo == true && '--enable-optimizations --with-lto=yes' || '' }} ${{ inputs.tier2 == true && '--enable-experimental-jit=interpreter' || '' }} ${{ inputs.jit == true && '--enable-experimental-jit=yes' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }}
         make ${{ runner.arch == 'ARM64' && '-j' || '-j4' }}
+        ./python -VV
     - name: Install pyperformance
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
@@ -272,7 +292,7 @@ jobs:
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
         rm -rf ~/.debug/*
-        venv/bin/python -m bench_runner run_benchmarks ${{ inputs.perf && 'perf' || 'benchmark' }} cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }} --run_id ${{ github.run_id }}
+        venv/bin/python -m bench_runner run_benchmarks ${{ inputs.perf && 'perf' || 'benchmark' }} cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true && 'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang == true && 'clang' || '' }} --run_id ${{ github.run_id }}
       # Pull again, since another job may have committed results in the meantime
     - name: Pull benchmarking
       if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.perf }}
@@ -306,4 +326,5 @@ jobs:
     if: ${{ (inputs.machine == 'linux-x86_64-vultr' || inputs.machine == 'all') }}
     env:
       flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
-        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }}
+        'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang
+        == true && 'clang' || '' }}
