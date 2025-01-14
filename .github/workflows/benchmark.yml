@@ -21,8 +21,8 @@ on:
         default: linux-amd64
         type: choice
         options:
-        - linux-x86_64-linux
         - linux-x86_64-vultr
+        - linux-x86_64-linux
         - all
       benchmarks:
         description: Benchmarks to run (comma-separated; empty runs all benchmarks)
