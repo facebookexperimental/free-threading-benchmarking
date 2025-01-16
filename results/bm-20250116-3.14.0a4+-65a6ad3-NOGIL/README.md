@@ -33,6 +33,14 @@
 - [📄table](bm-20250116-vultr-x86_64-mpage-gh_115999_specialize-3.14.0a4%2B-65a6ad3-vs-3.13.0rc2.md)
 - [📈time plot](bm-20250116-vultr-x86_64-mpage-gh_115999_specialize-3.14.0a4%2B-65a6ad3-vs-3.13.0rc2.svg)
 
+### vs. base
+
+- Geometric mean: 1.013x slower (HPT: reliability of 100.00%, 1.00x slower at 99th %ile)
+- Memory usage: 0.98x
+- [🧠memory plot](bm-20250116-vultr-x86_64-mpage-gh_115999_specialize-3.14.0a4%2B-65a6ad3-vs-base-mem.svg)
+- [📄table](bm-20250116-vultr-x86_64-mpage-gh_115999_specialize-3.14.0a4%2B-65a6ad3-vs-base.md)
+- [📈time plot](bm-20250116-vultr-x86_64-mpage-gh_115999_specialize-3.14.0a4%2B-65a6ad3-vs-base.svg)
+
 ### vs. default_base_vs_NOGIL
 
 - Geometric mean: 1.136x slower (HPT: reliability of 100.00%, 1.12x slower at 99th %ile)
