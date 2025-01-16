@@ -10,7 +10,7 @@
 
 ## linux x86_64 (linux)
 
-- [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/12799475571)
+- [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/12803443134)
 - cpu model: Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz
 - platform: Linux-5.15.0-1071-aws-x86_64-with-glibc2.31
 - [raw results](bm-20250115-linux-x86_64-python-d05140f9f77d7dfc753d-3.14.0a4%2B-d05140f.json)
