@@ -33,3 +33,11 @@
 - [📄table](bm-20250116-vultr-x86_64-python-f48702dade921beed3e2-3.14.0a4%2B-f48702d-vs-3.13.0rc2.md)
 - [📈time plot](bm-20250116-vultr-x86_64-python-f48702dade921beed3e2-3.14.0a4%2B-f48702d-vs-3.13.0rc2.svg)
 
+### vs. base
+
+- Geometric mean: 1.007x slower (HPT: reliability of 100.00%, 1.00x slower at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250116-vultr-x86_64-python-f48702dade921beed3e2-3.14.0a4%2B-f48702d-vs-base-mem.svg)
+- [📄table](bm-20250116-vultr-x86_64-python-f48702dade921beed3e2-3.14.0a4%2B-f48702d-vs-base.md)
+- [📈time plot](bm-20250116-vultr-x86_64-python-f48702dade921beed3e2-3.14.0a4%2B-f48702d-vs-base.svg)
+
