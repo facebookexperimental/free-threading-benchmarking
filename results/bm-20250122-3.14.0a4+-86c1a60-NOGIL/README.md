@@ -66,11 +66,16 @@
 - [📄table](bm-20250122-vultr-x86_64-python-86c1a60d5a28cfb51f88-3.14.0a4%2B-86c1a60-vs-3.13.0rc2.md)
 - [📈time plot](bm-20250122-vultr-x86_64-python-86c1a60d5a28cfb51f88-3.14.0a4%2B-86c1a60-vs-3.13.0rc2.svg)
 
-### vs. base
+### vs. default_base_vs_NOGIL
 
-- Geometric mean: 1.159x slower (HPT: reliability of 100.00%, 1.14x slower at 99th %ile)
+- Geometric mean: 1.158x slower (HPT: reliability of 100.00%, 1.14x slower at 99th %ile)
 - Memory usage: 1.20x
 - new benchmarks: html5lib
+- [📄table](bm-20250122-vultr-x86_64-python-86c1a60d5a28cfb51f88-3.14.0a4%2B-86c1a60-vs-default_base_vs_NOGIL.md)
+- [📈time plot](bm-20250122-vultr-x86_64-python-86c1a60d5a28cfb51f88-3.14.0a4%2B-86c1a60-vs-default_base_vs_NOGIL.svg)
+
+### vs. base
+
 - [🧠memory plot](bm-20250122-vultr-x86_64-python-86c1a60d5a28cfb51f88-3.14.0a4%2B-86c1a60-vs-base-mem.svg)
 - [📄table](bm-20250122-vultr-x86_64-python-86c1a60d5a28cfb51f88-3.14.0a4%2B-86c1a60-vs-base.md)
 - [📈time plot](bm-20250122-vultr-x86_64-python-86c1a60d5a28cfb51f88-3.14.0a4%2B-86c1a60-vs-base.svg)
