@@ -41,3 +41,12 @@
 - [📄table](bm-20250201-vultr-x86_64-mpage-revert_c3ae5c9-3.14.0a4%2B-3edc57c-vs-base.md)
 - [📈time plot](bm-20250201-vultr-x86_64-mpage-revert_c3ae5c9-3.14.0a4%2B-3edc57c-vs-base.svg)
 
+### vs. default_base_vs_NOGIL
+
+- Geometric mean: 1.141x slower (HPT: reliability of 100.00%, 1.12x slower at 99th %ile)
+- Memory usage: 1.20x
+- missing benchmarks: asyncio_tcp, asyncio_tcp_ssl, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
+- new benchmarks: html5lib
+- [📄table](bm-20250201-vultr-x86_64-mpage-revert_c3ae5c9-3.14.0a4%2B-3edc57c-vs-default_base_vs_NOGIL.md)
+- [📈time plot](bm-20250201-vultr-x86_64-mpage-revert_c3ae5c9-3.14.0a4%2B-3edc57c-vs-default_base_vs_NOGIL.svg)
+
