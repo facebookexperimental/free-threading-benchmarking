@@ -33,3 +33,11 @@
 - [📄table](bm-20250205-vultr-x86_64-DinoV-hash_type-3.14.0a4%2B-cbd6459-vs-3.13.0rc2.md)
 - [📈time plot](bm-20250205-vultr-x86_64-DinoV-hash_type-3.14.0a4%2B-cbd6459-vs-3.13.0rc2.svg)
 
+### vs. base
+
+- Geometric mean: 1.008x slower (HPT: reliability of 100.00%, 1.00x slower at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250205-vultr-x86_64-DinoV-hash_type-3.14.0a4%2B-cbd6459-vs-base-mem.svg)
+- [📄table](bm-20250205-vultr-x86_64-DinoV-hash_type-3.14.0a4%2B-cbd6459-vs-base.md)
+- [📈time plot](bm-20250205-vultr-x86_64-DinoV-hash_type-3.14.0a4%2B-cbd6459-vs-base.svg)
+
