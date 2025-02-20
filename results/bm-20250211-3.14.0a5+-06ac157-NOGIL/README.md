@@ -70,7 +70,6 @@
 
 - Geometric mean: 1.127x slower (HPT: reliability of 100.00%, 1.11x slower at 99th %ile)
 - Memory usage: 1.20x
-- new benchmarks: html5lib
 - [🧠memory plot](bm-20250211-vultr-x86_64-python-06ac157c53046f4fcad3-3.14.0a5%2B-06ac157-vs-base-mem.svg)
 - [📄table](bm-20250211-vultr-x86_64-python-06ac157c53046f4fcad3-3.14.0a5%2B-06ac157-vs-base.md)
 - [📈time plot](bm-20250211-vultr-x86_64-python-06ac157c53046f4fcad3-3.14.0a5%2B-06ac157-vs-base.svg)
