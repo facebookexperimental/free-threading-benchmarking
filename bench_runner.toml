@@ -48,6 +48,12 @@ arch = "x86_64"
 hostname = "pyperf"
 available = true
 
+[runners.m4pro-mac]
+os = "darwin"
+arch = "amd64"
+hostname = "macmini"
+available = true
+
 [plot]
 bases = ["3.12.6", "3.13.0rc2"]
 versions = [[3, 13], [3, 14]]
