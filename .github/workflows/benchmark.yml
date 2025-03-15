@@ -23,6 +23,7 @@ on:
         options:
         - linux-x86_64-vultr
         - linux-x86_64-linux
+        - darwin-amd64-m4pro-mac
         - all
       benchmarks:
         description: Benchmarks to run (comma-separated; empty runs all benchmarks)
