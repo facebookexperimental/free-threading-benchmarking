@@ -62,7 +62,7 @@ on:
         options:
         - linux-x86_64-vultr
         - linux-x86_64-linux
-        - darwin-amd64-m4pro-mac
+        - darwin-arm64-m4pro-mac
         - all
       benchmarks:
         description: Benchmarks to run (comma-separated; empty runs all benchmarks)
@@ -329,8 +329,8 @@ jobs:
       flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
         'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang
         == true && 'clang' || '' }}
-  benchmark-darwin-amd64-m4pro-mac:
-    runs-on: [self-hosted, macos, bare-metal, darwin-amd64-m4pro-mac]
+  benchmark-darwin-arm64-m4pro-mac:
+    runs-on: [self-hosted, macos, bare-metal, darwin-arm64-m4pro-mac]
 
     steps:
     - name: Setup environment
@@ -426,7 +426,7 @@ jobs:
         path: |
           benchmark.json
         overwrite: true
-    if: ${{ (inputs.machine == 'darwin-amd64-m4pro-mac' || inputs.machine == 'all')
+    if: ${{ (inputs.machine == 'darwin-arm64-m4pro-mac' || inputs.machine == 'all')
       }}
     env:
       flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
