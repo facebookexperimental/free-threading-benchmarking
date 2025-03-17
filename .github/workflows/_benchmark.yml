@@ -62,7 +62,7 @@ on:
         options:
         - linux-x86_64-vultr
         - linux-x86_64-linux
-        - darwin-arm64-m4pro-mac
+        - darwin-arm64-macm4pro
         - all
       benchmarks:
         description: Benchmarks to run (comma-separated; empty runs all benchmarks)
@@ -329,13 +329,13 @@ jobs:
       flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
         'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang
         == true && 'clang' || '' }}
-  benchmark-darwin-arm64-m4pro-mac:
-    runs-on: [self-hosted, macos, bare-metal, darwin-arm64-m4pro-mac]
+  benchmark-darwin-arm64-macm4pro:
+    runs-on: [self-hosted, macos, bare-metal, darwin-arm64-macm4pro]
 
     steps:
     - name: Setup environment
       run: |-
-        echo "BENCHMARK_MACHINE_NICKNAME=m4pro-mac" >> $GITHUB_ENV
+        echo "BENCHMARK_MACHINE_NICKNAME=macm4pro" >> $GITHUB_ENV
     - name: Checkout benchmarking
       uses: actions/checkout@v4
     - name: git gc
@@ -426,7 +426,7 @@ jobs:
         path: |
           benchmark.json
         overwrite: true
-    if: ${{ (inputs.machine == 'darwin-arm64-m4pro-mac' || inputs.machine == 'all')
+    if: ${{ (inputs.machine == 'darwin-arm64-macm4pro' || inputs.machine == 'all')
       }}
     env:
       flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
