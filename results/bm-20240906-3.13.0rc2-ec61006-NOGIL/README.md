@@ -106,3 +106,20 @@
 - [📄table](bm-20240906-macm4pro-arm64-python-v3.13.0rc2-3.13.0rc2-ec61006-vs-3.12.6.md)
 - [📈time plot](bm-20240906-macm4pro-arm64-python-v3.13.0rc2-3.13.0rc2-ec61006-vs-3.12.6.svg)
 
+### vs. 3.13.0rc2
+
+- Geometric mean: 1.265x slower (HPT: reliability of 100.00%, 1.20x slower at 99th %ile)
+- Memory usage: 1.05x
+- missing benchmarks: dask, djangocms, gevent_hub
+- [📄table](bm-20240906-macm4pro-arm64-python-v3.13.0rc2-3.13.0rc2-ec61006-vs-3.13.0rc2.md)
+- [📈time plot](bm-20240906-macm4pro-arm64-python-v3.13.0rc2-3.13.0rc2-ec61006-vs-3.13.0rc2.svg)
+
+### vs. base
+
+- Geometric mean: 1.265x slower (HPT: reliability of 100.00%, 1.20x slower at 99th %ile)
+- Memory usage: 1.05x
+- missing benchmarks: 🔴 dask, djangocms, gevent_hub
+- [🧠memory plot](bm-20240906-macm4pro-arm64-python-v3.13.0rc2-3.13.0rc2-ec61006-vs-base-mem.svg)
+- [📄table](bm-20240906-macm4pro-arm64-python-v3.13.0rc2-3.13.0rc2-ec61006-vs-base.md)
+- [📈time plot](bm-20240906-macm4pro-arm64-python-v3.13.0rc2-3.13.0rc2-ec61006-vs-base.svg)
+

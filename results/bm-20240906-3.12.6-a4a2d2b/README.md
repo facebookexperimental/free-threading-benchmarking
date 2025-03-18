@@ -44,3 +44,10 @@
 - platform: macOS-15.3.1-arm64-arm-64bit
 - [raw results](bm-20240906-macm4pro-arm64-python-v3.12.6-3.12.6-a4a2d2b.json)
 
+### vs. 3.13.0rc2
+
+- Geometric mean: 1.071x slower (HPT: reliability of 100.00%, 1.03x slower at 99th %ile)
+- Memory usage: 0.95x
+- [📄table](bm-20240906-macm4pro-arm64-python-v3.12.6-3.12.6-a4a2d2b-vs-3.13.0rc2.md)
+- [📈time plot](bm-20240906-macm4pro-arm64-python-v3.12.6-3.12.6-a4a2d2b-vs-3.13.0rc2.svg)
+

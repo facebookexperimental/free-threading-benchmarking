@@ -23,3 +23,11 @@
 - [📄table](bm-20250211-macm4pro-arm64-python-v3.14.0a5-3.14.0a5-3ae9101-vs-3.12.6.md)
 - [📈time plot](bm-20250211-macm4pro-arm64-python-v3.14.0a5-3.14.0a5-3ae9101-vs-3.12.6.svg)
 
+### vs. 3.13.0rc2
+
+- Geometric mean: 1.081x slower (HPT: reliability of 99.98%, 1.03x slower at 99th %ile)
+- Memory usage: 1.16x
+- missing benchmarks: chameleon, dask, djangocms, gevent_hub, tornado_http
+- [📄table](bm-20250211-macm4pro-arm64-python-v3.14.0a5-3.14.0a5-3ae9101-vs-3.13.0rc2.md)
+- [📈time plot](bm-20250211-macm4pro-arm64-python-v3.14.0a5-3.14.0a5-3ae9101-vs-3.13.0rc2.svg)
+

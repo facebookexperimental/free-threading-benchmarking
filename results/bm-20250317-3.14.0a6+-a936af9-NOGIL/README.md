@@ -91,6 +91,14 @@
 - [📄table](bm-20250317-macm4pro-arm64-python-a936af924efc6e2fb59e-3.14.0a6%2B-a936af9-vs-3.12.6.md)
 - [📈time plot](bm-20250317-macm4pro-arm64-python-a936af924efc6e2fb59e-3.14.0a6%2B-a936af9-vs-3.12.6.svg)
 
+### vs. 3.13.0rc2
+
+- Geometric mean: 1.081x slower (HPT: reliability of 99.97%, 1.04x slower at 99th %ile)
+- Memory usage: 1.16x
+- missing benchmarks: chameleon, dask, djangocms, gevent_hub, sqlalchemy_declarative, sqlalchemy_imperative, tornado_http
+- [📄table](bm-20250317-macm4pro-arm64-python-a936af924efc6e2fb59e-3.14.0a6%2B-a936af9-vs-3.13.0rc2.md)
+- [📈time plot](bm-20250317-macm4pro-arm64-python-a936af924efc6e2fb59e-3.14.0a6%2B-a936af9-vs-3.13.0rc2.svg)
+
 ### vs. base
 
 - Geometric mean: 1.080x slower (HPT: reliability of 100.00%, 1.04x slower at 99th %ile)
