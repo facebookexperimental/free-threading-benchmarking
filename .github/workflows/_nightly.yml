@@ -1,7 +1,7 @@
 # Generated file: !!! DO NOT EDIT !!!
 ---
 env:
-  PYPERFORMANCE_HASH: 9164273e5504c410a5be08d8753c91be708fdd9a
+  PYPERFORMANCE_HASH: 56d12a8fd7cc1432835965d374929bfa7f6f7a07
   PYSTON_BENCHMARKS_HASH: 265655e7f03ace13ec1e00e1ba299179e69f8a00
 name: _nightly
 on:
@@ -35,7 +35,7 @@ jobs:
     with:
       fork: python
       ref: ${{ needs.determine_head.outputs.commit }}
-      machine: all
+      machine: __really_all
       benchmarks: all
       pgo: true
       tier2: false
@@ -47,7 +47,7 @@ jobs:
     with:
       fork: python
       ref: ${{ needs.determine_head.outputs.commit }}
-      machine: all
+      machine: __really_all
       benchmarks: all
       pgo: true
       tier2: false
