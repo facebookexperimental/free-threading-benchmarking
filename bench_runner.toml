@@ -57,11 +57,11 @@ available = true
 [plot]
 bases = ["3.12.6", "3.13.0rc2"]
 versions = [[3, 13], [3, 14]]
-runners = ["linux", "vultr"]
-names = ["linux", "linux-vultr"]
-colors = ["C0", "C0"]
-styles = ["-", ":"]
-markers = ["s", "s"]
+runners = ["linux", "vultr", "macm4pro"]
+names = ["linux", "linux-vultr", "macos"]
+colors = ["C0", "C0", "C2"]
+styles = ["-", ":", "-"]
+markers = ["s", "s", "^"]
 
 [publish_mirror]
 skip = true
