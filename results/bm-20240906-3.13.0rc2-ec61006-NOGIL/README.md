@@ -91,3 +91,18 @@
 - [📄table](bm-20240906-vultr-x86_64-python-v3.13.0rc2-3.13.0rc2-ec61006-vs-base.md)
 - [📈time plot](bm-20240906-vultr-x86_64-python-v3.13.0rc2-3.13.0rc2-ec61006-vs-base.svg)
 
+## darwin arm64 (macm4pro)
+
+- [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/13906395028)
+- cpu model: missing
+- platform: macOS-15.3.1-arm64-arm-64bit-Mach-O
+- [raw results](bm-20240906-macm4pro-arm64-python-v3.13.0rc2-3.13.0rc2-ec61006.json)
+
+### vs. 3.12.6
+
+- Geometric mean: 1.208x slower (HPT: reliability of 100.00%, 1.15x slower at 99th %ile)
+- Memory usage: 1.10x
+- missing benchmarks: dask, djangocms, gevent_hub
+- [📄table](bm-20240906-macm4pro-arm64-python-v3.13.0rc2-3.13.0rc2-ec61006-vs-3.12.6.md)
+- [📈time plot](bm-20240906-macm4pro-arm64-python-v3.13.0rc2-3.13.0rc2-ec61006-vs-3.12.6.svg)
+

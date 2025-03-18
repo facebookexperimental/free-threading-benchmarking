@@ -37,3 +37,10 @@
 - [📄table](bm-20240906-vultr-x86_64-python-v3.12.6-3.12.6-a4a2d2b-vs-3.13.0rc2.md)
 - [📈time plot](bm-20240906-vultr-x86_64-python-v3.12.6-3.12.6-a4a2d2b-vs-3.13.0rc2.svg)
 
+## darwin arm64 (macm4pro)
+
+- [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/13906391158)
+- cpu model: missing
+- platform: macOS-15.3.1-arm64-arm-64bit
+- [raw results](bm-20240906-macm4pro-arm64-python-v3.12.6-3.12.6-a4a2d2b.json)
+
