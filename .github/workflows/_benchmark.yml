@@ -1,7 +1,7 @@
 # Generated file: !!! DO NOT EDIT !!!
 ---
 env:
-  PYPERFORMANCE_HASH: 9164273e5504c410a5be08d8753c91be708fdd9a
+  PYPERFORMANCE_HASH: 56d12a8fd7cc1432835965d374929bfa7f6f7a07
   PYSTON_BENCHMARKS_HASH: 265655e7f03ace13ec1e00e1ba299179e69f8a00
 name: _benchmark
 on:
@@ -42,7 +42,7 @@ on:
         type: boolean
         default: false
       clang:
-        description: build with latest clang
+        description: build with latest clang and tailcall
         type: boolean
         default: false
   workflow_dispatch:
@@ -87,7 +87,7 @@ on:
         type: boolean
         default: false
       clang:
-        description: build with latest clang
+        description: build with latest clang and tailcall
         type: boolean
         default: false
 jobs:
@@ -155,7 +155,7 @@ jobs:
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
         cd cpython
-        ./configure ${{ inputs.pgo == true && '--enable-optimizations --with-lto=full' || '' }} ${{ inputs.tier2 == true && '--enable-experimental-jit=interpreter' || '' }} ${{ inputs.jit == true && '--enable-experimental-jit=yes' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }}
+        ./configure ${{ inputs.pgo == true && '--enable-optimizations --with-lto=full' || '' }} ${{ inputs.tier2 == true && '--enable-experimental-jit=interpreter' || '' }} ${{ inputs.jit == true && '--enable-experimental-jit=yes' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }} ${{ inputs.clang == true && '--with-tail-call-interp' || '' }}
         make ${{ runner.arch == 'ARM64' && '-j' || '-j4' }}
         ./python -VV
     - name: Install pyperformance
@@ -165,10 +165,11 @@ jobs:
     - name: Tune system
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
-        sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH venv/bin/python -m pyperf system tune
+        sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH venv/bin/python -m pyperf system ${{ inputs.perf && 'reset' || 'tune' }}
     - name: Tune for (Linux) perf
       if: ${{ steps.should_run.outputs.should_run != 'false' && inputs.perf }}
       run: |
+        # Must match the PERF_PERIOD value in profiling_plot.py
         sudo bash -c "echo 100000 > /proc/sys/kernel/perf_event_max_sample_rate"
     - name: Running pyperformance
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
@@ -205,7 +206,8 @@ jobs:
         path: |
           profiling/results
 
-    if: ${{ (inputs.machine == 'linux-x86_64-vultr' || inputs.machine == 'all') }}
+    if: ${{ (inputs.machine == 'linux-x86_64-vultr' || inputs.machine == '__really_all'
+      || inputs.machine == 'all') }}
     env:
       flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
         'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang
@@ -274,7 +276,7 @@ jobs:
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
         cd cpython
-        ./configure ${{ inputs.pgo == true && '--enable-optimizations --with-lto=full' || '' }} ${{ inputs.tier2 == true && '--enable-experimental-jit=interpreter' || '' }} ${{ inputs.jit == true && '--enable-experimental-jit=yes' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }}
+        ./configure ${{ inputs.pgo == true && '--enable-optimizations --with-lto=full' || '' }} ${{ inputs.tier2 == true && '--enable-experimental-jit=interpreter' || '' }} ${{ inputs.jit == true && '--enable-experimental-jit=yes' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }} ${{ inputs.clang == true && '--with-tail-call-interp' || '' }}
         make ${{ runner.arch == 'ARM64' && '-j' || '-j4' }}
         ./python -VV
     - name: Install pyperformance
@@ -284,10 +286,11 @@ jobs:
     - name: Tune system
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
-        sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH venv/bin/python -m pyperf system tune
+        sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH venv/bin/python -m pyperf system ${{ inputs.perf && 'reset' || 'tune' }}
     - name: Tune for (Linux) perf
       if: ${{ steps.should_run.outputs.should_run != 'false' && inputs.perf }}
       run: |
+        # Must match the PERF_PERIOD value in profiling_plot.py
         sudo bash -c "echo 100000 > /proc/sys/kernel/perf_event_max_sample_rate"
     - name: Running pyperformance
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
@@ -324,7 +327,8 @@ jobs:
         path: |
           profiling/results
 
-    if: ${{ (inputs.machine == 'linux-x86_64-linux' || inputs.machine == 'all') }}
+    if: ${{ (inputs.machine == 'linux-x86_64-linux' || inputs.machine == '__really_all'
+      || inputs.machine == 'all') }}
     env:
       flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
         'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang
@@ -391,7 +395,7 @@ jobs:
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
         cd cpython
-        ./configure ${{ inputs.pgo == true && '--enable-optimizations --with-lto=full' || '' }} ${{ inputs.tier2 == true && '--enable-experimental-jit=interpreter' || '' }} ${{ inputs.jit == true && '--enable-experimental-jit=yes' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }}
+        ./configure ${{ inputs.pgo == true && '--enable-optimizations --with-lto=full' || '' }} ${{ inputs.tier2 == true && '--enable-experimental-jit=interpreter' || '' }} ${{ inputs.jit == true && '--enable-experimental-jit=yes' || '' }} ${{ inputs.nogil == true && '--disable-gil' || '' }} ${{ inputs.clang == true && '--with-tail-call-interp' || '' }}
         make -j4
         ./python.exe -VV
       # On macos ARM64, actions/setup-python isn't available, so we rely on a
@@ -426,8 +430,8 @@ jobs:
         path: |
           benchmark.json
         overwrite: true
-    if: ${{ (inputs.machine == 'darwin-arm64-macm4pro' || inputs.machine == 'all')
-      }}
+    if: ${{ (inputs.machine == 'darwin-arm64-macm4pro' || inputs.machine == '__really_all'
+      || inputs.machine == 'all') }}
     env:
       flags: ${{ inputs.tier2 == true && 'tier2' || '' }},${{ inputs.jit == true &&
         'jit' || '' }},${{ inputs.nogil == true && 'nogil' || '' }},${{ inputs.clang
