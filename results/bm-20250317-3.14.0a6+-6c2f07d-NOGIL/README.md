@@ -37,6 +37,8 @@
 
 - Geometric mean: 1.027x faster (HPT: reliability of 100.00%, 1.01x faster at 99th %ile)
 - Memory usage: 1.00x
+- missing benchmarks: 🔴 sqlglot_v2_normalize, sqlglot_v2_optimize, sqlglot_v2_parse, sqlglot_v2_transpile
+- new benchmarks: sqlglot_normalize, sqlglot_optimize, sqlglot_parse, sqlglot_transpile
 - [🧠memory plot](bm-20250317-vultr-x86_64-mpage-load_fast_borrow_abs-3.14.0a6%2B-6c2f07d-vs-base-mem.svg)
 - [📄table](bm-20250317-vultr-x86_64-mpage-load_fast_borrow_abs-3.14.0a6%2B-6c2f07d-vs-base.md)
 - [📈time plot](bm-20250317-vultr-x86_64-mpage-load_fast_borrow_abs-3.14.0a6%2B-6c2f07d-vs-base.svg)
