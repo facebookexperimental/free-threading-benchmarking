@@ -34,6 +34,14 @@
 - [📄table](bm-20250321-vultr-x86_64-Yhg1s-frame_threadsafety-3.14.0a6%2B-d3f6063-vs-3.13.0rc2.md)
 - [📈time plot](bm-20250321-vultr-x86_64-Yhg1s-frame_threadsafety-3.14.0a6%2B-d3f6063-vs-3.13.0rc2.svg)
 
+### vs. base
+
+- Geometric mean: 1.009x slower (HPT: reliability of 100.00%, 1.00x slower at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250321-vultr-x86_64-Yhg1s-frame_threadsafety-3.14.0a6%2B-d3f6063-vs-base-mem.svg)
+- [📄table](bm-20250321-vultr-x86_64-Yhg1s-frame_threadsafety-3.14.0a6%2B-d3f6063-vs-base.md)
+- [📈time plot](bm-20250321-vultr-x86_64-Yhg1s-frame_threadsafety-3.14.0a6%2B-d3f6063-vs-base.svg)
+
 ## darwin arm64 (macm4pro)
 
 - [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/14011153639)
