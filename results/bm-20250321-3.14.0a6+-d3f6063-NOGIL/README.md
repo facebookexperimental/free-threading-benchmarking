@@ -59,3 +59,11 @@
 - [📄table](bm-20250321-macm4pro-arm64-Yhg1s-frame_threadsafety-3.14.0a6%2B-d3f6063-vs-3.13.0rc2.md)
 - [📈time plot](bm-20250321-macm4pro-arm64-Yhg1s-frame_threadsafety-3.14.0a6%2B-d3f6063-vs-3.13.0rc2.svg)
 
+### vs. base
+
+- Geometric mean: 1.004x faster (HPT: reliability of 99.98%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250321-macm4pro-arm64-Yhg1s-frame_threadsafety-3.14.0a6%2B-d3f6063-vs-base-mem.svg)
+- [📄table](bm-20250321-macm4pro-arm64-Yhg1s-frame_threadsafety-3.14.0a6%2B-d3f6063-vs-base.md)
+- [📈time plot](bm-20250321-macm4pro-arm64-Yhg1s-frame_threadsafety-3.14.0a6%2B-d3f6063-vs-base.svg)
+
