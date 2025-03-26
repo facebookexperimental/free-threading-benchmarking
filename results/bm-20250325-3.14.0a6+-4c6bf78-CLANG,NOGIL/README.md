@@ -33,3 +33,11 @@
 - [📄table](bm-20250325-vultr-x86_64-colesbury-gh_131586_lookup_spe-3.14.0a6%2B-4c6bf78-vs-3.13.0rc2.md)
 - [📈time plot](bm-20250325-vultr-x86_64-colesbury-gh_131586_lookup_spe-3.14.0a6%2B-4c6bf78-vs-3.13.0rc2.svg)
 
+### vs. base
+
+- Geometric mean: 1.001x faster (HPT: reliability of 93.80%, 1.00x slower at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250325-vultr-x86_64-colesbury-gh_131586_lookup_spe-3.14.0a6%2B-4c6bf78-vs-base-mem.svg)
+- [📄table](bm-20250325-vultr-x86_64-colesbury-gh_131586_lookup_spe-3.14.0a6%2B-4c6bf78-vs-base.md)
+- [📈time plot](bm-20250325-vultr-x86_64-colesbury-gh_131586_lookup_spe-3.14.0a6%2B-4c6bf78-vs-base.svg)
+
