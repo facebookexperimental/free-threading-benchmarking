@@ -41,3 +41,11 @@
 - [📄table](bm-20250401-vultr-x86_64-nascheme-gh_127266_type_slots-3.14.0a6%2B-395a6d3-vs-base.md)
 - [📈time plot](bm-20250401-vultr-x86_64-nascheme-gh_127266_type_slots-3.14.0a6%2B-395a6d3-vs-base.svg)
 
+### vs. default_base_vs_NOGIL
+
+- Geometric mean: 1.177x slower (HPT: reliability of 100.00%, 1.17x slower at 99th %ile)
+- Memory usage: 1.19x
+- new benchmarks: html5lib
+- [📄table](bm-20250401-vultr-x86_64-nascheme-gh_127266_type_slots-3.14.0a6%2B-395a6d3-vs-default_base_vs_NOGIL.md)
+- [📈time plot](bm-20250401-vultr-x86_64-nascheme-gh_127266_type_slots-3.14.0a6%2B-395a6d3-vs-default_base_vs_NOGIL.svg)
+

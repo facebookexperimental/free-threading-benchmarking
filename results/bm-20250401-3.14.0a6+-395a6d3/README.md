@@ -33,3 +33,11 @@
 - [📄table](bm-20250401-vultr-x86_64-nascheme-gh_127266_type_slots-3.14.0a6%2B-395a6d3-vs-3.13.0rc2.md)
 - [📈time plot](bm-20250401-vultr-x86_64-nascheme-gh_127266_type_slots-3.14.0a6%2B-395a6d3-vs-3.13.0rc2.svg)
 
+### vs. base
+
+- Geometric mean: 1.005x faster (HPT: reliability of 98.65%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250401-vultr-x86_64-nascheme-gh_127266_type_slots-3.14.0a6%2B-395a6d3-vs-base-mem.svg)
+- [📄table](bm-20250401-vultr-x86_64-nascheme-gh_127266_type_slots-3.14.0a6%2B-395a6d3-vs-base.md)
+- [📈time plot](bm-20250401-vultr-x86_64-nascheme-gh_127266_type_slots-3.14.0a6%2B-395a6d3-vs-base.svg)
+
