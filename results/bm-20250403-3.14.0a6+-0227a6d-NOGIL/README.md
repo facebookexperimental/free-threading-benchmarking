@@ -33,3 +33,11 @@
 - [📄table](bm-20250403-macm4pro-arm64-Fidget%252dSpinner-tail_call_force_on-3.14.0a6%2B-0227a6d-vs-3.13.0rc2.md)
 - [📈time plot](bm-20250403-macm4pro-arm64-Fidget%252dSpinner-tail_call_force_on-3.14.0a6%2B-0227a6d-vs-3.13.0rc2.svg)
 
+### vs. base
+
+- Geometric mean: 1.071x faster (HPT: reliability of 100.00%, 1.05x faster at 99th %ile)
+- Memory usage: 1.01x
+- [🧠memory plot](bm-20250403-macm4pro-arm64-Fidget%252dSpinner-tail_call_force_on-3.14.0a6%2B-0227a6d-vs-base-mem.svg)
+- [📄table](bm-20250403-macm4pro-arm64-Fidget%252dSpinner-tail_call_force_on-3.14.0a6%2B-0227a6d-vs-base.md)
+- [📈time plot](bm-20250403-macm4pro-arm64-Fidget%252dSpinner-tail_call_force_on-3.14.0a6%2B-0227a6d-vs-base.svg)
+
