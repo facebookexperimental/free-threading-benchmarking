@@ -33,3 +33,11 @@
 - [📄table](bm-20250402-vultr-x86_64-mpage-restore_load_bearing-3.14.0a6%2B-ccaa69a-vs-3.13.0rc2.md)
 - [📈time plot](bm-20250402-vultr-x86_64-mpage-restore_load_bearing-3.14.0a6%2B-ccaa69a-vs-3.13.0rc2.svg)
 
+### vs. base
+
+- Geometric mean: 1.002x slower (HPT: reliability of 95.62%, 1.00x slower at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250402-vultr-x86_64-mpage-restore_load_bearing-3.14.0a6%2B-ccaa69a-vs-base-mem.svg)
+- [📄table](bm-20250402-vultr-x86_64-mpage-restore_load_bearing-3.14.0a6%2B-ccaa69a-vs-base.md)
+- [📈time plot](bm-20250402-vultr-x86_64-mpage-restore_load_bearing-3.14.0a6%2B-ccaa69a-vs-base.svg)
+
