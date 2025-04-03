@@ -10,16 +10,17 @@
 
 ## darwin arm64 (macm4pro)
 
-- [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/13928903389)
+- [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/14244921858)
 - cpu model: missing
-- platform: macOS-15.3.1-arm64-arm-64bit-Mach-O
+- platform: macOS-15.4-arm64-arm-64bit-Mach-O
 - [raw results](bm-20250314-macm4pro-arm64-python-v3.14.0a6-3.14.0a6-77b2c93.json)
 
 ### vs. 3.12.6
 
 - Geometric mean: 1.024x slower (HPT: reliability of 99.86%, 1.01x slower at 99th %ile)
 - Memory usage: 1.21x
-- missing benchmarks: chameleon, dask, djangocms, gevent_hub, tornado_http
+- missing benchmarks: chameleon, dask, djangocms, gevent_hub, sqlglot_normalize, sqlglot_optimize, sqlglot_parse, sqlglot_transpile, tornado_http
+- new benchmarks: sqlglot_v2_normalize, sqlglot_v2_optimize, sqlglot_v2_parse, sqlglot_v2_transpile
 - [📄table](bm-20250314-macm4pro-arm64-python-v3.14.0a6-3.14.0a6-77b2c93-vs-3.12.6.md)
 - [📈time plot](bm-20250314-macm4pro-arm64-python-v3.14.0a6-3.14.0a6-77b2c93-vs-3.12.6.svg)
 
@@ -27,7 +28,8 @@
 
 - Geometric mean: 1.095x slower (HPT: reliability of 100.00%, 1.06x slower at 99th %ile)
 - Memory usage: 1.16x
-- missing benchmarks: chameleon, dask, djangocms, gevent_hub, tornado_http
+- missing benchmarks: chameleon, dask, djangocms, gevent_hub, sqlglot_normalize, sqlglot_optimize, sqlglot_parse, sqlglot_transpile, tornado_http
+- new benchmarks: sqlglot_v2_normalize, sqlglot_v2_optimize, sqlglot_v2_parse, sqlglot_v2_transpile
 - [📄table](bm-20250314-macm4pro-arm64-python-v3.14.0a6-3.14.0a6-77b2c93-vs-3.13.0rc2.md)
 - [📈time plot](bm-20250314-macm4pro-arm64-python-v3.14.0a6-3.14.0a6-77b2c93-vs-3.13.0rc2.svg)
 
@@ -35,7 +37,6 @@
 
 - Geometric mean: 1.082x slower (HPT: reliability of 100.00%, 1.05x slower at 99th %ile)
 - Memory usage: 1.10x
-- missing benchmarks: 🔴 dask
 - [🧠memory plot](bm-20250314-macm4pro-arm64-python-v3.14.0a6-3.14.0a6-77b2c93-vs-base-mem.svg)
 - [📄table](bm-20250314-macm4pro-arm64-python-v3.14.0a6-3.14.0a6-77b2c93-vs-base.md)
 - [📈time plot](bm-20250314-macm4pro-arm64-python-v3.14.0a6-3.14.0a6-77b2c93-vs-base.svg)
