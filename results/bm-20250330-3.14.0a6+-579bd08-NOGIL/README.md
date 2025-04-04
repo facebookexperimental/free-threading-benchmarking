@@ -66,3 +66,11 @@
 - [📄table](bm-20250330-macm4pro-arm64-tom%252dpytel-579bd08e9f4db18fbbe0-3.14.0a6%2B-579bd08-vs-base.md)
 - [📈time plot](bm-20250330-macm4pro-arm64-tom%252dpytel-579bd08e9f4db18fbbe0-3.14.0a6%2B-579bd08-vs-base.svg)
 
+### vs. default_base_vs_NOGIL
+
+- Geometric mean: 1.010x slower (HPT: reliability of 99.13%, 1.00x slower at 99th %ile)
+- Memory usage: 1.11x
+- missing benchmarks: dask
+- [📄table](bm-20250330-macm4pro-arm64-tom%252dpytel-579bd08e9f4db18fbbe0-3.14.0a6%2B-579bd08-vs-default_base_vs_NOGIL.md)
+- [📈time plot](bm-20250330-macm4pro-arm64-tom%252dpytel-579bd08e9f4db18fbbe0-3.14.0a6%2B-579bd08-vs-default_base_vs_NOGIL.svg)
+
