@@ -33,6 +33,15 @@
 - [📄table](bm-20250325-vultr-x86_64-python-96ef4c511f3ec763dbb0-3.14.0a6%2B-96ef4c5-vs-3.13.0rc2.md)
 - [📈time plot](bm-20250325-vultr-x86_64-python-96ef4c511f3ec763dbb0-3.14.0a6%2B-96ef4c5-vs-3.13.0rc2.svg)
 
+### vs. base
+
+- Geometric mean: 1.111x slower (HPT: reliability of 100.00%, 1.09x slower at 99th %ile)
+- Memory usage: 1.21x
+- new benchmarks: html5lib
+- [🧠memory plot](bm-20250325-vultr-x86_64-python-96ef4c511f3ec763dbb0-3.14.0a6%2B-96ef4c5-vs-base-mem.svg)
+- [📄table](bm-20250325-vultr-x86_64-python-96ef4c511f3ec763dbb0-3.14.0a6%2B-96ef4c5-vs-base.md)
+- [📈time plot](bm-20250325-vultr-x86_64-python-96ef4c511f3ec763dbb0-3.14.0a6%2B-96ef4c5-vs-base.svg)
+
 ## darwin arm64 (macm4pro)
 
 - [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/14264979175)
