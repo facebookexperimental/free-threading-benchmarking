@@ -33,3 +33,11 @@
 - [📄table](bm-20250408-vultr-x86_64-mpage-exp_no_slp_vectorize-3.14.0a7%2B-93646c2-vs-3.13.0rc2.md)
 - [📈time plot](bm-20250408-vultr-x86_64-mpage-exp_no_slp_vectorize-3.14.0a7%2B-93646c2-vs-3.13.0rc2.svg)
 
+### vs. base
+
+- Geometric mean: 1.041x faster (HPT: reliability of 100.00%, 1.03x faster at 99th %ile)
+- Memory usage: 1.01x
+- [🧠memory plot](bm-20250408-vultr-x86_64-mpage-exp_no_slp_vectorize-3.14.0a7%2B-93646c2-vs-base-mem.svg)
+- [📄table](bm-20250408-vultr-x86_64-mpage-exp_no_slp_vectorize-3.14.0a7%2B-93646c2-vs-base.md)
+- [📈time plot](bm-20250408-vultr-x86_64-mpage-exp_no_slp_vectorize-3.14.0a7%2B-93646c2-vs-base.svg)
+

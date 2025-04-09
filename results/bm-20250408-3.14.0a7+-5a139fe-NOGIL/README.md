@@ -41,3 +41,11 @@
 - [📄table](bm-20250408-vultr-x86_64-mpage-restore_load_bearing-3.14.0a7%2B-5a139fe-vs-base.md)
 - [📈time plot](bm-20250408-vultr-x86_64-mpage-restore_load_bearing-3.14.0a7%2B-5a139fe-vs-base.svg)
 
+### vs. default_base_vs_NOGIL
+
+- Geometric mean: 1.081x slower (HPT: reliability of 100.00%, 1.07x slower at 99th %ile)
+- Memory usage: 1.20x
+- new benchmarks: html5lib
+- [📄table](bm-20250408-vultr-x86_64-mpage-restore_load_bearing-3.14.0a7%2B-5a139fe-vs-default_base_vs_NOGIL.md)
+- [📈time plot](bm-20250408-vultr-x86_64-mpage-restore_load_bearing-3.14.0a7%2B-5a139fe-vs-default_base_vs_NOGIL.svg)
+
