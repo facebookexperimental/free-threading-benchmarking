@@ -33,6 +33,14 @@
 - [📄table](bm-20250429-linux-x86_64-sergey%252dmiryanov-gh_132042_precalc_mr-3.14.0a7%2B-39f987b-vs-3.13.0rc2.md)
 - [📈time plot](bm-20250429-linux-x86_64-sergey%252dmiryanov-gh_132042_precalc_mr-3.14.0a7%2B-39f987b-vs-3.13.0rc2.svg)
 
+### vs. base
+
+- Geometric mean: 1.004x slower (HPT: reliability of 90.14%, 1.00x slower at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20250429-linux-x86_64-sergey%252dmiryanov-gh_132042_precalc_mr-3.14.0a7%2B-39f987b-vs-base-mem.svg)
+- [📄table](bm-20250429-linux-x86_64-sergey%252dmiryanov-gh_132042_precalc_mr-3.14.0a7%2B-39f987b-vs-base.md)
+- [📈time plot](bm-20250429-linux-x86_64-sergey%252dmiryanov-gh_132042_precalc_mr-3.14.0a7%2B-39f987b-vs-base.svg)
+
 ### vs. default_base_vs_NOGIL
 
 - Geometric mean: 1.092x slower (HPT: reliability of 100.00%, 1.07x slower at 99th %ile)
