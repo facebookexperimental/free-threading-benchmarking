@@ -22,7 +22,6 @@ on:
         type: choice
         options:
         - linux-x86_64-vultr
-        - linux-x86_64-linux
         - darwin-arm64-macm4pro
         - all
         - __really_all
