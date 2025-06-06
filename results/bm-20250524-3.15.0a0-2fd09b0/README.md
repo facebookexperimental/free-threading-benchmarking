@@ -9,11 +9,6 @@
 - commit date: 2025-05-24T12:19:20+00:00
 - ref: 2fd09b011031f3c00c34
 
-## linux x86_64 (linux)
-
-- [pystats raw](bm-20250524-linux-x86_64-python-2fd09b011031f3c00c34-3.15.0a0-2fd09b0-pystats.json)
-- [pystats table](bm-20250524-linux-x86_64-python-2fd09b011031f3c00c34-3.15.0a0-2fd09b0-pystats.md)
-
 ## linux x86_64 (vultr)
 
 - [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/15232282695)

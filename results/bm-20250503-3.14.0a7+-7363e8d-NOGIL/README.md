@@ -8,39 +8,6 @@
 - commit merge base: [3e256b9118eded25e6aca61e3939fd4e03b87082](https://github.com/python/cpython/commit/3e256b9118eded25e6aca61e3939fd4e03b87082)
 - ref: 7363e8d24d14abf65163
 
-## linux x86_64 (linux)
-
-- [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/14815835534)
-- cpu model: Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz
-- platform: Linux-6.8.0-1024-aws-x86_64-with-glibc2.35
-- [raw results](bm-20250503-linux-x86_64-python-7363e8d24d14abf65163-3.14.0a7%2B-7363e8d.json)
-
-### vs. 3.12.6
-
-- Geometric mean: 1.108x faster (HPT: reliability of 94.54%, 1.00x faster at 99th %ile)
-- Memory usage: 1.37x
-- missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative, sqlglot_normalize, sqlglot_optimize, sqlglot_parse, sqlglot_transpile, tornado_http
-- new benchmarks: connected_components, k_core, many_optionals, shortest_path, sphinx, sqlglot_v2_normalize, sqlglot_v2_optimize, sqlglot_v2_parse, sqlglot_v2_transpile, subparsers
-- [📄table](bm-20250503-linux-x86_64-python-7363e8d24d14abf65163-3.14.0a7%2B-7363e8d-vs-3.12.6.md)
-- [📈time plot](bm-20250503-linux-x86_64-python-7363e8d24d14abf65163-3.14.0a7%2B-7363e8d-vs-3.12.6.svg)
-
-### vs. 3.13.0rc2
-
-- Geometric mean: 1.069x faster (HPT: reliability of 67.05%, 1.00x faster at 99th %ile)
-- Memory usage: 1.36x
-- missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, sqlglot_normalize, sqlglot_optimize, sqlglot_parse, sqlglot_transpile, tornado_http
-- new benchmarks: connected_components, k_core, many_optionals, shortest_path, sphinx, sqlglot_v2_normalize, sqlglot_v2_optimize, sqlglot_v2_parse, sqlglot_v2_transpile, subparsers
-- [📄table](bm-20250503-linux-x86_64-python-7363e8d24d14abf65163-3.14.0a7%2B-7363e8d-vs-3.13.0rc2.md)
-- [📈time plot](bm-20250503-linux-x86_64-python-7363e8d24d14abf65163-3.14.0a7%2B-7363e8d-vs-3.13.0rc2.svg)
-
-### vs. base
-
-- Geometric mean: 1.085x slower (HPT: reliability of 100.00%, 1.07x slower at 99th %ile)
-- Memory usage: 1.21x
-- [🧠memory plot](bm-20250503-linux-x86_64-python-7363e8d24d14abf65163-3.14.0a7%2B-7363e8d-vs-base-mem.svg)
-- [📄table](bm-20250503-linux-x86_64-python-7363e8d24d14abf65163-3.14.0a7%2B-7363e8d-vs-base.md)
-- [📈time plot](bm-20250503-linux-x86_64-python-7363e8d24d14abf65163-3.14.0a7%2B-7363e8d-vs-base.svg)
-
 ## linux x86_64 (vultr)
 
 - [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/14815835534)
