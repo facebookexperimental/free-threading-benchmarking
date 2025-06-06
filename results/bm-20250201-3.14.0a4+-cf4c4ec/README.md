@@ -8,33 +8,6 @@
 - commit merge base: [71ae93374defd192e5e88fe0912eff4f8e56f286](https://github.com/python/cpython/commit/71ae93374defd192e5e88fe0912eff4f8e56f286)
 - ref: cf4c4ecc26c7e3b89f2e
 
-## linux x86_64 (linux)
-
-- [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/13093724822)
-- cpu model: Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz
-- platform: Linux-5.15.0-1071-aws-x86_64-with-glibc2.31
-- [pystats raw](bm-20250201-linux-x86_64-python-cf4c4ecc26c7e3b89f2e-3.14.0a4%2B-cf4c4ec-pystats.json)
-- [pystats table](bm-20250201-linux-x86_64-python-cf4c4ecc26c7e3b89f2e-3.14.0a4%2B-cf4c4ec-pystats.md)
-- [raw results](bm-20250201-linux-x86_64-python-cf4c4ecc26c7e3b89f2e-3.14.0a4%2B-cf4c4ec.json)
-
-### vs. 3.12.6
-
-- Geometric mean: 1.096x faster (HPT: reliability of 100.00%, 1.04x faster at 99th %ile)
-- Memory usage: 1.13x
-- missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2, tornado_http
-- new benchmarks: connected_components, k_core, many_optionals, shortest_path, sphinx, subparsers
-- [📄table](bm-20250201-linux-x86_64-python-cf4c4ecc26c7e3b89f2e-3.14.0a4%2B-cf4c4ec-vs-3.12.6.md)
-- [📈time plot](bm-20250201-linux-x86_64-python-cf4c4ecc26c7e3b89f2e-3.14.0a4%2B-cf4c4ec-vs-3.12.6.svg)
-
-### vs. 3.13.0rc2
-
-- Geometric mean: 1.055x faster (HPT: reliability of 100.00%, 1.03x faster at 99th %ile)
-- Memory usage: 1.13x
-- missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, tornado_http
-- new benchmarks: connected_components, k_core, many_optionals, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative, subparsers
-- [📄table](bm-20250201-linux-x86_64-python-cf4c4ecc26c7e3b89f2e-3.14.0a4%2B-cf4c4ec-vs-3.13.0rc2.md)
-- [📈time plot](bm-20250201-linux-x86_64-python-cf4c4ecc26c7e3b89f2e-3.14.0a4%2B-cf4c4ec-vs-3.13.0rc2.svg)
-
 ## linux x86_64 (vultr)
 
 - [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/13093724822)

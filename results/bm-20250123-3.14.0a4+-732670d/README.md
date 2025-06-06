@@ -8,31 +8,6 @@
 - commit merge base: [bab8918f9a647c20b64f5c165b45c0926f19ca0d](https://github.com/python/cpython/commit/bab8918f9a647c20b64f5c165b45c0926f19ca0d)
 - ref: 732670d93b9b0c0ff8ad
 
-## linux x86_64 (linux)
-
-- [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/12940660945)
-- cpu model: Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz
-- platform: Linux-5.15.0-1071-aws-x86_64-with-glibc2.31
-- [raw results](bm-20250123-linux-x86_64-python-732670d93b9b0c0ff8ad-3.14.0a4%2B-732670d.json)
-
-### vs. 3.12.6
-
-- Geometric mean: 1.068x faster (HPT: reliability of 99.93%, 1.02x faster at 99th %ile)
-- Memory usage: 1.13x
-- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, tornado_http, unpack_sequence, unpickle, unpickle_list
-- new benchmarks: connected_components, k_core, many_optionals, shortest_path, sphinx, subparsers
-- [📄table](bm-20250123-linux-x86_64-python-732670d93b9b0c0ff8ad-3.14.0a4%2B-732670d-vs-3.12.6.md)
-- [📈time plot](bm-20250123-linux-x86_64-python-732670d93b9b0c0ff8ad-3.14.0a4%2B-732670d-vs-3.12.6.svg)
-
-### vs. 3.13.0rc2
-
-- Geometric mean: 1.030x faster (HPT: reliability of 99.85%, 1.01x faster at 99th %ile)
-- Memory usage: 1.13x
-- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, flaskblogging, gunicorn, pickle, pickle_dict, pickle_list, tornado_http, unpack_sequence, unpickle, unpickle_list
-- new benchmarks: connected_components, k_core, many_optionals, shortest_path, sphinx, sqlalchemy_declarative, sqlalchemy_imperative, subparsers
-- [📄table](bm-20250123-linux-x86_64-python-732670d93b9b0c0ff8ad-3.14.0a4%2B-732670d-vs-3.13.0rc2.md)
-- [📈time plot](bm-20250123-linux-x86_64-python-732670d93b9b0c0ff8ad-3.14.0a4%2B-732670d-vs-3.13.0rc2.svg)
-
 ## linux x86_64 (vultr)
 
 - [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/12940660945)
