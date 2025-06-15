@@ -6,7 +6,41 @@
 - commit hash: [2e15a50](https://github.com/python/cpython/commit/2e15a50)
 - commit date: 2025-06-14T16:04:16Z
 - commit merge base: [fc413ecb8f4bf1c59b29932695e3538548eb1a8a](https://github.com/python/cpython/commit/fc413ecb8f4bf1c59b29932695e3538548eb1a8a)
+- commit date: 2025-06-14T16:04:16+00:00
 - ref: 2e15a50851da66eb8227
+
+## linux x86_64 (vultr)
+
+- [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/15657462322)
+- cpu model: Intel(R) Xeon(R) E-2286G CPU @ 4.00GHz
+- platform: Linux-6.8.0-55-generic-x86_64-with-glibc2.39
+- [raw results](bm-20250614-vultr-x86_64-python-2e15a50851da66eb8227-3.15.0a0-2e15a50.json)
+
+### vs. 3.12.6
+
+- Geometric mean: 1.159x faster (HPT: reliability of 100.00%, 1.08x faster at 99th %ile)
+- Memory usage: 1.20x
+- missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, mypy2, sqlalchemy_declarative, sqlalchemy_imperative, sqlglot_normalize, sqlglot_optimize, sqlglot_parse, sqlglot_transpile, tornado_http
+- new benchmarks: connected_components, k_core, many_optionals, shortest_path, sphinx, sqlglot_v2_normalize, sqlglot_v2_optimize, sqlglot_v2_parse, sqlglot_v2_transpile, subparsers
+- [📄table](bm-20250614-vultr-x86_64-python-2e15a50851da66eb8227-3.15.0a0-2e15a50-vs-3.12.6.md)
+- [📈time plot](bm-20250614-vultr-x86_64-python-2e15a50851da66eb8227-3.15.0a0-2e15a50-vs-3.12.6.svg)
+
+### vs. 3.13.0rc2
+
+- Geometric mean: 1.119x faster (HPT: reliability of 100.00%, 1.05x faster at 99th %ile)
+- Memory usage: 1.18x
+- missing benchmarks: aiohttp, chameleon, dask, flaskblogging, gunicorn, sqlglot_normalize, sqlglot_optimize, sqlglot_parse, sqlglot_transpile, tornado_http
+- new benchmarks: connected_components, k_core, many_optionals, shortest_path, sphinx, sqlglot_v2_normalize, sqlglot_v2_optimize, sqlglot_v2_parse, sqlglot_v2_transpile, subparsers
+- [📄table](bm-20250614-vultr-x86_64-python-2e15a50851da66eb8227-3.15.0a0-2e15a50-vs-3.13.0rc2.md)
+- [📈time plot](bm-20250614-vultr-x86_64-python-2e15a50851da66eb8227-3.15.0a0-2e15a50-vs-3.13.0rc2.svg)
+
+### vs. base
+
+- Geometric mean: 1.039x faster (HPT: reliability of 100.00%, 1.02x faster at 99th %ile)
+- Memory usage: 1.04x
+- [🧠memory plot](bm-20250614-vultr-x86_64-python-2e15a50851da66eb8227-3.15.0a0-2e15a50-vs-base-mem.svg)
+- [📄table](bm-20250614-vultr-x86_64-python-2e15a50851da66eb8227-3.15.0a0-2e15a50-vs-base.md)
+- [📈time plot](bm-20250614-vultr-x86_64-python-2e15a50851da66eb8227-3.15.0a0-2e15a50-vs-base.svg)
 
 ## darwin arm64 (macm4pro)
 
