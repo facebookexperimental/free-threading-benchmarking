@@ -2,7 +2,7 @@
 
 - fork: python/b485e50fde3be08d796a
 - version: 3.15.0a0
-- config: 
+- config: NOGIL
 - commit hash: [b485e50](https://github.com/python/cpython/commit/b485e50)
 - commit date: 2025-09-17T16:50:15-05:00
 - commit merge base: [5a15e7378996358848394930343e9633b6fec8a9](https://github.com/python/cpython/commit/5a15e7378996358848394930343e9633b6fec8a9)
@@ -17,8 +17,8 @@
 
 ### vs. 3.12.6
 
-- Geometric mean: 1.076x faster (HPT: reliability of 100.00%, 1.05x faster at 99th %ile)
-- Memory usage: 1.16x
+- Geometric mean: 1.023x slower (HPT: reliability of 91.04%, 1.00x slower at 99th %ile)
+- Memory usage: 1.41x
 - missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlalchemy_declarative, sqlalchemy_imperative, sqlglot_normalize, sqlglot_optimize, sqlglot_parse, sqlglot_transpile, tornado_http, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: connected_components, k_core, many_optionals, shortest_path, sphinx, sqlglot_v2_normalize, sqlglot_v2_optimize, sqlglot_v2_parse, sqlglot_v2_transpile, subparsers
 - [📄table](bm-20250917-vultr-x86_64-python-b485e50fde3be08d796a-3.15.0a0-b485e50-vs-3.12.6.md)
@@ -26,12 +26,20 @@
 
 ### vs. 3.13.0rc2
 
-- Geometric mean: 1.040x faster (HPT: reliability of 100.00%, 1.02x faster at 99th %ile)
-- Memory usage: 1.15x
+- Geometric mean: 1.056x slower (HPT: reliability of 98.95%, 1.00x slower at 99th %ile)
+- Memory usage: 1.39x
 - missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, flaskblogging, gunicorn, pickle, pickle_dict, pickle_list, sqlglot_normalize, sqlglot_optimize, sqlglot_parse, sqlglot_transpile, tornado_http, unpack_sequence, unpickle, unpickle_list
 - new benchmarks: connected_components, k_core, many_optionals, shortest_path, sphinx, sqlglot_v2_normalize, sqlglot_v2_optimize, sqlglot_v2_parse, sqlglot_v2_transpile, subparsers
 - [📄table](bm-20250917-vultr-x86_64-python-b485e50fde3be08d796a-3.15.0a0-b485e50-vs-3.13.0rc2.md)
 - [📈time plot](bm-20250917-vultr-x86_64-python-b485e50fde3be08d796a-3.15.0a0-b485e50-vs-3.13.0rc2.svg)
+
+### vs. base
+
+- Geometric mean: 1.098x slower (HPT: reliability of 100.00%, 1.08x slower at 99th %ile)
+- Memory usage: 1.20x
+- [🧠memory plot](bm-20250917-vultr-x86_64-python-b485e50fde3be08d796a-3.15.0a0-b485e50-vs-base-mem.svg)
+- [📄table](bm-20250917-vultr-x86_64-python-b485e50fde3be08d796a-3.15.0a0-b485e50-vs-base.md)
+- [📈time plot](bm-20250917-vultr-x86_64-python-b485e50fde3be08d796a-3.15.0a0-b485e50-vs-base.svg)
 
 ## darwin arm64 (macm4pro)
 
@@ -42,8 +50,8 @@
 
 ### vs. 3.12.6
 
-- Geometric mean: 1.109x faster (HPT: reliability of 100.00%, 1.04x faster at 99th %ile)
-- Memory usage: 1.16x
+- Geometric mean: 1.092x faster (HPT: reliability of 97.98%, 1.00x faster at 99th %ile)
+- Memory usage: 1.25x
 - missing benchmarks: chameleon, djangocms, gevent_hub, sqlalchemy_declarative, sqlalchemy_imperative, sqlglot_normalize, sqlglot_optimize, sqlglot_parse, sqlglot_transpile, tornado_http
 - new benchmarks: sqlglot_v2_normalize, sqlglot_v2_optimize, sqlglot_v2_parse, sqlglot_v2_transpile
 - [📄table](bm-20250917-macm4pro-arm64-python-b485e50fde3be08d796a-3.15.0a0-b485e50-vs-3.12.6.md)
@@ -51,10 +59,18 @@
 
 ### vs. 3.13.0rc2
 
-- Geometric mean: 1.029x faster (HPT: reliability of 98.67%, 1.00x faster at 99th %ile)
-- Memory usage: 1.11x
+- Geometric mean: 1.013x faster (HPT: reliability of 62.24%, 1.00x slower at 99th %ile)
+- Memory usage: 1.21x
 - missing benchmarks: chameleon, djangocms, gevent_hub, sqlalchemy_declarative, sqlalchemy_imperative, sqlglot_normalize, sqlglot_optimize, sqlglot_parse, sqlglot_transpile, tornado_http
 - new benchmarks: sqlglot_v2_normalize, sqlglot_v2_optimize, sqlglot_v2_parse, sqlglot_v2_transpile
 - [📄table](bm-20250917-macm4pro-arm64-python-b485e50fde3be08d796a-3.15.0a0-b485e50-vs-3.13.0rc2.md)
 - [📈time plot](bm-20250917-macm4pro-arm64-python-b485e50fde3be08d796a-3.15.0a0-b485e50-vs-3.13.0rc2.svg)
+
+### vs. base
+
+- Geometric mean: 1.017x slower (HPT: reliability of 99.34%, 1.00x slower at 99th %ile)
+- Memory usage: 1.10x
+- [🧠memory plot](bm-20250917-macm4pro-arm64-python-b485e50fde3be08d796a-3.15.0a0-b485e50-vs-base-mem.svg)
+- [📄table](bm-20250917-macm4pro-arm64-python-b485e50fde3be08d796a-3.15.0a0-b485e50-vs-base.md)
+- [📈time plot](bm-20250917-macm4pro-arm64-python-b485e50fde3be08d796a-3.15.0a0-b485e50-vs-base.svg)
 
