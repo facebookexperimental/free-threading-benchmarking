@@ -66,3 +66,11 @@
 - [📄table](bm-20251012-macm4pro-arm64-python-d6dd64ac654898b4ce71-3.15.0a0-d6dd64a-vs-3.13.0rc2.md)
 - [📈time plot](bm-20251012-macm4pro-arm64-python-d6dd64ac654898b4ce71-3.15.0a0-d6dd64a-vs-3.13.0rc2.svg)
 
+### vs. base
+
+- Geometric mean: 1.024x faster (HPT: reliability of 100.00%, 1.01x faster at 99th %ile)
+- Memory usage: 0.99x
+- [🧠memory plot](bm-20251012-macm4pro-arm64-python-d6dd64ac654898b4ce71-3.15.0a0-d6dd64a-vs-base-mem.svg)
+- [📄table](bm-20251012-macm4pro-arm64-python-d6dd64ac654898b4ce71-3.15.0a0-d6dd64a-vs-base.md)
+- [📈time plot](bm-20251012-macm4pro-arm64-python-d6dd64ac654898b4ce71-3.15.0a0-d6dd64a-vs-base.svg)
+
