@@ -33,6 +33,15 @@
 - [📄table](bm-20251019-vultr-x86_64-python-bedaea05987738c4c6b9-3.15.0a1%2B-bedaea0-vs-3.13.0rc2.md)
 - [📈time plot](bm-20251019-vultr-x86_64-python-bedaea05987738c4c6b9-3.15.0a1%2B-bedaea0-vs-3.13.0rc2.svg)
 
+### vs. base
+
+- Geometric mean: 1.009x faster (HPT: reliability of 50.56%, 1.00x faster at 99th %ile)
+- Memory usage: 1.01x
+- missing benchmarks: 🔴 asyncio_tcp, asyncio_tcp_ssl, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
+- [🧠memory plot](bm-20251019-vultr-x86_64-python-bedaea05987738c4c6b9-3.15.0a1%2B-bedaea0-vs-base-mem.svg)
+- [📄table](bm-20251019-vultr-x86_64-python-bedaea05987738c4c6b9-3.15.0a1%2B-bedaea0-vs-base.md)
+- [📈time plot](bm-20251019-vultr-x86_64-python-bedaea05987738c4c6b9-3.15.0a1%2B-bedaea0-vs-base.svg)
+
 ## darwin arm64 (macm4pro)
 
 - [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/18622795374)
