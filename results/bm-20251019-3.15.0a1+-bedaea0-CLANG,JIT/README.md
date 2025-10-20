@@ -10,7 +10,7 @@
 
 ## linux x86_64 (vultr)
 
-- [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/18658283881)
+- [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/18664669841)
 - cpu model: Intel(R) Xeon(R) E-2286G CPU @ 4.00GHz
 - platform: Linux-6.8.0-55-generic-x86_64-with-glibc2.39
 - [raw results](bm-20251019-vultr-x86_64-python-bedaea05987738c4c6b9-3.15.0a1%2B-bedaea0.json)
