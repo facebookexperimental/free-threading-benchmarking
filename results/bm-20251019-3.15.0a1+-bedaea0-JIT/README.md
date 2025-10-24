@@ -13,6 +13,8 @@
 - [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/18622625669)
 - cpu model: Intel(R) Xeon(R) E-2286G CPU @ 4.00GHz
 - platform: Linux-6.8.0-55-generic-x86_64-with-glibc2.39
+- [pystats raw](bm-20251019-vultr-x86_64-python-bedaea05987738c4c6b9-3.15.0a1%2B-bedaea0-pystats.json)
+- [pystats table](bm-20251019-vultr-x86_64-python-bedaea05987738c4c6b9-3.15.0a1%2B-bedaea0-pystats.md)
 - [raw results](bm-20251019-vultr-x86_64-python-bedaea05987738c4c6b9-3.15.0a1%2B-bedaea0.json)
 
 ### vs. 3.12.6
@@ -38,6 +40,7 @@
 - Geometric mean: 1.009x faster (HPT: reliability of 50.56%, 1.00x faster at 99th %ile)
 - Memory usage: 1.01x
 - missing benchmarks: 🔴 asyncio_tcp, asyncio_tcp_ssl, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
+- [pystats diff](bm-20251019-vultr-x86_64-python-bedaea05987738c4c6b9-3.15.0a1%2B-bedaea0-pystats-vs-base.md)
 - [🧠memory plot](bm-20251019-vultr-x86_64-python-bedaea05987738c4c6b9-3.15.0a1%2B-bedaea0-vs-base-mem.svg)
 - [📄table](bm-20251019-vultr-x86_64-python-bedaea05987738c4c6b9-3.15.0a1%2B-bedaea0-vs-base.md)
 - [📈time plot](bm-20251019-vultr-x86_64-python-bedaea05987738c4c6b9-3.15.0a1%2B-bedaea0-vs-base.svg)

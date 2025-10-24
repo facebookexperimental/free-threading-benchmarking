@@ -9,6 +9,7 @@ Here are some recent and important revisions. 👉 [Complete list of results](RE
 <!-- START table -->
 - [Most recent  pystats on main (bedaea0)](results/bm-20251019-3.15.0a1%2B-bedaea0/bm-20251019-vultr-x86_64-python-bedaea05987738c4c6b9-3.15.0a1%2B-bedaea0-pystats.md)
 - [Most recent PYTHON_UOPS pystats on main (bedaea0)](results/bm-20251019-3.15.0a1%2B-bedaea0-PYTHON_UOPS/bm-20251019-vultr-x86_64-python-bedaea05987738c4c6b9-3.15.0a1%2B-bedaea0-pystats.md)
+- [Most recent JIT pystats on main (bedaea0)](results/bm-20251019-3.15.0a1%2B-bedaea0-JIT/bm-20251019-vultr-x86_64-python-bedaea05987738c4c6b9-3.15.0a1%2B-bedaea0-pystats.md)
 
 ## linux x86_64 (vultr)
 | date | fork/ref | hash/flags | vs. 3.12.6: | vs. 3.13.0rc2: | vs. base: |
