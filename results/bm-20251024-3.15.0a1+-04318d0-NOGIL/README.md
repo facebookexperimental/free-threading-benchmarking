@@ -33,6 +33,14 @@
 - [📄table](bm-20251024-vultr-x86_64-kumaraditya303-interp_tls-3.15.0a1%2B-04318d0-vs-3.13.0rc2.md)
 - [📈time plot](bm-20251024-vultr-x86_64-kumaraditya303-interp_tls-3.15.0a1%2B-04318d0-vs-3.13.0rc2.svg)
 
+### vs. base
+
+- Geometric mean: 1.001x slower (HPT: reliability of 76.86%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20251024-vultr-x86_64-kumaraditya303-interp_tls-3.15.0a1%2B-04318d0-vs-base-mem.svg)
+- [📄table](bm-20251024-vultr-x86_64-kumaraditya303-interp_tls-3.15.0a1%2B-04318d0-vs-base.md)
+- [📈time plot](bm-20251024-vultr-x86_64-kumaraditya303-interp_tls-3.15.0a1%2B-04318d0-vs-base.svg)
+
 ### vs. default_base_vs_NOGIL
 
 - Geometric mean: 1.090x slower (HPT: reliability of 100.00%, 1.06x slower at 99th %ile)
