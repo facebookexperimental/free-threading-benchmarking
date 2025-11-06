@@ -33,3 +33,11 @@
 - [📄table](bm-20251105-vultr-x86_64-Fidget%252dSpinner-tracing_jit-3.15.0a1%2B-c75d91c-vs-3.13.0rc2.md)
 - [📈time plot](bm-20251105-vultr-x86_64-Fidget%252dSpinner-tracing_jit-3.15.0a1%2B-c75d91c-vs-3.13.0rc2.svg)
 
+### vs. base
+
+- Geometric mean: 1.009x faster (HPT: reliability of 93.96%, 1.00x slower at 99th %ile)
+- Memory usage: 1.01x
+- [🧠memory plot](bm-20251105-vultr-x86_64-Fidget%252dSpinner-tracing_jit-3.15.0a1%2B-c75d91c-vs-base-mem.svg)
+- [📄table](bm-20251105-vultr-x86_64-Fidget%252dSpinner-tracing_jit-3.15.0a1%2B-c75d91c-vs-base.md)
+- [📈time plot](bm-20251105-vultr-x86_64-Fidget%252dSpinner-tracing_jit-3.15.0a1%2B-c75d91c-vs-base.svg)
+

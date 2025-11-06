@@ -38,6 +38,7 @@
 
 - Geometric mean: 1.011x faster (HPT: reliability of 55.52%, 1.00x slower at 99th %ile)
 - Memory usage: 1.01x
+- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
 - [🧠memory plot](bm-20251101-vultr-x86_64-python-2f60b8f02fe7cb83dd58-3.15.0a1%2B-2f60b8f-vs-base-mem.svg)
 - [📄table](bm-20251101-vultr-x86_64-python-2f60b8f02fe7cb83dd58-3.15.0a1%2B-2f60b8f-vs-base.md)
 - [📈time plot](bm-20251101-vultr-x86_64-python-2f60b8f02fe7cb83dd58-3.15.0a1%2B-2f60b8f-vs-base.svg)
