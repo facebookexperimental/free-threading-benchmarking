@@ -33,3 +33,11 @@
 - [📄table](bm-20251222-vultr-x86_64-diegorusso-executor_register-3.15.0a3%2B-92c1f91-vs-3.13.0rc2.md)
 - [📈time plot](bm-20251222-vultr-x86_64-diegorusso-executor_register-3.15.0a3%2B-92c1f91-vs-3.13.0rc2.svg)
 
+### vs. base
+
+- Geometric mean: 1.000x faster (HPT: reliability of 86.53%, 1.00x faster at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20251222-vultr-x86_64-diegorusso-executor_register-3.15.0a3%2B-92c1f91-vs-base-mem.svg)
+- [📄table](bm-20251222-vultr-x86_64-diegorusso-executor_register-3.15.0a3%2B-92c1f91-vs-base.md)
+- [📈time plot](bm-20251222-vultr-x86_64-diegorusso-executor_register-3.15.0a3%2B-92c1f91-vs-base.svg)
+
