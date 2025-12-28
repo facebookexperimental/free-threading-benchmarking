@@ -67,3 +67,12 @@
 - [📄table](bm-20251227-macm4pro-arm64-python-61ee04834b096be00678-3.15.0a3%2B-61ee048-vs-3.13.0rc2.md)
 - [📈time plot](bm-20251227-macm4pro-arm64-python-61ee04834b096be00678-3.15.0a3%2B-61ee048-vs-3.13.0rc2.svg)
 
+### vs. base
+
+- Geometric mean: 1.065x faster (HPT: reliability of 100.00%, 1.02x faster at 99th %ile)
+- Memory usage: 1.02x
+- new benchmarks: dask, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
+- [🧠memory plot](bm-20251227-macm4pro-arm64-python-61ee04834b096be00678-3.15.0a3%2B-61ee048-vs-base-mem.svg)
+- [📄table](bm-20251227-macm4pro-arm64-python-61ee04834b096be00678-3.15.0a3%2B-61ee048-vs-base.md)
+- [📈time plot](bm-20251227-macm4pro-arm64-python-61ee04834b096be00678-3.15.0a3%2B-61ee048-vs-base.svg)
+
