@@ -38,6 +38,7 @@
 - Geometric mean: 1.004x faster (HPT: reliability of 89.20%, 1.00x faster at 99th %ile)
 - Memory usage: 1.01x
 - missing benchmarks: 🔴 docutils, pylint, sqlglot_v2_normalize, sqlglot_v2_transpile, sympy_expand, sympy_integrate, sympy_str, sympy_sum
+- new benchmarks: asyncio_websockets
 - [🧠memory plot](bm-20251230-macm4pro-arm64-Fidget%252dSpinner-resume_tracing-3.15.0a3%2B-d52a106-vs-base-mem.svg)
 - [📄table](bm-20251230-macm4pro-arm64-Fidget%252dSpinner-resume_tracing-3.15.0a3%2B-d52a106-vs-base.md)
 - [📈time plot](bm-20251230-macm4pro-arm64-Fidget%252dSpinner-resume_tracing-3.15.0a3%2B-d52a106-vs-base.svg)

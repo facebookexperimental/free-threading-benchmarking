@@ -37,6 +37,7 @@
 
 - Geometric mean: 1.014x slower (HPT: reliability of 99.82%, 1.00x slower at 99th %ile)
 - Memory usage: 1.01x
+- new benchmarks: asyncio_websockets
 - [🧠memory plot](bm-20251230-macm4pro-arm64-Fidget%252dSpinner-resume_tracing-3.15.0a3%2B-d84384d-vs-base-mem.svg)
 - [📄table](bm-20251230-macm4pro-arm64-Fidget%252dSpinner-resume_tracing-3.15.0a3%2B-d84384d-vs-base.md)
 - [📈time plot](bm-20251230-macm4pro-arm64-Fidget%252dSpinner-resume_tracing-3.15.0a3%2B-d84384d-vs-base.svg)
