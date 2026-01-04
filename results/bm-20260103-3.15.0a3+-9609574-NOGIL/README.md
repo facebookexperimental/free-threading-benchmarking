@@ -66,3 +66,12 @@
 - [📄table](bm-20260103-macm4pro-arm64-python-9609574e7fd36edfaa8b-3.15.0a3%2B-9609574-vs-3.13.0rc2.md)
 - [📈time plot](bm-20260103-macm4pro-arm64-python-9609574e7fd36edfaa8b-3.15.0a3%2B-9609574-vs-3.13.0rc2.svg)
 
+### vs. base
+
+- Geometric mean: 1.069x slower (HPT: reliability of 100.00%, 1.07x slower at 99th %ile)
+- Memory usage: 1.11x
+- missing benchmarks: 🔴 asyncio_tcp, asyncio_tcp_ssl, asyncio_websockets, dask
+- [🧠memory plot](bm-20260103-macm4pro-arm64-python-9609574e7fd36edfaa8b-3.15.0a3%2B-9609574-vs-base-mem.svg)
+- [📄table](bm-20260103-macm4pro-arm64-python-9609574e7fd36edfaa8b-3.15.0a3%2B-9609574-vs-base.md)
+- [📈time plot](bm-20260103-macm4pro-arm64-python-9609574e7fd36edfaa8b-3.15.0a3%2B-9609574-vs-base.svg)
+
