@@ -6,7 +6,41 @@
 - commit hash: [5d987e8](https://github.com/Fidget%2dSpinner/cpython/commit/5d987e8)
 - commit date: 2026-01-10T00:10:48Z
 - commit merge base: [95259116ecb4346b570b9f87fd825d1d5901c4f1](https://github.com/python/cpython/commit/95259116ecb4346b570b9f87fd825d1d5901c4f1)
+- commit date: 2026-01-10T00:10:48+00:00
 - ref: jit_ft
+
+## linux x86_64 (vultr)
+
+- [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/20869668843)
+- cpu model: Intel(R) Xeon(R) E-2286G CPU @ 4.00GHz
+- platform: Linux-6.8.0-87-generic-x86_64-with-glibc2.39
+- [raw results](bm-20260110-vultr-x86_64-Fidget%252dSpinner-jit_ft-3.15.0a3%2B-5d987e8.json)
+
+### vs. 3.12.6
+
+- Geometric mean: 1.015x faster (HPT: reliability of 81.64%, 1.00x faster at 99th %ile)
+- Memory usage: 1.44x
+- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, flaskblogging, gunicorn, mypy2, pickle, pickle_dict, pickle_list, sqlalchemy_declarative, sqlalchemy_imperative, sqlglot_normalize, sqlglot_optimize, sqlglot_parse, sqlglot_transpile, tornado_http, unpack_sequence, unpickle, unpickle_list
+- new benchmarks: connected_components, k_core, many_optionals, shortest_path, sphinx, sqlglot_v2_normalize, sqlglot_v2_optimize, sqlglot_v2_parse, sqlglot_v2_transpile, subparsers
+- [📄table](bm-20260110-vultr-x86_64-Fidget%252dSpinner-jit_ft-3.15.0a3%2B-5d987e8-vs-3.12.6.md)
+- [📈time plot](bm-20260110-vultr-x86_64-Fidget%252dSpinner-jit_ft-3.15.0a3%2B-5d987e8-vs-3.12.6.svg)
+
+### vs. 3.13.0rc2
+
+- Geometric mean: 1.019x slower (HPT: reliability of 67.74%, 1.00x faster at 99th %ile)
+- Memory usage: 1.43x
+- missing benchmarks: aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, flaskblogging, gunicorn, pickle, pickle_dict, pickle_list, sqlglot_normalize, sqlglot_optimize, sqlglot_parse, sqlglot_transpile, tornado_http, unpack_sequence, unpickle, unpickle_list
+- new benchmarks: connected_components, k_core, many_optionals, shortest_path, sphinx, sqlglot_v2_normalize, sqlglot_v2_optimize, sqlglot_v2_parse, sqlglot_v2_transpile, subparsers
+- [📄table](bm-20260110-vultr-x86_64-Fidget%252dSpinner-jit_ft-3.15.0a3%2B-5d987e8-vs-3.13.0rc2.md)
+- [📈time plot](bm-20260110-vultr-x86_64-Fidget%252dSpinner-jit_ft-3.15.0a3%2B-5d987e8-vs-3.13.0rc2.svg)
+
+### vs. base
+
+- Geometric mean: 1.049x faster (HPT: reliability of 99.83%, 1.00x faster at 99th %ile)
+- Memory usage: 1.02x
+- [🧠memory plot](bm-20260110-vultr-x86_64-Fidget%252dSpinner-jit_ft-3.15.0a3%2B-5d987e8-vs-base-mem.svg)
+- [📄table](bm-20260110-vultr-x86_64-Fidget%252dSpinner-jit_ft-3.15.0a3%2B-5d987e8-vs-base.md)
+- [📈time plot](bm-20260110-vultr-x86_64-Fidget%252dSpinner-jit_ft-3.15.0a3%2B-5d987e8-vs-base.svg)
 
 ## darwin arm64 (macm4pro)
 
@@ -32,4 +66,12 @@
 - new benchmarks: sqlglot_v2_normalize, sqlglot_v2_optimize, sqlglot_v2_parse, sqlglot_v2_transpile
 - [📄table](bm-20260110-macm4pro-arm64-Fidget%252dSpinner-jit_ft-3.15.0a3%2B-5d987e8-vs-3.13.0rc2.md)
 - [📈time plot](bm-20260110-macm4pro-arm64-Fidget%252dSpinner-jit_ft-3.15.0a3%2B-5d987e8-vs-3.13.0rc2.svg)
+
+### vs. base
+
+- Geometric mean: 1.096x faster (HPT: reliability of 100.00%, 1.02x faster at 99th %ile)
+- Memory usage: 1.03x
+- [🧠memory plot](bm-20260110-macm4pro-arm64-Fidget%252dSpinner-jit_ft-3.15.0a3%2B-5d987e8-vs-base-mem.svg)
+- [📄table](bm-20260110-macm4pro-arm64-Fidget%252dSpinner-jit_ft-3.15.0a3%2B-5d987e8-vs-base.md)
+- [📈time plot](bm-20260110-macm4pro-arm64-Fidget%252dSpinner-jit_ft-3.15.0a3%2B-5d987e8-vs-base.svg)
 
