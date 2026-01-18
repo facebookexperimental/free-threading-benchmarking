@@ -81,53 +81,13 @@
 | typing_runtime_protocols | [[tier2 run]](#typing_runtime_protocols-on-collect-stats-tier2) |  |  |
 | unpickle_pure_python | [[tier2 run]](#unpickle_pure_python-on-collect-stats-tier2) |  |  |
 | xml_etree | [[tier2 run]](#xml_etree-on-collect-stats-tier2) |  |  |
-## aiohttp on darwin-arm64 default
-
-<details>
-<summary>Log for aiohttp on darwin-arm64 default</summary>
-
-```
-# /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/bin/python -u /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_aiohttp/run_benchmark.py --inherit-environ PYPERFORMANCE_RUNID,PYPERF_PERF_RECORD_EXTRA_OPTS,PYTHON_JIT --output /tmp/tmpx05sjpg6
-Traceback (most recent call last):
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_aiohttp/run_benchmark.py", line 69, in <module>
-    with context:
-         ^^^^^^^
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Lib/contextlib.py", line 141, in __enter__
-    return next(self.gen)
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_aiohttp/netutils.py", line 36, in serving
-    waitUntilUp(addr)
-    ~~~~~~~~~~~^^^^^^
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_aiohttp/netutils.py", line 66, in waitUntilUp
-    raise Exception('Timeout reached when trying to connect')
-Exception: Timeout reached when trying to connect
-Traceback (most recent call last):
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.14/site-packages/pyperformance/run.py", line 170, in run_benchmarks
-    result = bench.run(
-        bench_venv.python,
-    ...<3 lines>...
-        verbose=options.verbose,
-    )
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.14/site-packages/pyperformance/_benchmark.py", line 189, in run
-    bench = _run_perf_script(
-        python,
-    ...<4 lines>...
-        verbose=verbose,
-    )
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.14/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
-    raise RuntimeError("Benchmark died")
-RuntimeError: Benchmark died
-Command failed with exit code 1
-```
-
-</details>
-
 ## aiohttp on linux-x86_64 default
 
 <details>
 <summary>Log for aiohttp on linux-x86_64 default</summary>
 
 ```
-# /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/bin/python -u /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_aiohttp/run_benchmark.py --inherit-environ PYPERF_PERF_RECORD_EXTRA_OPTS,PYTHON_JIT,PYPERFORMANCE_RUNID --output /tmp/tmpfpzck409
+# /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/bin/python -u /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_aiohttp/run_benchmark.py --inherit-environ PYPERFORMANCE_RUNID,PYTHON_JIT,PYPERF_PERF_RECORD_EXTRA_OPTS --output /tmp/tmpr5umvt28
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_aiohttp/run_benchmark.py", line 69, in <module>
     with context:
@@ -155,21 +115,54 @@ Command failed with exit code 1
 
 </details>
 
+## aiohttp on darwin-arm64 default
+
+<details>
+<summary>Log for aiohttp on darwin-arm64 default</summary>
+
+```
+# /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/bin/python -u /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_aiohttp/run_benchmark.py --inherit-environ PYPERF_PERF_RECORD_EXTRA_OPTS,PYTHON_JIT,PYPERFORMANCE_RUNID --output /tmp/tmpbg4dz4dr
+Traceback (most recent call last):
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_aiohttp/run_benchmark.py", line 69, in <module>
+    with context:
+         ^^^^^^^
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Lib/contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_aiohttp/netutils.py", line 36, in serving
+    waitUntilUp(addr)
+    ~~~~~~~~~~~^^^^^^
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_aiohttp/netutils.py", line 66, in waitUntilUp
+    raise Exception('Timeout reached when trying to connect')
+Exception: Timeout reached when trying to connect
+Traceback (most recent call last):
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.14/site-packages/pyperformance/run.py", line 170, in run_benchmarks
+    result = bench.run(
+        bench_venv.python,
+    ...<3 lines>...
+        verbose=options.verbose,
+    )
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.14/site-packages/pyperformance/_benchmark.py", line 189, in run
+    bench = _run_perf_script(
+Command failed with exit code 1
+```
+
+</details>
+
 ## argparse on collect-stats tier2
 
 <details>
 <summary>Log for argparse on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 531 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 249 in calibrate_loops
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 286 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 531 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 249 in calibrate_loops
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 286 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_argparse/run_benchmark.py", line 125 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -177,23 +170,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_argparse/run_benchmark.py", line 125, in <module>
     runner.bench_func(args.benchmark, BENCHMARKS[args.benchmark])
     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
     suite = self.spawn_worker(self.calibrate_loops, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -221,15 +214,15 @@ Python benchmark suite 1.11.0
 <summary>Log for argparse_subparsers on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 531 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 249 in calibrate_loops
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 286 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 531 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 249 in calibrate_loops
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 286 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_argparse/run_benchmark.py", line 125 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -237,23 +230,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_argparse/run_benchmark.py", line 125, in <module>
     runner.bench_func(args.benchmark, BENCHMARKS[args.benchmark])
     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
     suite = self.spawn_worker(self.calibrate_loops, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -281,15 +274,15 @@ Python benchmark suite 1.11.0
 <summary>Log for async_generators on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 601 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610 in bench_async_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 601 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610 in bench_async_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_async_generators/run_benchmark.py", line 45 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -297,23 +290,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_async_generators/run_benchmark.py", line 45, in <module>
     runner.bench_async_func('async_generators', bench_async_generators)
     ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610, in bench_async_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610, in bench_async_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -341,15 +334,15 @@ Python benchmark suite 1.11.0
 <summary>Log for async_tree on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 601 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610 in bench_async_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 601 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610 in bench_async_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_async_tree/run_benchmark.py", line 201 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -357,23 +350,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_async_tree/run_benchmark.py", line 201, in <module>
     runner.bench_async_func(bench_name, async_tree.run)
     ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610, in bench_async_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610, in bench_async_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -401,15 +394,15 @@ Python benchmark suite 1.11.0
 <summary>Log for async_tree_cpu_io_mixed on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 601 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610 in bench_async_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 601 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610 in bench_async_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_async_tree/run_benchmark.py", line 201 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -417,23 +410,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_async_tree/run_benchmark.py", line 201, in <module>
     runner.bench_async_func(bench_name, async_tree.run)
     ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610, in bench_async_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610, in bench_async_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -461,15 +454,15 @@ Python benchmark suite 1.11.0
 <summary>Log for async_tree_cpu_io_mixed_tg on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 601 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610 in bench_async_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 601 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610 in bench_async_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_async_tree/run_benchmark.py", line 201 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -477,23 +470,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_async_tree/run_benchmark.py", line 201, in <module>
     runner.bench_async_func(bench_name, async_tree.run)
     ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610, in bench_async_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610, in bench_async_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -521,15 +514,15 @@ Python benchmark suite 1.11.0
 <summary>Log for async_tree_io on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 601 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610 in bench_async_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 601 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610 in bench_async_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_async_tree/run_benchmark.py", line 201 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -537,23 +530,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_async_tree/run_benchmark.py", line 201, in <module>
     runner.bench_async_func(bench_name, async_tree.run)
     ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610, in bench_async_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610, in bench_async_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -581,15 +574,15 @@ Python benchmark suite 1.11.0
 <summary>Log for async_tree_io_tg on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 601 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610 in bench_async_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 601 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610 in bench_async_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_async_tree/run_benchmark.py", line 201 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -597,23 +590,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_async_tree/run_benchmark.py", line 201, in <module>
     runner.bench_async_func(bench_name, async_tree.run)
     ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610, in bench_async_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610, in bench_async_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -641,15 +634,15 @@ Python benchmark suite 1.11.0
 <summary>Log for async_tree_memoization on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 601 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610 in bench_async_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 601 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610 in bench_async_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_async_tree/run_benchmark.py", line 201 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -657,23 +650,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_async_tree/run_benchmark.py", line 201, in <module>
     runner.bench_async_func(bench_name, async_tree.run)
     ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610, in bench_async_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610, in bench_async_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -701,15 +694,15 @@ Python benchmark suite 1.11.0
 <summary>Log for async_tree_memoization_tg on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 601 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610 in bench_async_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 601 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610 in bench_async_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_async_tree/run_benchmark.py", line 201 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -717,23 +710,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_async_tree/run_benchmark.py", line 201, in <module>
     runner.bench_async_func(bench_name, async_tree.run)
     ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610, in bench_async_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610, in bench_async_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -761,15 +754,15 @@ Python benchmark suite 1.11.0
 <summary>Log for async_tree_tg on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 601 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 249 in calibrate_loops
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 286 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610 in bench_async_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 601 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 249 in calibrate_loops
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 286 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610 in bench_async_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_async_tree/run_benchmark.py", line 201 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -777,23 +770,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_async_tree/run_benchmark.py", line 201, in <module>
     runner.bench_async_func(bench_name, async_tree.run)
     ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610, in bench_async_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610, in bench_async_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
     suite = self.spawn_worker(self.calibrate_loops, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -821,15 +814,15 @@ Python benchmark suite 1.11.0
 <summary>Log for asyncio_websockets on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 601 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 270 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610 in bench_async_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 601 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 270 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610 in bench_async_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_asyncio_websockets/run_benchmark.py", line 48 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -837,23 +830,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_asyncio_websockets/run_benchmark.py", line 48, in <module>
     runner.bench_async_func('asyncio_websockets', main)
     ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610, in bench_async_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 610, in bench_async_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -881,15 +874,15 @@ Python benchmark suite 1.11.0
 <summary>Log for bpe_tokeniser on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_bpe_tokeniser/run_benchmark.py", line 157 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -897,23 +890,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_bpe_tokeniser/run_benchmark.py", line 157, in <module>
     runner.bench_time_func("bpe_tokeniser", bench_bpe_tokeniser)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -935,42 +928,99 @@ Python benchmark suite 1.11.0
 
 </details>
 
+## chameleon on linux-x86_64 default
+
+<details>
+<summary>Log for chameleon on linux-x86_64 default</summary>
+
+```
+# /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/bin/python -u /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_chameleon/run_benchmark.py --inherit-environ PYPERFORMANCE_RUNID,PYTHON_JIT,PYPERF_PERF_RECORD_EXTRA_OPTS --output /tmp/tmp4i2gkza_
+/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/template.py:17: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Traceback (most recent call last):
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_chameleon/run_benchmark.py", line 35, in <module>
+    main()
+    ~~~~^^
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_chameleon/run_benchmark.py", line 25, in main
+    tmpl = PageTemplate(BIGTABLE_ZPT)
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/zpt/template.py", line 205, in __init__
+    super(PageTemplate, self).__init__(body, **config)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/template.py", line 137, in __init__
+    self.write(body)
+    ~~~~~~~~~~^^^^^^
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/template.py", line 235, in write
+    self.cook(body)
+    ~~~~~~~~~^^^^^^
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/template.py", line 167, in cook
+    program = self._cook(body, digest, names)
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/template.py", line 245, in _cook
+    source = self._compile(body, builtins)
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/template.py", line 276, in _compile
+    program = self.parse(body)
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/zpt/template.py", line 227, in parse
+    return MacroProgram(
+        body, self.mode, self.filename,
+    ...<9 lines>...
+        tokenizer=self.tokenizer
+    )
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/zpt/program.py", line 174, in __init__
+    super(MacroProgram, self).__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/program.py", line 35, in __init__
+    node = self.visit(kind, args)
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/program.py", line 41, in visit
+    return visitor(*args)
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/zpt/program.py", line 320, in visit_element
+    ATTRIBUTES = self._create_attributes_nodes(
+        prepared, I18N_ATTRIBUTES, STATIC_ATTRIBUTES,
+    )
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/zpt/program.py", line 794, in _create_attributes_nodes
+    default = ast.Str(s=text) if text is not None else None
+              ^^^^^^^
+AttributeError: module 'ast' has no attribute 'Str'
+Traceback (most recent call last):
+Command failed with exit code 1
+```
+
+</details>
+
 ## chameleon on collect-stats pystats
 
 <details>
 <summary>Log for chameleon on collect-stats pystats</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/template.py", line 137, in __init__
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/template.py", line 137, in __init__
     self.write(body)
     ~~~~~~~~~~^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/template.py", line 235, in write
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/template.py", line 235, in write
     self.cook(body)
     ~~~~~~~~~^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/template.py", line 167, in cook
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/template.py", line 167, in cook
     program = self._cook(body, digest, names)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/template.py", line 245, in _cook
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/template.py", line 245, in _cook
     source = self._compile(body, builtins)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/template.py", line 276, in _compile
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/template.py", line 276, in _compile
     program = self.parse(body)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/zpt/template.py", line 227, in parse
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/zpt/template.py", line 227, in parse
     return MacroProgram(
         body, self.mode, self.filename,
     ...<9 lines>...
         tokenizer=self.tokenizer
     )
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/zpt/program.py", line 174, in __init__
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/zpt/program.py", line 174, in __init__
     super(MacroProgram, self).__init__(*args, **kwargs)
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/program.py", line 35, in __init__
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/program.py", line 35, in __init__
     node = self.visit(kind, args)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/program.py", line 41, in visit
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/program.py", line 41, in visit
     return visitor(*args)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/zpt/program.py", line 320, in visit_element
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/zpt/program.py", line 320, in visit_element
     ATTRIBUTES = self._create_attributes_nodes(
         prepared, I18N_ATTRIBUTES, STATIC_ATTRIBUTES,
     )
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/zpt/program.py", line 794, in _create_attributes_nodes
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/zpt/program.py", line 794, in _create_attributes_nodes
     default = ast.Str(s=text) if text is not None else None
               ^^^^^^^
 AttributeError: module 'ast' has no attribute 'Str'
@@ -1001,36 +1051,36 @@ Python benchmark suite 1.11.0
 <summary>Log for chameleon on darwin-arm64 default</summary>
 
 ```
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/template.py", line 137, in __init__
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/template.py", line 137, in __init__
     self.write(body)
     ~~~~~~~~~~^^^^^^
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/template.py", line 235, in write
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/template.py", line 235, in write
     self.cook(body)
     ~~~~~~~~~^^^^^^
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/template.py", line 167, in cook
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/template.py", line 167, in cook
     program = self._cook(body, digest, names)
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/template.py", line 245, in _cook
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/template.py", line 245, in _cook
     source = self._compile(body, builtins)
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/template.py", line 276, in _compile
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/template.py", line 276, in _compile
     program = self.parse(body)
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/zpt/template.py", line 227, in parse
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/zpt/template.py", line 227, in parse
     return MacroProgram(
         body, self.mode, self.filename,
     ...<9 lines>...
         tokenizer=self.tokenizer
     )
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/zpt/program.py", line 174, in __init__
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/zpt/program.py", line 174, in __init__
     super(MacroProgram, self).__init__(*args, **kwargs)
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/program.py", line 35, in __init__
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/program.py", line 35, in __init__
     node = self.visit(kind, args)
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/program.py", line 41, in visit
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/program.py", line 41, in visit
     return visitor(*args)
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/zpt/program.py", line 320, in visit_element
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/zpt/program.py", line 320, in visit_element
     ATTRIBUTES = self._create_attributes_nodes(
         prepared, I18N_ATTRIBUTES, STATIC_ATTRIBUTES,
     )
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/zpt/program.py", line 794, in _create_attributes_nodes
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/zpt/program.py", line 794, in _create_attributes_nodes
     default = ast.Str(s=text) if text is not None else None
               ^^^^^^^
 AttributeError: module 'ast' has no attribute 'Str'
@@ -1055,73 +1105,13 @@ Command failed with exit code 1
 
 </details>
 
-## chameleon on linux-x86_64 default
-
-<details>
-<summary>Log for chameleon on linux-x86_64 default</summary>
-
-```
-    ~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_chameleon/run_benchmark.py", line 25, in main
-    tmpl = PageTemplate(BIGTABLE_ZPT)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/zpt/template.py", line 205, in __init__
-    super(PageTemplate, self).__init__(body, **config)
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/template.py", line 137, in __init__
-    self.write(body)
-    ~~~~~~~~~~^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/template.py", line 235, in write
-    self.cook(body)
-    ~~~~~~~~~^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/template.py", line 167, in cook
-    program = self._cook(body, digest, names)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/template.py", line 245, in _cook
-    source = self._compile(body, builtins)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/template.py", line 276, in _compile
-    program = self.parse(body)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/zpt/template.py", line 227, in parse
-    return MacroProgram(
-        body, self.mode, self.filename,
-    ...<9 lines>...
-        tokenizer=self.tokenizer
-    )
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/zpt/program.py", line 174, in __init__
-    super(MacroProgram, self).__init__(*args, **kwargs)
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/program.py", line 35, in __init__
-    node = self.visit(kind, args)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/program.py", line 41, in visit
-    return visitor(*args)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/zpt/program.py", line 320, in visit_element
-    ATTRIBUTES = self._create_attributes_nodes(
-        prepared, I18N_ATTRIBUTES, STATIC_ATTRIBUTES,
-    )
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/chameleon/zpt/program.py", line 794, in _create_attributes_nodes
-    default = ast.Str(s=text) if text is not None else None
-              ^^^^^^^
-AttributeError: module 'ast' has no attribute 'Str'
-Traceback (most recent call last):
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
-    result = bench.run(
-             ^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 189, in run
-    bench = _run_perf_script(
-            ^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
-    raise RuntimeError("Benchmark died")
-RuntimeError: Benchmark died
-Command failed with exit code 1
-```
-
-</details>
-
 ## chaos on collect-stats tier2
 
 <details>
 <summary>Log for chaos on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_chaos/run_benchmark.py", line 270 in main
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_chaos/run_benchmark.py", line 309 in <module>
 
@@ -1137,23 +1127,23 @@ Traceback (most recent call last):
                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
                       args.filename, args.rng_seed)
                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -1181,11 +1171,11 @@ Python benchmark suite 1.11.0
 <summary>Log for comprehensions on collect-stats tier2</summary>
 
 ```
-# /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python -u /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_comprehensions/run_benchmark.py --inherit-environ PYPERFORMANCE_RUNID,PYPERF_PERF_RECORD_EXTRA_OPTS,PYTHON_JIT --hook=pystats --loops=8192 --output /tmp/tmpbsmsmgbh
+# /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python -u /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_comprehensions/run_benchmark.py --inherit-environ PYPERFORMANCE_RUNID,PYPERF_PERF_RECORD_EXTRA_OPTS,PYTHON_JIT --hook=pystats --loops=8192 --output /tmp/tmpcj77y64c
 Fatal Python error: effective_trace_length: No terminating instruction
 Python runtime state: initialized
 
-Current thread 0x00007d62d1abc740 [python] (most recent call first):
+Current thread 0x000079d51dbc7740 [python] (most recent call first):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_comprehensions/run_benchmark.py", line 48 in _add_widgets
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_comprehensions/run_benchmark.py", line 33 in __init__
   File "__init__", line ??? in __init__
@@ -1196,23 +1186,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_comprehensions/run_benchmark.py", line 95, in <module>
     runner.bench_time_func("comprehensions", bench_comprehensions)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -1240,13 +1230,13 @@ Python benchmark suite 1.11.0
 <summary>Log for concurrent_imap on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 249 in calibrate_loops
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 286 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 249 in calibrate_loops
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 286 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_concurrent_imap/run_benchmark.py", line 31 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -1254,24 +1244,24 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_concurrent_imap/run_benchmark.py", line 31, in <module>
     runner.bench_func("bench_mp_pool", bench_mp_pool, num_core, count, chunk)
     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
     suite = self.spawn_worker(self.calibrate_loops, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
-/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Lib/multiprocessing/resource_tracker.py:396: UserWarning: resource_tracker: There appear to be 6 leaked semaphore objects to clean up at shutdown: {'/mp-f6h76bmo', '/mp-k7771sex', '/mp-290b7kzt', '/mp-4zcxyvx5', '/mp-h9ozkeic', '/mp-mj5sc3ne'}
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
+/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Lib/multiprocessing/resource_tracker.py:396: UserWarning: resource_tracker: There appear to be 6 leaked semaphore objects to clean up at shutdown: {'/mp-rqtcedo0', '/mp-f92yne64', '/mp-ynjxaw9g', '/mp-15jzjlnb', '/mp-0itipyxb', '/mp-9ugrtn82'}
   warnings.warn(
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
@@ -1300,15 +1290,15 @@ Python benchmark suite 1.11.0
 <summary>Log for coverage on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_coverage/run_benchmark.py", line 29 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -1316,23 +1306,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_coverage/run_benchmark.py", line 29, in <module>
     runner.bench_time_func('coverage', bench_coverage)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -1360,15 +1350,15 @@ Python benchmark suite 1.11.0
 <summary>Log for crypto_pyaes on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_crypto_pyaes/run_benchmark.py", line 45 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -1376,23 +1366,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_crypto_pyaes/run_benchmark.py", line 45, in <module>
     runner.bench_time_func('crypto_pyaes', bench_pyaes)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -1420,15 +1410,15 @@ Python benchmark suite 1.11.0
 <summary>Log for deepcopy on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_deepcopy/run_benchmark.py", line 86 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -1436,23 +1426,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_deepcopy/run_benchmark.py", line 86, in <module>
     runner.bench_time_func('deepcopy', benchmark)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -1481,12 +1471,12 @@ Python benchmark suite 1.11.0
 
 ```
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -1540,11 +1530,11 @@ RUNNING: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/f
 <summary>Log for django_template on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_django_template/run_benchmark.py", line 26 in bench_django_template
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_django_template/run_benchmark.py", line 51 in <module>
 
@@ -1556,23 +1546,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_django_template/run_benchmark.py", line 26, in bench_django_template
     runner.bench_func('django_template', template.render, context)
     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -1587,6 +1577,66 @@ Command failed with exit code 1
 
 ERROR: No benchmark was run
 Python benchmark suite 1.11.0
+
+
+==================================================
+```
+
+</details>
+
+## djangocms on linux-x86_64 default
+
+<details>
+<summary>Log for djangocms on linux-x86_64 default</summary>
+
+```
+  Using cached django_fsm-2.8.2-py2.py3-none-any.whl.metadata (1.9 kB)
+Collecting django-parler==2.3
+  Using cached django_parler-2.3-py3-none-any.whl.metadata (8.6 kB)
+Collecting django-polymorphic==3.1.0
+  Using cached django_polymorphic-3.1.0-py3-none-any.whl.metadata (4.6 kB)
+Collecting django-sekizai==4.1.0
+  Using cached django_sekizai-4.1.0-py3-none-any.whl.metadata (4.6 kB)
+Collecting django-treebeard==4.7.1
+  Using cached django_treebeard-4.7.1-py3-none-any.whl.metadata (2.7 kB)
+Collecting djangocms-admin-style==3.3.1
+  Using cached djangocms_admin_style-3.3.1-py3-none-any.whl.metadata (10 kB)
+Collecting djangocms-alias==2.0.1
+  Using cached djangocms_alias-2.0.1-py3-none-any.whl.metadata (3.7 kB)
+Collecting djangocms-attributes-field==3.0.0
+  Using cached djangocms_attributes_field-3.0.0-py3-none-any.whl.metadata (7.7 kB)
+Collecting djangocms-frontend==1.3.4
+  Using cached djangocms_frontend-1.3.4-py3-none-any.whl.metadata (9.3 kB)
+Collecting djangocms-text-ckeditor==5.1.6
+  Using cached djangocms_text_ckeditor-5.1.6-py3-none-any.whl.metadata (21 kB)
+Collecting djangocms-versioning==2.0.2
+  Using cached djangocms_versioning-2.0.2-py3-none-any.whl.metadata (4.1 kB)
+Collecting easy-thumbnails==2.10
+  Using cached easy_thumbnails-2.10-py3-none-any.whl.metadata (15 kB)
+Collecting html5lib==1.1
+  Using cached html5lib-1.1-py2.py3-none-any.whl.metadata (16 kB)
+Collecting idna==3.10
+  Using cached idna-3.10-py3-none-any.whl.metadata (10 kB)
+Collecting lxml==5.3.0
+  Using cached lxml-5.3.0.tar.gz (3.7 MB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  × Getting requirements to build wheel did not run successfully.
+  │ exit code: 1
+  ╰─> [4 lines of output]
+      <string>:67: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+      Building lxml version 5.3.0.
+      Building without Cython.
+      Error: Please make sure the libxml2 and libxslt development packages are installed.
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+ERROR: Failed to build 'lxml' when getting requirements to build wheel
+Command failed with exit code 1
 
 
 ==================================================
@@ -1663,12 +1713,12 @@ Command failed with exit code 1
               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
           )
           ^
-        File "/private/tmp/pip-install-wwhmnx_7/pillow_a4add5e522de4d928acb6b14e7bab79c/_custom_build/backend.py", line 26, in build_wheel
+        File "/private/tmp/pip-install-3psky9_z/pillow_134a6bb8e40f4f59bbf3fd9c803f0f5c/_custom_build/backend.py", line 26, in build_wheel
           return super().build_wheel(wheel_directory, config_settings, metadata_directory)
                  ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/private/tmp/pip-build-env-05hmi8iz/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 435, in build_wheel
+        File "/private/tmp/pip-build-env-4iwgcq_m/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 435, in build_wheel
           return _build(['bdist_wheel', '--dist-info-dir', str(metadata_directory)])
-        File "/private/tmp/pip-build-env-05hmi8iz/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 423, in _build
+        File "/private/tmp/pip-build-env-4iwgcq_m/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 423, in _build
           return self._build_with_temp_dir(
                  ~~~~~~~~~~~~~~~~~~~~~~~~~^
               cmd,
@@ -1678,13 +1728,13 @@ Command failed with exit code 1
               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
           )
           ^
-        File "/private/tmp/pip-build-env-05hmi8iz/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 404, in _build_with_temp_dir
+        File "/private/tmp/pip-build-env-4iwgcq_m/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 404, in _build_with_temp_dir
           self.run_setup()
           ~~~~~~~~~~~~~~^^
-        File "/private/tmp/pip-install-wwhmnx_7/pillow_a4add5e522de4d928acb6b14e7bab79c/_custom_build/backend.py", line 20, in run_setup
+        File "/private/tmp/pip-install-3psky9_z/pillow_134a6bb8e40f4f59bbf3fd9c803f0f5c/_custom_build/backend.py", line 20, in run_setup
           return super().run_setup(setup_script)
                  ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
-        File "/private/tmp/pip-build-env-05hmi8iz/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 317, in run_setup
+        File "/private/tmp/pip-build-env-4iwgcq_m/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 317, in run_setup
           exec(code, locals())
           ~~~~^^^^^^^^^^^^^^^^
         File "<string>", line 1042, in <module>
@@ -1701,71 +1751,11 @@ Command failed with exit code 1
   
   note: This error originates from a subprocess, and is likely not a problem with pip.
   ERROR: Failed building wheel for pillow
+Failed to build pillow
 error: failed-wheel-build-for-install
 
 × Failed to build installable wheels for some pyproject.toml based projects
 ╰─> pillow
-Failed to build pillow
-Command failed with exit code 1
-
-
-==================================================
-```
-
-</details>
-
-## djangocms on linux-x86_64 default
-
-<details>
-<summary>Log for djangocms on linux-x86_64 default</summary>
-
-```
-  Using cached django_fsm-2.8.2-py2.py3-none-any.whl.metadata (1.9 kB)
-Collecting django-parler==2.3
-  Using cached django_parler-2.3-py3-none-any.whl.metadata (8.6 kB)
-Collecting django-polymorphic==3.1.0
-  Using cached django_polymorphic-3.1.0-py3-none-any.whl.metadata (4.6 kB)
-Collecting django-sekizai==4.1.0
-  Using cached django_sekizai-4.1.0-py3-none-any.whl.metadata (4.6 kB)
-Collecting django-treebeard==4.7.1
-  Using cached django_treebeard-4.7.1-py3-none-any.whl.metadata (2.7 kB)
-Collecting djangocms-admin-style==3.3.1
-  Using cached djangocms_admin_style-3.3.1-py3-none-any.whl.metadata (10 kB)
-Collecting djangocms-alias==2.0.1
-  Using cached djangocms_alias-2.0.1-py3-none-any.whl.metadata (3.7 kB)
-Collecting djangocms-attributes-field==3.0.0
-  Using cached djangocms_attributes_field-3.0.0-py3-none-any.whl.metadata (7.7 kB)
-Collecting djangocms-frontend==1.3.4
-  Using cached djangocms_frontend-1.3.4-py3-none-any.whl.metadata (9.3 kB)
-Collecting djangocms-text-ckeditor==5.1.6
-  Using cached djangocms_text_ckeditor-5.1.6-py3-none-any.whl.metadata (21 kB)
-Collecting djangocms-versioning==2.0.2
-  Using cached djangocms_versioning-2.0.2-py3-none-any.whl.metadata (4.1 kB)
-Collecting easy-thumbnails==2.10
-  Using cached easy_thumbnails-2.10-py3-none-any.whl.metadata (15 kB)
-Collecting html5lib==1.1
-  Using cached html5lib-1.1-py2.py3-none-any.whl.metadata (16 kB)
-Collecting idna==3.10
-  Using cached idna-3.10-py3-none-any.whl.metadata (10 kB)
-Collecting lxml==5.3.0
-  Using cached lxml-5.3.0.tar.gz (3.7 MB)
-  Installing build dependencies: started
-  Installing build dependencies: finished with status 'done'
-  Getting requirements to build wheel: started
-  Getting requirements to build wheel: finished with status 'error'
-  error: subprocess-exited-with-error
-  
-  × Getting requirements to build wheel did not run successfully.
-  │ exit code: 1
-  ╰─> [4 lines of output]
-      <string>:67: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
-      Building lxml version 5.3.0.
-      Building without Cython.
-      Error: Please make sure the libxml2 and libxslt development packages are installed.
-      [end of output]
-  
-  note: This error originates from a subprocess, and is likely not a problem with pip.
-ERROR: Failed to build 'lxml' when getting requirements to build wheel
 Command failed with exit code 1
 
 
@@ -1780,15 +1770,15 @@ Command failed with exit code 1
 <summary>Log for docutils on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_docutils/run_benchmark.py", line 54 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -1796,23 +1786,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_docutils/run_benchmark.py", line 54, in <module>
     runner.bench_time_func("docutils", bench_docutils, DOC_ROOT)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -1840,15 +1830,15 @@ Python benchmark suite 1.11.0
 <summary>Log for dulwich_log on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 531 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 531 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_dulwich_log/run_benchmark.py", line 27 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux, dulwich._objects, dulwich._diff_tree, dulwich._pack (total: 5)
@@ -1856,23 +1846,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_dulwich_log/run_benchmark.py", line 27, in <module>
     runner.bench_func('dulwich_log', iter_all_commits, repo)
     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -1900,15 +1890,15 @@ Python benchmark suite 1.11.0
 <summary>Log for fannkuch on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 535 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 535 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_fannkuch/run_benchmark.py", line 54 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -1916,23 +1906,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_fannkuch/run_benchmark.py", line 54, in <module>
     runner.bench_func('fannkuch', fannkuch, arg)
     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -1954,13 +1944,47 @@ Python benchmark suite 1.11.0
 
 </details>
 
+## flaskblogging on linux-x86_64 default
+
+<details>
+<summary>Log for flaskblogging on linux-x86_64 default</summary>
+
+```
+# /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/bin/python -u /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/run_benchmark.py --inherit-environ PYPERFORMANCE_RUNID,PYTHON_JIT,PYPERF_PERF_RECORD_EXTRA_OPTS --output /tmp/tmpim1opos5
+Traceback (most recent call last):
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/run_benchmark.py", line 76, in <module>
+    with context:
+         ^^^^^^^
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Lib/contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/netutils.py", line 36, in serving
+    waitUntilUp(addr)
+    ~~~~~~~~~~~^^^^^^
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/netutils.py", line 66, in waitUntilUp
+##[error]    raise Exception('Timeout reached when trying to connect')
+Exception: Timeout reached when trying to connect
+Traceback (most recent call last):
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
+    result = bench.run(
+             ^^^^^^^^^^
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 189, in run
+    bench = _run_perf_script(
+            ^^^^^^^^^^^^^^^^^
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
+    raise RuntimeError("Benchmark died")
+RuntimeError: Benchmark died
+Command failed with exit code 1
+```
+
+</details>
+
 ## flaskblogging on collect-stats pystats
 
 <details>
 <summary>Log for flaskblogging on collect-stats pystats</summary>
 
 ```
-# /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/bin/python -u /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/run_benchmark.py --inherit-environ PYPERF_PERF_RECORD_EXTRA_OPTS,PYTHON_JIT,PYPERFORMANCE_RUNID --hook=pystats --loops=32 --output /tmp/tmpbv1p1bpn
+# /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/bin/python -u /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/run_benchmark.py --inherit-environ PYTHON_JIT,PYPERFORMANCE_RUNID,PYPERF_PERF_RECORD_EXTRA_OPTS --hook=pystats --loops=32 --output /tmp/tmpugi0qenf
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/run_benchmark.py", line 76, in <module>
     with context:
@@ -2000,7 +2024,7 @@ Python benchmark suite 1.11.0
 <summary>Log for flaskblogging on darwin-arm64 default</summary>
 
 ```
-# /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/bin/python -u /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/run_benchmark.py --inherit-environ PYPERFORMANCE_RUNID,PYPERF_PERF_RECORD_EXTRA_OPTS,PYTHON_JIT --output /tmp/tmpn_hgx849
+# /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/bin/python -u /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/run_benchmark.py --inherit-environ PYPERF_PERF_RECORD_EXTRA_OPTS,PYTHON_JIT,PYPERFORMANCE_RUNID --output /tmp/tmp87obg05x
 Traceback (most recent call last):
   File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/run_benchmark.py", line 76, in <module>
     with context:
@@ -2034,55 +2058,21 @@ Command failed with exit code 1
 
 </details>
 
-## flaskblogging on linux-x86_64 default
-
-<details>
-<summary>Log for flaskblogging on linux-x86_64 default</summary>
-
-```
-# /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/bin/python -u /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/run_benchmark.py --inherit-environ PYPERF_PERF_RECORD_EXTRA_OPTS,PYTHON_JIT,PYPERFORMANCE_RUNID --output /tmp/tmpk8nymieq
-Traceback (most recent call last):
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/run_benchmark.py", line 76, in <module>
-    with context:
-         ^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Lib/contextlib.py", line 141, in __enter__
-    return next(self.gen)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/netutils.py", line 36, in serving
-    waitUntilUp(addr)
-    ~~~~~~~~~~~^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_flaskblogging/netutils.py", line 66, in waitUntilUp
-##[error]    raise Exception('Timeout reached when trying to connect')
-Exception: Timeout reached when trying to connect
-Traceback (most recent call last):
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
-    result = bench.run(
-             ^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 189, in run
-    bench = _run_perf_script(
-            ^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
-    raise RuntimeError("Benchmark died")
-RuntimeError: Benchmark died
-Command failed with exit code 1
-```
-
-</details>
-
 ## float on collect-stats tier2
 
 <details>
 <summary>Log for float on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 531 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 531 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_float/run_benchmark.py", line 60 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -2090,23 +2080,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_float/run_benchmark.py", line 60, in <module>
     runner.bench_func('float', benchmark, points)
     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -2134,15 +2124,15 @@ Python benchmark suite 1.11.0
 <summary>Log for gc_collect on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 249 in calibrate_loops
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 286 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 249 in calibrate_loops
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 286 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_gc_collect/run_benchmark.py", line 64 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -2150,23 +2140,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_gc_collect/run_benchmark.py", line 64, in <module>
     runner.bench_time_func("create_gc_cycles", benchamark_collection, CYCLES, LINKS)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
     suite = self.spawn_worker(self.calibrate_loops, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -2194,15 +2184,15 @@ Python benchmark suite 1.11.0
 <summary>Log for gc_traversal on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_gc_traversal/run_benchmark.py", line 37 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -2210,23 +2200,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_gc_traversal/run_benchmark.py", line 37, in <module>
     runner.bench_time_func("gc_traversal", benchamark_collection, N_LEVELS)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -2254,15 +2244,15 @@ Python benchmark suite 1.11.0
 <summary>Log for generators on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_generators/run_benchmark.py", line 49 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -2270,23 +2260,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_generators/run_benchmark.py", line 49, in <module>
     runner.bench_time_func('generators', bench_generators)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -2314,15 +2304,15 @@ Python benchmark suite 1.11.0
 <summary>Log for genshi on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 249 in calibrate_loops
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 286 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 249 in calibrate_loops
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 286 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_genshi/run_benchmark.py", line 67 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -2330,23 +2320,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_genshi/run_benchmark.py", line 67, in <module>
     runner.bench_time_func(name, bench_genshi, tmpl_cls, tmpl_str)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
     suite = self.spawn_worker(self.calibrate_loops, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -2361,6 +2351,66 @@ Command failed with exit code 1
 
 ERROR: No benchmark was run
 Python benchmark suite 1.11.0
+
+
+==================================================
+```
+
+</details>
+
+## gevent_hub on linux-x86_64 default
+
+<details>
+<summary>Log for gevent_hub on linux-x86_64 default</summary>
+
+```
+      else:
+          integer_types = (int, long)
+                                ^
+      ------------------------------------------------------------
+      src/gevent/libev/corecext.pyx:69:26: undeclared name not builtin: long
+      Compiling src/gevent/libev/corecext.pyx because it changed.
+      [1/1] Cythonizing src/gevent/libev/corecext.pyx
+      Traceback (most recent call last):
+        File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b-bm-gevent_hub/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 389, in <module>
+          main()
+          ~~~~^^
+        File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b-bm-gevent_hub/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 373, in main
+          json_out["return_val"] = hook(**hook_input["kwargs"])
+                                   ~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b-bm-gevent_hub/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 143, in get_requires_for_build_wheel
+          return hook(config_settings)
+        File "/tmp/pip-build-env-ozdw4a_k/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 331, in get_requires_for_build_wheel
+          return self._get_build_requires(config_settings, requirements=[])
+                 ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/tmp/pip-build-env-ozdw4a_k/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 301, in _get_build_requires
+          self.run_setup()
+          ~~~~~~~~~~~~~~^^
+        File "/tmp/pip-build-env-ozdw4a_k/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 317, in run_setup
+          exec(code, locals())
+          ~~~~^^^^^^^^^^^^^^^^
+        File "<string>", line 54, in <module>
+        File "/tmp/pip-install-eejva790/gevent_4d34520a16cf4dbe9b7aacbc975d79cb/_setuputils.py", line 249, in cythonize1
+          new_ext = cythonize(
+                    ~~~~~~~~~^
+              [ext],
+              ^^^^^^
+          ...<46 lines>...
+              # cache="build/cycache",
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+          )[0]
+          ^
+        File "/tmp/pip-build-env-ozdw4a_k/overlay/lib/python3.15/site-packages/Cython/Build/Dependencies.py", line 1153, in cythonize
+          cythonize_one(*args)
+          ~~~~~~~~~~~~~^^^^^^^
+        File "/tmp/pip-build-env-ozdw4a_k/overlay/lib/python3.15/site-packages/Cython/Build/Dependencies.py", line 1297, in cythonize_one
+          raise CompileError(None, pyx_file)
+      Cython.Compiler.Errors.CompileError: src/gevent/libev/corecext.pyx
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+ERROR: Failed to build 'gevent' when getting requirements to build wheel
+Command failed with exit code 1
 
 
 ==================================================
@@ -2383,25 +2433,25 @@ Python benchmark suite 1.11.0
       Compiling src/gevent/libev/corecext.pyx because it changed.
       [1/1] Cythonizing src/gevent/libev/corecext.pyx
       Traceback (most recent call last):
-        File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b-bm-gevent_hub/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 389, in <module>
+        File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b-bm-gevent_hub/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 389, in <module>
           main()
           ~~~~^^
-        File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b-bm-gevent_hub/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 373, in main
+        File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b-bm-gevent_hub/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 373, in main
           json_out["return_val"] = hook(**hook_input["kwargs"])
                                    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b-bm-gevent_hub/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 143, in get_requires_for_build_wheel
+        File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b-bm-gevent_hub/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 143, in get_requires_for_build_wheel
           return hook(config_settings)
-        File "/tmp/pip-build-env-f5s3m4nf/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 331, in get_requires_for_build_wheel
+        File "/tmp/pip-build-env-oxt39rk1/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 331, in get_requires_for_build_wheel
           return self._get_build_requires(config_settings, requirements=[])
                  ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/tmp/pip-build-env-f5s3m4nf/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 301, in _get_build_requires
+        File "/tmp/pip-build-env-oxt39rk1/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 301, in _get_build_requires
           self.run_setup()
           ~~~~~~~~~~~~~~^^
-        File "/tmp/pip-build-env-f5s3m4nf/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 317, in run_setup
+        File "/tmp/pip-build-env-oxt39rk1/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 317, in run_setup
           exec(code, locals())
           ~~~~^^^^^^^^^^^^^^^^
         File "<string>", line 54, in <module>
-        File "/tmp/pip-install-jrd_k_8s/gevent_88bd9b6c3296486db72017d451fa6daa/_setuputils.py", line 249, in cythonize1
+        File "/tmp/pip-install-5j2t4a_9/gevent_72bb8fdb44874a5cb9f6b2b057bb895b/_setuputils.py", line 249, in cythonize1
           new_ext = cythonize(
                     ~~~~~~~~~^
               [ext],
@@ -2411,10 +2461,10 @@ Python benchmark suite 1.11.0
               ^^^^^^^^^^^^^^^^^^^^^^^^
           )[0]
           ^
-        File "/tmp/pip-build-env-f5s3m4nf/overlay/lib/python3.15/site-packages/Cython/Build/Dependencies.py", line 1153, in cythonize
+        File "/tmp/pip-build-env-oxt39rk1/overlay/lib/python3.15/site-packages/Cython/Build/Dependencies.py", line 1153, in cythonize
           cythonize_one(*args)
           ~~~~~~~~~~~~~^^^^^^^
-        File "/tmp/pip-build-env-f5s3m4nf/overlay/lib/python3.15/site-packages/Cython/Build/Dependencies.py", line 1297, in cythonize_one
+        File "/tmp/pip-build-env-oxt39rk1/overlay/lib/python3.15/site-packages/Cython/Build/Dependencies.py", line 1297, in cythonize_one
           raise CompileError(None, pyx_file)
       Cython.Compiler.Errors.CompileError: src/gevent/libev/corecext.pyx
       [end of output]
@@ -2442,25 +2492,25 @@ Command failed with exit code 1
       Compiling src/gevent/libev/corecext.pyx because it changed.
       [1/1] Cythonizing src/gevent/libev/corecext.pyx
       Traceback (most recent call last):
-        File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b-bm-gevent_hub/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 389, in <module>
+        File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b-bm-gevent_hub/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 389, in <module>
           main()
           ~~~~^^
-        File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b-bm-gevent_hub/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 373, in main
+        File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b-bm-gevent_hub/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 373, in main
           json_out["return_val"] = hook(**hook_input["kwargs"])
                                    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b-bm-gevent_hub/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 143, in get_requires_for_build_wheel
+        File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b-bm-gevent_hub/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 143, in get_requires_for_build_wheel
           return hook(config_settings)
-        File "/private/tmp/pip-build-env-w620xk6i/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 331, in get_requires_for_build_wheel
+        File "/private/tmp/pip-build-env-s1muadxm/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 331, in get_requires_for_build_wheel
           return self._get_build_requires(config_settings, requirements=[])
                  ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/private/tmp/pip-build-env-w620xk6i/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 301, in _get_build_requires
+        File "/private/tmp/pip-build-env-s1muadxm/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 301, in _get_build_requires
           self.run_setup()
           ~~~~~~~~~~~~~~^^
-        File "/private/tmp/pip-build-env-w620xk6i/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 317, in run_setup
+        File "/private/tmp/pip-build-env-s1muadxm/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 317, in run_setup
           exec(code, locals())
           ~~~~^^^^^^^^^^^^^^^^
         File "<string>", line 54, in <module>
-        File "/private/tmp/pip-install-_7_bf0hu/gevent_e9973103dccf47019ab4191b24f6f131/_setuputils.py", line 249, in cythonize1
+        File "/private/tmp/pip-install-56rxccbl/gevent_70d020070ff34ea0b8ee0e54ca8f11f0/_setuputils.py", line 249, in cythonize1
           new_ext = cythonize(
                     ~~~~~~~~~^
               [ext],
@@ -2470,70 +2520,10 @@ Command failed with exit code 1
               ^^^^^^^^^^^^^^^^^^^^^^^^
           )[0]
           ^
-        File "/private/tmp/pip-build-env-w620xk6i/overlay/lib/python3.15/site-packages/Cython/Build/Dependencies.py", line 1153, in cythonize
+        File "/private/tmp/pip-build-env-s1muadxm/overlay/lib/python3.15/site-packages/Cython/Build/Dependencies.py", line 1153, in cythonize
           cythonize_one(*args)
           ~~~~~~~~~~~~~^^^^^^^
-        File "/private/tmp/pip-build-env-w620xk6i/overlay/lib/python3.15/site-packages/Cython/Build/Dependencies.py", line 1297, in cythonize_one
-          raise CompileError(None, pyx_file)
-      Cython.Compiler.Errors.CompileError: src/gevent/libev/corecext.pyx
-      [end of output]
-  
-  note: This error originates from a subprocess, and is likely not a problem with pip.
-ERROR: Failed to build 'gevent' when getting requirements to build wheel
-Command failed with exit code 1
-
-
-==================================================
-```
-
-</details>
-
-## gevent_hub on linux-x86_64 default
-
-<details>
-<summary>Log for gevent_hub on linux-x86_64 default</summary>
-
-```
-      else:
-          integer_types = (int, long)
-                                ^
-      ------------------------------------------------------------
-      src/gevent/libev/corecext.pyx:69:26: undeclared name not builtin: long
-      Compiling src/gevent/libev/corecext.pyx because it changed.
-      [1/1] Cythonizing src/gevent/libev/corecext.pyx
-      Traceback (most recent call last):
-        File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b-bm-gevent_hub/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 389, in <module>
-          main()
-          ~~~~^^
-        File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b-bm-gevent_hub/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 373, in main
-          json_out["return_val"] = hook(**hook_input["kwargs"])
-                                   ~~~~^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b-bm-gevent_hub/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 143, in get_requires_for_build_wheel
-          return hook(config_settings)
-        File "/tmp/pip-build-env-xk4fwikp/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 331, in get_requires_for_build_wheel
-          return self._get_build_requires(config_settings, requirements=[])
-                 ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/tmp/pip-build-env-xk4fwikp/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 301, in _get_build_requires
-          self.run_setup()
-          ~~~~~~~~~~~~~~^^
-        File "/tmp/pip-build-env-xk4fwikp/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 317, in run_setup
-          exec(code, locals())
-          ~~~~^^^^^^^^^^^^^^^^
-        File "<string>", line 54, in <module>
-        File "/tmp/pip-install-rl31hzl7/gevent_208c4c5ad54948398a107666e7023ec0/_setuputils.py", line 249, in cythonize1
-          new_ext = cythonize(
-                    ~~~~~~~~~^
-              [ext],
-              ^^^^^^
-          ...<46 lines>...
-              # cache="build/cycache",
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-          )[0]
-          ^
-        File "/tmp/pip-build-env-xk4fwikp/overlay/lib/python3.15/site-packages/Cython/Build/Dependencies.py", line 1153, in cythonize
-          cythonize_one(*args)
-          ~~~~~~~~~~~~~^^^^^^^
-        File "/tmp/pip-build-env-xk4fwikp/overlay/lib/python3.15/site-packages/Cython/Build/Dependencies.py", line 1297, in cythonize_one
+        File "/private/tmp/pip-build-env-s1muadxm/overlay/lib/python3.15/site-packages/Cython/Build/Dependencies.py", line 1297, in cythonize_one
           raise CompileError(None, pyx_file)
       Cython.Compiler.Errors.CompileError: src/gevent/libev/corecext.pyx
       [end of output]
@@ -2554,15 +2544,15 @@ Command failed with exit code 1
 <summary>Log for go on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 535 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 535 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_go/run_benchmark.py", line 457 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -2570,23 +2560,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_go/run_benchmark.py", line 457, in <module>
     runner.bench_func('go', versus_cpu)
     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -2608,45 +2598,105 @@ Python benchmark suite 1.11.0
 
 </details>
 
+## gunicorn on linux-x86_64 default
+
+<details>
+<summary>Log for gunicorn on linux-x86_64 default</summary>
+
+```
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_gunicorn/run_benchmark.py", line 31, in bench_gunicorn
+    elapsed, _ = _bench_gunicorn(loops)
+                 ~~~~~~~~~~~~~~~^^^^^^^
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_gunicorn/run_benchmark.py", line 58, in _bench_gunicorn
+    requests_get("http://localhost:8000/blog/").text
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /blog/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x762e617c5e80>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Traceback (most recent call last):
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_gunicorn/run_benchmark.py", line 87, in <module>
+    runner.bench_time_func("gunicorn", bench_gunicorn)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+    result = self._main(task)
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+    bench = self._manager()
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+    bench = Manager(self).create_bench()
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+    worker_bench, run = self.create_worker_bench()
+                        ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+    suite = self.create_suite()
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
+    suite = self.spawn_worker(self.calibrate_loops, 0)
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+    raise RuntimeError("%s failed with exit code %s"
+                       % (cmd[0], exitcode))
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/bin/python failed with exit code 1
+Traceback (most recent call last):
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
+    result = bench.run(
+             ^^^^^^^^^^
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 189, in run
+    bench = _run_perf_script(
+            ^^^^^^^^^^^^^^^^^
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
+    raise RuntimeError("Benchmark died")
+RuntimeError: Benchmark died
+Command failed with exit code 1
+```
+
+</details>
+
 ## gunicorn on collect-stats pystats
 
 <details>
 <summary>Log for gunicorn on collect-stats pystats</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/lib/python3.15/site-packages/requests/api.py", line 73, in get
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/lib/python3.15/site-packages/requests/api.py", line 73, in get
     return request("get", url, params=params, **kwargs)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/lib/python3.15/site-packages/requests/api.py", line 59, in request
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/lib/python3.15/site-packages/requests/api.py", line 59, in request
     return session.request(method=method, url=url, **kwargs)
            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/lib/python3.15/site-packages/requests/sessions.py", line 587, in request
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/lib/python3.15/site-packages/requests/sessions.py", line 587, in request
     resp = self.send(prep, **send_kwargs)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/lib/python3.15/site-packages/requests/sessions.py", line 701, in send
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/lib/python3.15/site-packages/requests/sessions.py", line 701, in send
     r = adapter.send(request, **kwargs)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/lib/python3.15/site-packages/requests/adapters.py", line 519, in send
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/lib/python3.15/site-packages/requests/adapters.py", line 519, in send
     raise ConnectionError(e, request=request)
-requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /blog/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x705a039e2120>: Failed to establish a new connection: [Errno 111] Connection refused'))
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /blog/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ce6a11c9fd0>: Failed to establish a new connection: [Errno 111] Connection refused'))
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_gunicorn/run_benchmark.py", line 87, in <module>
     runner.bench_time_func("gunicorn", bench_gunicorn)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/bin/python failed with exit code 1
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/bin/python failed with exit code 1
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -2674,39 +2724,39 @@ Python benchmark suite 1.11.0
 <summary>Log for gunicorn on darwin-arm64 default</summary>
 
 ```
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/lib/python3.15/site-packages/requests/api.py", line 73, in get
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/lib/python3.15/site-packages/requests/api.py", line 73, in get
     return request("get", url, params=params, **kwargs)
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/lib/python3.15/site-packages/requests/api.py", line 59, in request
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/lib/python3.15/site-packages/requests/api.py", line 59, in request
     return session.request(method=method, url=url, **kwargs)
            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/lib/python3.15/site-packages/requests/sessions.py", line 587, in request
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/lib/python3.15/site-packages/requests/sessions.py", line 587, in request
     resp = self.send(prep, **send_kwargs)
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/lib/python3.15/site-packages/requests/sessions.py", line 701, in send
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/lib/python3.15/site-packages/requests/sessions.py", line 701, in send
     r = adapter.send(request, **kwargs)
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/lib/python3.15/site-packages/requests/adapters.py", line 519, in send
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/lib/python3.15/site-packages/requests/adapters.py", line 519, in send
     raise ConnectionError(e, request=request)
-requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /blog/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108ec42f0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /blog/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b1d01a0>: Failed to establish a new connection: [Errno 61] Connection refused'))
 Traceback (most recent call last):
   File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_gunicorn/run_benchmark.py", line 87, in <module>
     runner.bench_time_func("gunicorn", bench_gunicorn)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
     suite = self.spawn_worker(self.calibrate_loops, 0)
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/bin/python failed with exit code 1
+RuntimeError: /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/bin/python failed with exit code 1
 Traceback (most recent call last):
   File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.14/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -2728,81 +2778,21 @@ Command failed with exit code 1
 
 </details>
 
-## gunicorn on linux-x86_64 default
-
-<details>
-<summary>Log for gunicorn on linux-x86_64 default</summary>
-
-```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_gunicorn/run_benchmark.py", line 31, in bench_gunicorn
-    elapsed, _ = _bench_gunicorn(loops)
-                 ~~~~~~~~~~~~~~~^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_gunicorn/run_benchmark.py", line 58, in _bench_gunicorn
-    requests_get("http://localhost:8000/blog/").text
-    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/requests/api.py", line 73, in get
-    return request("get", url, params=params, **kwargs)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/requests/api.py", line 59, in request
-    return session.request(method=method, url=url, **kwargs)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/requests/sessions.py", line 587, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/requests/sessions.py", line 701, in send
-    r = adapter.send(request, **kwargs)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/requests/adapters.py", line 519, in send
-    raise ConnectionError(e, request=request)
-requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /blog/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7c52305f9fd0>: Failed to establish a new connection: [Errno 111] Connection refused'))
-Traceback (most recent call last):
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_gunicorn/run_benchmark.py", line 87, in <module>
-    runner.bench_time_func("gunicorn", bench_gunicorn)
-    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
-    result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
-    bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
-    bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
-    worker_bench, run = self.create_worker_bench()
-                        ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
-    suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
-    suite = self.spawn_worker(self.calibrate_loops, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
-    raise RuntimeError("%s failed with exit code %s"
-                       % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/bin/python failed with exit code 1
-Traceback (most recent call last):
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
-    result = bench.run(
-             ^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 189, in run
-    bench = _run_perf_script(
-            ^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
-    raise RuntimeError("Benchmark died")
-RuntimeError: Benchmark died
-Command failed with exit code 1
-```
-
-</details>
-
 ## hexiom on collect-stats tier2
 
 <details>
 <summary>Log for hexiom on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_hexiom/run_benchmark.py", line 666 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -2810,23 +2800,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_hexiom/run_benchmark.py", line 666, in <module>
     runner.bench_time_func('hexiom', main, args.level)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -2854,15 +2844,15 @@ Python benchmark suite 1.11.0
 <summary>Log for html5lib on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 531 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 531 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_html5lib/run_benchmark.py", line 33 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -2870,23 +2860,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_html5lib/run_benchmark.py", line 33, in <module>
     runner.bench_func('html5lib', bench_html5lib, html_file)
     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -2914,15 +2904,15 @@ Python benchmark suite 1.11.0
 <summary>Log for json on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_json/run_benchmark.py", line 68 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -2930,23 +2920,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_json/run_benchmark.py", line 68, in <module>
     runner.bench_time_func("json", bench_json_loads)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -2974,11 +2964,11 @@ Python benchmark suite 1.11.0
 <summary>Log for json_dumps on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_json_dumps/run_benchmark.py", line 55 in main
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_json_dumps/run_benchmark.py", line 59 in <module>
 
@@ -2990,23 +2980,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_json_dumps/run_benchmark.py", line 55, in main
     runner.bench_func('json_dumps', bench_json_dumps, data)
     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -3021,126 +3011,6 @@ Command failed with exit code 1
 
 ERROR: No benchmark was run
 Python benchmark suite 1.11.0
-
-
-==================================================
-```
-
-</details>
-
-## kinto on collect-stats pystats
-
-<details>
-<summary>Log for kinto on collect-stats pystats</summary>
-
-```
-      /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Include/pylifecycle.h:37:38: note: declared here
-         37 | Py_DEPRECATED(3.11) PyAPI_FUNC(void) Py_SetProgramName(const wchar_t *);
-            |                                      ^~~~~~~~~~~~~~~~~
-      plugins/python/python_plugin.c:287:9: warning: ‘Py_OptimizeFlag’ is deprecated [-Wdeprecated-declarations]
-        287 |         Py_OptimizeFlag = up.optimize;
-            |         ^~~~~~~~~~~~~~~
-      /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Include/cpython/pydebug.h:13:37: note: declared here
-         13 | Py_DEPRECATED(3.12) PyAPI_DATA(int) Py_OptimizeFlag;
-            |                                     ^~~~~~~~~~~~~~~
-      plugins/python/pyutils.c: In function ‘init_pyargv’:
-      plugins/python/pyutils.c:391:9: warning: ‘PySys_SetArgv’ is deprecated [-Wdeprecated-declarations]
-        391 |         PySys_SetArgv(up.argc, up.py_argv);
-            |         ^~~~~~~~~~~~~
-      In file included from /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Include/Python.h:137,
-                       from plugins/python/uwsgi_python.h:4,
-                       from plugins/python/pyutils.c:1:
-      /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Include/sysmodule.h:16:38: note: declared here
-         16 | Py_DEPRECATED(3.11) PyAPI_FUNC(void) PySys_SetArgv(int, wchar_t **);
-            |                                      ^~~~~~~~~~~~~
-      plugins/python/python_plugin.c: In function ‘uwsgi_python_suspend’:
-      plugins/python/python_plugin.c:1612:80: error: ‘PyThreadState’ {aka ‘struct _ts’} has no member named ‘c_recursion_remaining’; did you mean ‘py_recursion_remaining’?
-       1612 |                 up.current_c_recursion_remaining[wsgi_req->async_id] = tstate->c_recursion_remaining;
-            |                                                                                ^~~~~~~~~~~~~~~~~~~~~
-            |                                                                                py_recursion_remaining
-      plugins/python/python_plugin.c:1629:65: error: ‘PyThreadState’ {aka ‘struct _ts’} has no member named ‘c_recursion_remaining’; did you mean ‘py_recursion_remaining’?
-       1629 |                 up.current_main_c_recursion_remaining = tstate->c_recursion_remaining;
-            |                                                                 ^~~~~~~~~~~~~~~~~~~~~
-            |                                                                 py_recursion_remaining
-      plugins/python/python_plugin.c: In function ‘uwsgi_python_resume’:
-      plugins/python/python_plugin.c:1873:25: error: ‘PyThreadState’ {aka ‘struct _ts’} has no member named ‘c_recursion_remaining’; did you mean ‘py_recursion_remaining’?
-       1873 |                 tstate->c_recursion_remaining = up.current_c_recursion_remaining[wsgi_req->async_id];
-            |                         ^~~~~~~~~~~~~~~~~~~~~
-            |                         py_recursion_remaining
-      plugins/python/python_plugin.c:1890:25: error: ‘PyThreadState’ {aka ‘struct _ts’} has no member named ‘c_recursion_remaining’; did you mean ‘py_recursion_remaining’?
-       1890 |                 tstate->c_recursion_remaining = up.current_main_c_recursion_remaining;
-            |                         ^~~~~~~~~~~~~~~~~~~~~
-            |                         py_recursion_remaining
-      [end of output]
-  
-  note: This error originates from a subprocess, and is likely not a problem with pip.
-  ERROR: Failed building wheel for uWSGI
-Successfully built kinto
-Failed to build uWSGI
-error: failed-wheel-build-for-install
-
-× Failed to build installable wheels for some pyproject.toml based projects
-╰─> uWSGI
-Command failed with exit code 1
-
-
-```
-
-</details>
-
-## kinto on darwin-arm64 default
-
-<details>
-<summary>Log for kinto on darwin-arm64 default</summary>
-
-```
-            |                                                                                py_recursion_remaining
-      /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Include/cpython/pystate.h:125:9: note: 'py_recursion_remaining' declared here
-        125 |     int py_recursion_remaining;
-            |         ^
-      plugins/python/python_plugin.c:1629:51: error: no member named 'c_recursion_remaining' in 'struct _ts'; did you mean 'py_recursion_remaining'?
-       1629 |                 up.current_main_c_recursion_remaining = tstate->c_recursion_remaining;
-            |                                                                 ^~~~~~~~~~~~~~~~~~~~~
-            |                                                                 py_recursion_remaining
-      /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Include/cpython/pystate.h:125:9: note: 'py_recursion_remaining' declared here
-        125 |     int py_recursion_remaining;
-            |         ^
-      plugins/python/python_plugin.c:1873:11: error: no member named 'c_recursion_remaining' in 'struct _ts'; did you mean 'py_recursion_remaining'?
-       1873 |                 tstate->c_recursion_remaining = up.current_c_recursion_remaining[wsgi_req->async_id];
-            |                         ^~~~~~~~~~~~~~~~~~~~~
-            |                         py_recursion_remaining
-      /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Include/cpython/pystate.h:125:9: note: 'py_recursion_remaining' declared here
-        125 |     int py_recursion_remaining;
-            |         ^
-      plugins/python/python_plugin.c:1890:11: error: no member named 'c_recursion_remaining' in 'struct _ts'; did you mean 'py_recursion_remaining'?
-       1890 |                 tstate->c_recursion_remaining = up.current_main_c_recursion_remaining;
-            |                         ^~~~~~~~~~~~~~~~~~~~~
-            |                         py_recursion_remaining
-      /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Include/cpython/pystate.h:125:9: note: 'py_recursion_remaining' declared here
-        125 |     int py_recursion_remaining;
-            |         ^
-      plugins/python/pyutils.c:391:2: warning: 'PySys_SetArgv' is deprecated [-Wdeprecated-declarations]
-        391 |         PySys_SetArgv(up.argc, up.py_argv);
-            |         ^
-      /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Include/sysmodule.h:16:1: note: 'PySys_SetArgv' has been explicitly marked deprecated here
-         16 | Py_DEPRECATED(3.11) PyAPI_FUNC(void) PySys_SetArgv(int, wchar_t **);
-            | ^
-      /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Include/pyport.h:281:54: note: expanded from macro 'Py_DEPRECATED'
-        281 | #define Py_DEPRECATED(VERSION_UNUSED) __attribute__((__deprecated__))
-            |                                                      ^
-      4 warnings and 4 errors generated.
-      1 warning generated.
-      [end of output]
-  
-  note: This error originates from a subprocess, and is likely not a problem with pip.
-  ERROR: Failed building wheel for uWSGI
-error: failed-wheel-build-for-install
-
-× Failed to build installable wheels for some pyproject.toml based projects
-╰─> uWSGI
-Successfully built kinto
-Failed to build uWSGI
-Command failed with exit code 1
 
 
 ==================================================
@@ -3194,12 +3064,132 @@ Command failed with exit code 1
   
   note: This error originates from a subprocess, and is likely not a problem with pip.
   ERROR: Failed building wheel for uWSGI
-Successfully built kinto
-Failed to build uWSGI
 error: failed-wheel-build-for-install
 
 × Failed to build installable wheels for some pyproject.toml based projects
 ╰─> uWSGI
+Successfully built kinto
+Failed to build uWSGI
+Command failed with exit code 1
+
+
+==================================================
+```
+
+</details>
+
+## kinto on collect-stats pystats
+
+<details>
+<summary>Log for kinto on collect-stats pystats</summary>
+
+```
+      /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Include/pylifecycle.h:37:38: note: declared here
+         37 | Py_DEPRECATED(3.11) PyAPI_FUNC(void) Py_SetProgramName(const wchar_t *);
+            |                                      ^~~~~~~~~~~~~~~~~
+      plugins/python/python_plugin.c:287:9: warning: ‘Py_OptimizeFlag’ is deprecated [-Wdeprecated-declarations]
+        287 |         Py_OptimizeFlag = up.optimize;
+            |         ^~~~~~~~~~~~~~~
+      /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Include/cpython/pydebug.h:13:37: note: declared here
+         13 | Py_DEPRECATED(3.12) PyAPI_DATA(int) Py_OptimizeFlag;
+            |                                     ^~~~~~~~~~~~~~~
+      plugins/python/python_plugin.c: In function ‘uwsgi_python_suspend’:
+      plugins/python/pyutils.c: In function ‘init_pyargv’:
+      plugins/python/pyutils.c:391:9: warning: ‘PySys_SetArgv’ is deprecated [-Wdeprecated-declarations]
+        391 |         PySys_SetArgv(up.argc, up.py_argv);
+            |         ^~~~~~~~~~~~~
+      In file included from /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Include/Python.h:137,
+                       from plugins/python/uwsgi_python.h:4,
+                       from plugins/python/pyutils.c:1:
+      /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Include/sysmodule.h:16:38: note: declared here
+         16 | Py_DEPRECATED(3.11) PyAPI_FUNC(void) PySys_SetArgv(int, wchar_t **);
+            |                                      ^~~~~~~~~~~~~
+      plugins/python/python_plugin.c:1612:80: error: ‘PyThreadState’ {aka ‘struct _ts’} has no member named ‘c_recursion_remaining’; did you mean ‘py_recursion_remaining’?
+       1612 |                 up.current_c_recursion_remaining[wsgi_req->async_id] = tstate->c_recursion_remaining;
+            |                                                                                ^~~~~~~~~~~~~~~~~~~~~
+            |                                                                                py_recursion_remaining
+      plugins/python/python_plugin.c:1629:65: error: ‘PyThreadState’ {aka ‘struct _ts’} has no member named ‘c_recursion_remaining’; did you mean ‘py_recursion_remaining’?
+       1629 |                 up.current_main_c_recursion_remaining = tstate->c_recursion_remaining;
+            |                                                                 ^~~~~~~~~~~~~~~~~~~~~
+            |                                                                 py_recursion_remaining
+      plugins/python/python_plugin.c: In function ‘uwsgi_python_resume’:
+      plugins/python/python_plugin.c:1873:25: error: ‘PyThreadState’ {aka ‘struct _ts’} has no member named ‘c_recursion_remaining’; did you mean ‘py_recursion_remaining’?
+       1873 |                 tstate->c_recursion_remaining = up.current_c_recursion_remaining[wsgi_req->async_id];
+            |                         ^~~~~~~~~~~~~~~~~~~~~
+            |                         py_recursion_remaining
+      plugins/python/python_plugin.c:1890:25: error: ‘PyThreadState’ {aka ‘struct _ts’} has no member named ‘c_recursion_remaining’; did you mean ‘py_recursion_remaining’?
+       1890 |                 tstate->c_recursion_remaining = up.current_main_c_recursion_remaining;
+            |                         ^~~~~~~~~~~~~~~~~~~~~
+            |                         py_recursion_remaining
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for uWSGI
+Successfully built kinto
+error: failed-wheel-build-for-install
+
+× Failed to build installable wheels for some pyproject.toml based projects
+╰─> uWSGI
+Failed to build uWSGI
+Command failed with exit code 1
+
+
+```
+
+</details>
+
+## kinto on darwin-arm64 default
+
+<details>
+<summary>Log for kinto on darwin-arm64 default</summary>
+
+```
+            |                                                                                py_recursion_remaining
+      /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Include/cpython/pystate.h:125:9: note: 'py_recursion_remaining' declared here
+        125 |     int py_recursion_remaining;
+            |         ^
+      plugins/python/python_plugin.c:1629:51: error: no member named 'c_recursion_remaining' in 'struct _ts'; did you mean 'py_recursion_remaining'?
+       1629 |                 up.current_main_c_recursion_remaining = tstate->c_recursion_remaining;
+            |                                                                 ^~~~~~~~~~~~~~~~~~~~~
+            |                                                                 py_recursion_remaining
+      /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Include/cpython/pystate.h:125:9: note: 'py_recursion_remaining' declared here
+        125 |     int py_recursion_remaining;
+            |         ^
+      plugins/python/python_plugin.c:1873:11: error: no member named 'c_recursion_remaining' in 'struct _ts'; did you mean 'py_recursion_remaining'?
+       1873 |                 tstate->c_recursion_remaining = up.current_c_recursion_remaining[wsgi_req->async_id];
+            |                         ^~~~~~~~~~~~~~~~~~~~~
+            |                         py_recursion_remaining
+      /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Include/cpython/pystate.h:125:9: note: 'py_recursion_remaining' declared here
+        125 |     int py_recursion_remaining;
+            |         ^
+      plugins/python/python_plugin.c:1890:11: error: no member named 'c_recursion_remaining' in 'struct _ts'; did you mean 'py_recursion_remaining'?
+       1890 |                 tstate->c_recursion_remaining = up.current_main_c_recursion_remaining;
+            |                         ^~~~~~~~~~~~~~~~~~~~~
+            |                         py_recursion_remaining
+      /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Include/cpython/pystate.h:125:9: note: 'py_recursion_remaining' declared here
+        125 |     int py_recursion_remaining;
+            |         ^
+      4 warnings and 4 errors generated.
+      plugins/python/pyutils.c:391:2: warning: 'PySys_SetArgv' is deprecated [-Wdeprecated-declarations]
+        391 |         PySys_SetArgv(up.argc, up.py_argv);
+            |         ^
+      /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Include/sysmodule.h:16:1: note: 'PySys_SetArgv' has been explicitly marked deprecated here
+         16 | Py_DEPRECATED(3.11) PyAPI_FUNC(void) PySys_SetArgv(int, wchar_t **);
+            | ^
+      /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Include/pyport.h:281:54: note: expanded from macro 'Py_DEPRECATED'
+        281 | #define Py_DEPRECATED(VERSION_UNUSED) __attribute__((__deprecated__))
+            |                                                      ^
+      1 warning generated.
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for uWSGI
+error: failed-wheel-build-for-install
+
+× Failed to build installable wheels for some pyproject.toml based projects
+╰─> uWSGI
+Successfully built kinto
+Failed to build uWSGI
 Command failed with exit code 1
 
 
@@ -3214,11 +3204,11 @@ Command failed with exit code 1
 <summary>Log for logging on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_logging/run_benchmark.py", line 162 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -3230,23 +3220,23 @@ Traceback (most recent call last):
                            ^^^^^^^^^^^^^^^
                            inner_loops=10)
                            ^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
     suite = self.spawn_worker(self.calibrate_loops, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -3274,11 +3264,11 @@ Python benchmark suite 1.11.0
 <summary>Log for mako on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_mako/run_benchmark.py", line 131 in bench_mako
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_mako/run_benchmark.py", line 142 in <module>
 
@@ -3290,23 +3280,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_mako/run_benchmark.py", line 131, in bench_mako
     runner.bench_func('mako', func)
     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -3334,15 +3324,15 @@ Python benchmark suite 1.11.0
 <summary>Log for mdp on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_mdp/run_benchmark.py", line 267 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -3350,23 +3340,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_mdp/run_benchmark.py", line 267, in <module>
     runner.bench_time_func('mdp', bench_mdp)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -3394,9 +3384,9 @@ Python benchmark suite 1.11.0
 <summary>Log for meteor_contest on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_meteor_contest/run_benchmark.py", line 221 in main
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_meteor_contest/run_benchmark.py", line 226 in <module>
 
@@ -3410,23 +3400,23 @@ Traceback (most recent call last):
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
                            board, pieces, solve_arg, fps, se_nh)
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -3448,17 +3438,16 @@ Python benchmark suite 1.11.0
 
 </details>
 
-## mypy2 on collect-stats pystats
+## mypy2 on linux-x86_64 default
 
 <details>
-<summary>Log for mypy2 on collect-stats pystats</summary>
+<summary>Log for mypy2 on linux-x86_64 default</summary>
 
 ```
-Installing collected packages: pip
-  changing mode of /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b-bm-mypy2/bin/pip3 to 755
-  changing mode of /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b-bm-mypy2/bin/pip3.15 to 755
+  changing mode of /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b-bm-mypy2/bin/pip3 to 755
+  changing mode of /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b-bm-mypy2/bin/pip3.15 to 755
 Successfully installed pip-25.3
-# /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b-bm-mypy2/bin/python -m pip install -U 'setuptools>=18.5' wheel
+# /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b-bm-mypy2/bin/python -m pip install -U 'setuptools>=18.5' wheel
 Collecting setuptools>=18.5
   Using cached setuptools-80.9.0-py3-none-any.whl.metadata (6.6 kB)
 Collecting wheel
@@ -3468,10 +3457,71 @@ Using cached wheel-0.45.1-py3-none-any.whl (72 kB)
 Installing collected packages: wheel, setuptools
 
 Successfully installed setuptools-80.9.0 wheel-0.45.1
-# /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b-bm-mypy2/bin/python -m pip --version
-pip 25.3 from /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b-bm-mypy2/lib/python3.15/site-packages/pip (python 3.15)
-Installing requirements into the virtual environment /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b-bm-mypy2
-# /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b-bm-mypy2/bin/python -m pip install --no-binary=mypy mypy==1.13.0 mypy-extensions==1.0.0 typing-extensions==4.2.0 pyperf==2.9.0
+# /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b-bm-mypy2/bin/python -m pip --version
+pip 25.3 from /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b-bm-mypy2/lib/python3.15/site-packages/pip (python 3.15)
+Installing requirements into the virtual environment /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b-bm-mypy2
+# /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b-bm-mypy2/bin/python -m pip install --no-binary=mypy mypy==1.13.0 mypy-extensions==1.0.0 typing-extensions==4.2.0 pyperf==2.9.0
+Collecting mypy==1.13.0
+  Using cached mypy-1.13.0.tar.gz (3.2 MB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting mypy-extensions==1.0.0
+  Using cached mypy_extensions-1.0.0-py3-none-any.whl.metadata (1.1 kB)
+Collecting typing-extensions==4.2.0
+  Using cached typing_extensions-4.2.0-py3-none-any.whl.metadata (6.2 kB)
+Collecting pyperf==2.9.0
+  Using cached pyperf-2.9.0-py3-none-any.whl.metadata (5.9 kB)
+INFO: pip is looking at multiple versions of mypy to determine which version is compatible with other requirements. This could take a while.
+ERROR: Cannot install mypy==1.13.0 and typing-extensions==4.2.0 because these package versions have conflicting dependencies.
+
+The conflict is caused by:
+    The user requested typing-extensions==4.2.0
+    mypy 1.13.0 depends on typing_extensions>=4.6.0
+
+Additionally, some packages in these conflicts have no matching distributions available for your environment:
+    typing-extensions
+
+To fix this you could try to:
+1. loosen the range of package versions you've specified
+2. remove package versions to allow pip to attempt to solve the dependency conflict
+
+ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+Command failed with exit code 1
+
+
+==================================================
+```
+
+</details>
+
+## mypy2 on collect-stats pystats
+
+<details>
+<summary>Log for mypy2 on collect-stats pystats</summary>
+
+```
+Installing collected packages: pip
+  changing mode of /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b-bm-mypy2/bin/pip3 to 755
+  changing mode of /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b-bm-mypy2/bin/pip3.15 to 755
+Successfully installed pip-25.3
+# /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b-bm-mypy2/bin/python -m pip install -U 'setuptools>=18.5' wheel
+Collecting setuptools>=18.5
+  Using cached setuptools-80.9.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting wheel
+  Using cached wheel-0.45.1-py3-none-any.whl.metadata (2.3 kB)
+Using cached setuptools-80.9.0-py3-none-any.whl (1.2 MB)
+Using cached wheel-0.45.1-py3-none-any.whl (72 kB)
+Installing collected packages: wheel, setuptools
+
+Successfully installed setuptools-80.9.0 wheel-0.45.1
+# /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b-bm-mypy2/bin/python -m pip --version
+pip 25.3 from /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b-bm-mypy2/lib/python3.15/site-packages/pip (python 3.15)
+Installing requirements into the virtual environment /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b-bm-mypy2
+# /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b-bm-mypy2/bin/python -m pip install --no-binary=mypy mypy==1.13.0 mypy-extensions==1.0.0 typing-extensions==4.2.0 pyperf==2.9.0
 Collecting mypy==1.13.0
   Using cached mypy-1.13.0.tar.gz (3.2 MB)
   Installing build dependencies: started
@@ -3514,10 +3564,10 @@ Command failed with exit code 1
 <summary>Log for mypy2 on darwin-arm64 default</summary>
 
 ```
-  changing mode of /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b-bm-mypy2/bin/pip3 to 755
-  changing mode of /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b-bm-mypy2/bin/pip3.15 to 755
+  changing mode of /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b-bm-mypy2/bin/pip3 to 755
+  changing mode of /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b-bm-mypy2/bin/pip3.15 to 755
 Successfully installed pip-25.3
-# /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b-bm-mypy2/bin/python -m pip install -U 'setuptools>=18.5' wheel
+# /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b-bm-mypy2/bin/python -m pip install -U 'setuptools>=18.5' wheel
 Collecting setuptools>=18.5
   Using cached setuptools-80.9.0-py3-none-any.whl.metadata (6.6 kB)
 Collecting wheel
@@ -3527,70 +3577,10 @@ Using cached wheel-0.45.1-py3-none-any.whl (72 kB)
 Installing collected packages: wheel, setuptools
 
 Successfully installed setuptools-80.9.0 wheel-0.45.1
-# /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b-bm-mypy2/bin/python -m pip --version
-pip 25.3 from /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b-bm-mypy2/lib/python3.15/site-packages/pip (python 3.15)
-Installing requirements into the virtual environment /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b-bm-mypy2
-# /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b-bm-mypy2/bin/python -m pip install --no-binary=mypy mypy==1.13.0 mypy-extensions==1.0.0 typing-extensions==4.2.0 pyperf==2.9.0
-Collecting mypy==1.13.0
-  Using cached mypy-1.13.0.tar.gz (3.2 MB)
-  Installing build dependencies: started
-  Installing build dependencies: finished with status 'done'
-  Getting requirements to build wheel: started
-  Getting requirements to build wheel: finished with status 'done'
-  Preparing metadata (pyproject.toml): started
-  Preparing metadata (pyproject.toml): finished with status 'done'
-Collecting mypy-extensions==1.0.0
-  Using cached mypy_extensions-1.0.0-py3-none-any.whl.metadata (1.1 kB)
-Collecting typing-extensions==4.2.0
-  Using cached typing_extensions-4.2.0-py3-none-any.whl.metadata (6.2 kB)
-Collecting pyperf==2.9.0
-  Using cached pyperf-2.9.0-py3-none-any.whl.metadata (5.9 kB)
-INFO: pip is looking at multiple versions of mypy to determine which version is compatible with other requirements. This could take a while.
-ERROR: Cannot install mypy==1.13.0 and typing-extensions==4.2.0 because these package versions have conflicting dependencies.
-
-The conflict is caused by:
-    The user requested typing-extensions==4.2.0
-    mypy 1.13.0 depends on typing_extensions>=4.6.0
-
-Additionally, some packages in these conflicts have no matching distributions available for your environment:
-    typing-extensions
-
-To fix this you could try to:
-1. loosen the range of package versions you've specified
-2. remove package versions to allow pip to attempt to solve the dependency conflict
-
-ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
-Command failed with exit code 1
-
-
-==================================================
-```
-
-</details>
-
-## mypy2 on linux-x86_64 default
-
-<details>
-<summary>Log for mypy2 on linux-x86_64 default</summary>
-
-```
-  changing mode of /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b-bm-mypy2/bin/pip3 to 755
-  changing mode of /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b-bm-mypy2/bin/pip3.15 to 755
-Successfully installed pip-25.3
-# /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b-bm-mypy2/bin/python -m pip install -U 'setuptools>=18.5' wheel
-Collecting setuptools>=18.5
-  Using cached setuptools-80.9.0-py3-none-any.whl.metadata (6.6 kB)
-Collecting wheel
-  Using cached wheel-0.45.1-py3-none-any.whl.metadata (2.3 kB)
-Using cached setuptools-80.9.0-py3-none-any.whl (1.2 MB)
-Using cached wheel-0.45.1-py3-none-any.whl (72 kB)
-Installing collected packages: wheel, setuptools
-
-Successfully installed setuptools-80.9.0 wheel-0.45.1
-# /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b-bm-mypy2/bin/python -m pip --version
-pip 25.3 from /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b-bm-mypy2/lib/python3.15/site-packages/pip (python 3.15)
-Installing requirements into the virtual environment /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b-bm-mypy2
-# /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b-bm-mypy2/bin/python -m pip install --no-binary=mypy mypy==1.13.0 mypy-extensions==1.0.0 typing-extensions==4.2.0 pyperf==2.9.0
+# /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b-bm-mypy2/bin/python -m pip --version
+pip 25.3 from /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b-bm-mypy2/lib/python3.15/site-packages/pip (python 3.15)
+Installing requirements into the virtual environment /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b-bm-mypy2
+# /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b-bm-mypy2/bin/python -m pip install --no-binary=mypy mypy==1.13.0 mypy-extensions==1.0.0 typing-extensions==4.2.0 pyperf==2.9.0
 Collecting mypy==1.13.0
   Using cached mypy-1.13.0.tar.gz (3.2 MB)
   Installing build dependencies: started
@@ -3634,13 +3624,13 @@ Command failed with exit code 1
 <summary>Log for nbody on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_nbody/run_benchmark.py", line 155 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -3650,23 +3640,23 @@ Traceback (most recent call last):
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
                            args.reference, args.iterations)
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -3694,15 +3684,15 @@ Python benchmark suite 1.11.0
 <summary>Log for networkx on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 535 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 249 in calibrate_loops
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 286 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 535 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 249 in calibrate_loops
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 286 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_networkx/run_benchmark.py", line 61 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -3710,23 +3700,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_networkx/run_benchmark.py", line 61, in <module>
     runner.bench_func(args.benchmark, BENCHMARKS[args.benchmark])
     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
     suite = self.spawn_worker(self.calibrate_loops, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -3754,15 +3744,15 @@ Python benchmark suite 1.11.0
 <summary>Log for networkx_connected_components on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 535 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 249 in calibrate_loops
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 286 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 535 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 249 in calibrate_loops
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 286 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_networkx/run_benchmark.py", line 61 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -3770,23 +3760,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_networkx/run_benchmark.py", line 61, in <module>
     runner.bench_func(args.benchmark, BENCHMARKS[args.benchmark])
     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
     suite = self.spawn_worker(self.calibrate_loops, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -3814,15 +3804,15 @@ Python benchmark suite 1.11.0
 <summary>Log for networkx_k_core on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 535 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 249 in calibrate_loops
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 286 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 535 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 249 in calibrate_loops
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 286 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_networkx/run_benchmark.py", line 61 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -3830,23 +3820,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_networkx/run_benchmark.py", line 61, in <module>
     runner.bench_func(args.benchmark, BENCHMARKS[args.benchmark])
     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
     suite = self.spawn_worker(self.calibrate_loops, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -3874,15 +3864,15 @@ Python benchmark suite 1.11.0
 <summary>Log for nqueens on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 531 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 531 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_nqueens/run_benchmark.py", line 62 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -3890,23 +3880,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_nqueens/run_benchmark.py", line 62, in <module>
     runner.bench_func('nqueens', bench_n_queens, queen_count)
     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -3934,15 +3924,15 @@ Python benchmark suite 1.11.0
 <summary>Log for pathlib on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_pathlib/run_benchmark.py", line 75 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -3950,23 +3940,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_pathlib/run_benchmark.py", line 75, in <module>
     runner.bench_time_func('pathlib', bench_pathlib, tmp_path)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -3994,13 +3984,13 @@ Python benchmark suite 1.11.0
 <summary>Log for pickle_pure_python on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_pickle/run_benchmark.py", line 285 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -4010,23 +4000,23 @@ Traceback (most recent call last):
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
                            pickle, options, inner_loops=inner_loops)
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -4054,15 +4044,15 @@ Python benchmark suite 1.11.0
 <summary>Log for pidigits on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 535 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 535 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_pidigits/run_benchmark.py", line 70 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -4070,23 +4060,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_pidigits/run_benchmark.py", line 70, in <module>
     runner.bench_func('pidigits', calc_ndigits, args.digits)
     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -4114,13 +4104,13 @@ Python benchmark suite 1.11.0
 <summary>Log for pprint on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 249 in calibrate_loops
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 286 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 249 in calibrate_loops
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 286 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_pprint/run_benchmark.py", line 21 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -4130,23 +4120,23 @@ Traceback (most recent call last):
     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
                       printable, {}, None, 0)
                       ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
     suite = self.spawn_worker(self.calibrate_loops, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -4174,15 +4164,15 @@ Python benchmark suite 1.11.0
 <summary>Log for pycparser on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_pycparser/run_benchmark.py", line 79 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -4190,23 +4180,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_pycparser/run_benchmark.py", line 79, in <module>
     runner.bench_time_func("pycparser", bench_pycparser)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -4234,15 +4224,15 @@ Python benchmark suite 1.11.0
 <summary>Log for pyflate on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_pyflate/run_benchmark.py", line 665 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -4250,23 +4240,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_pyflate/run_benchmark.py", line 665, in <module>
     runner.bench_time_func('pyflate', bench_pyflake, filename)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -4294,15 +4284,15 @@ Python benchmark suite 1.11.0
 <summary>Log for pylint on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_pylint/run_benchmark.py", line 70 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -4310,23 +4300,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/pyston-benchmarks/benchmarks/bm_pylint/run_benchmark.py", line 70, in <module>
     runner.bench_time_func("pylint", bench_pylint)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -4341,6 +4331,66 @@ Command failed with exit code 1
 
 ERROR: No benchmark was run
 Python benchmark suite 1.11.0
+
+
+==================================================
+```
+
+</details>
+
+## pytorch_alexnet_inference on linux-x86_64 default
+
+<details>
+<summary>Log for pytorch_alexnet_inference on linux-x86_64 default</summary>
+
+```
+  error: subprocess-exited-with-error
+  
+  × Preparing metadata (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [31 lines of output]
+      Running from numpy source directory.
+      <string>:460: UserWarning: Unrecognized setuptools command, proceeding with generating Cython sources and expanding templates
+      Traceback (most recent call last):
+        File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b-bm-pytorch_alexnet_inference/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 389, in <module>
+          main()
+          ~~~~^^
+        File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b-bm-pytorch_alexnet_inference/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 373, in main
+          json_out["return_val"] = hook(**hook_input["kwargs"])
+                                   ~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b-bm-pytorch_alexnet_inference/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 175, in prepare_metadata_for_build_wheel
+          return hook(metadata_directory, config_settings)
+        File "/tmp/pip-build-env-elrsz4n0/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 374, in prepare_metadata_for_build_wheel
+          self.run_setup()
+          ~~~~~~~~~~~~~~^^
+        File "/tmp/pip-build-env-elrsz4n0/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 512, in run_setup
+          super().run_setup(setup_script=setup_script)
+          ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/tmp/pip-build-env-elrsz4n0/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 317, in run_setup
+          exec(code, locals())
+          ~~~~^^^^^^^^^^^^^^^^
+        File "<string>", line 489, in <module>
+        File "<string>", line 465, in setup_package
+        File "/tmp/pip-install-rda4yu9p/numpy_db6850d2cafe401c906567a0d87f007f/numpy/distutils/core.py", line 24, in <module>
+          from numpy.distutils.command import config, config_compiler, \
+          ...<2 lines>...
+               install_clib
+        File "/tmp/pip-install-rda4yu9p/numpy_db6850d2cafe401c906567a0d87f007f/numpy/distutils/command/config.py", line 19, in <module>
+          from numpy.distutils.mingw32ccompiler import generate_manifest
+        File "/tmp/pip-install-rda4yu9p/numpy_db6850d2cafe401c906567a0d87f007f/numpy/distutils/mingw32ccompiler.py", line 28, in <module>
+          from distutils.msvccompiler import get_build_version as get_build_msvc_version
+      ModuleNotFoundError: No module named 'distutils.msvccompiler'
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> numpy
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
+Command failed with exit code 1
 
 
 ==================================================
@@ -4363,32 +4413,32 @@ Python benchmark suite 1.11.0
       Running from numpy source directory.
       <string>:460: UserWarning: Unrecognized setuptools command, proceeding with generating Cython sources and expanding templates
       Traceback (most recent call last):
-        File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b-bm-pytorch_alexnet_inference/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 389, in <module>
+        File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b-bm-pytorch_alexnet_inference/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 389, in <module>
           main()
           ~~~~^^
-        File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b-bm-pytorch_alexnet_inference/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 373, in main
+        File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b-bm-pytorch_alexnet_inference/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 373, in main
           json_out["return_val"] = hook(**hook_input["kwargs"])
                                    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b-bm-pytorch_alexnet_inference/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 175, in prepare_metadata_for_build_wheel
+        File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b-bm-pytorch_alexnet_inference/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 175, in prepare_metadata_for_build_wheel
           return hook(metadata_directory, config_settings)
-        File "/tmp/pip-build-env-l6sl3ohi/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 374, in prepare_metadata_for_build_wheel
+        File "/tmp/pip-build-env-a9_sapax/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 374, in prepare_metadata_for_build_wheel
           self.run_setup()
           ~~~~~~~~~~~~~~^^
-        File "/tmp/pip-build-env-l6sl3ohi/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 512, in run_setup
+        File "/tmp/pip-build-env-a9_sapax/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 512, in run_setup
           super().run_setup(setup_script=setup_script)
           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/tmp/pip-build-env-l6sl3ohi/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 317, in run_setup
+        File "/tmp/pip-build-env-a9_sapax/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 317, in run_setup
           exec(code, locals())
           ~~~~^^^^^^^^^^^^^^^^
         File "<string>", line 489, in <module>
         File "<string>", line 465, in setup_package
-        File "/tmp/pip-install-20jhe363/numpy_c5612f3bdc82436f8c0475d607621ca6/numpy/distutils/core.py", line 24, in <module>
+        File "/tmp/pip-install-6ilixyw3/numpy_5a1ad74ee8f7479684488911878bf24d/numpy/distutils/core.py", line 24, in <module>
           from numpy.distutils.command import config, config_compiler, \
           ...<2 lines>...
                install_clib
-        File "/tmp/pip-install-20jhe363/numpy_c5612f3bdc82436f8c0475d607621ca6/numpy/distutils/command/config.py", line 19, in <module>
+        File "/tmp/pip-install-6ilixyw3/numpy_5a1ad74ee8f7479684488911878bf24d/numpy/distutils/command/config.py", line 19, in <module>
           from numpy.distutils.mingw32ccompiler import generate_manifest
-        File "/tmp/pip-install-20jhe363/numpy_c5612f3bdc82436f8c0475d607621ca6/numpy/distutils/mingw32ccompiler.py", line 28, in <module>
+        File "/tmp/pip-install-6ilixyw3/numpy_5a1ad74ee8f7479684488911878bf24d/numpy/distutils/mingw32ccompiler.py", line 28, in <module>
           from distutils.msvccompiler import get_build_version as get_build_msvc_version
       ModuleNotFoundError: No module named 'distutils.msvccompiler'
       [end of output]
@@ -4422,92 +4472,32 @@ Command failed with exit code 1
       Running from numpy source directory.
       <string>:460: UserWarning: Unrecognized setuptools command, proceeding with generating Cython sources and expanding templates
       Traceback (most recent call last):
-        File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b-bm-pytorch_alexnet_inference/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 389, in <module>
+        File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b-bm-pytorch_alexnet_inference/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 389, in <module>
           main()
           ~~~~^^
-        File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b-bm-pytorch_alexnet_inference/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 373, in main
+        File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b-bm-pytorch_alexnet_inference/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 373, in main
           json_out["return_val"] = hook(**hook_input["kwargs"])
                                    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b-bm-pytorch_alexnet_inference/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 175, in prepare_metadata_for_build_wheel
+        File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b-bm-pytorch_alexnet_inference/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 175, in prepare_metadata_for_build_wheel
           return hook(metadata_directory, config_settings)
-        File "/private/tmp/pip-build-env-n5c83lkc/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 374, in prepare_metadata_for_build_wheel
+        File "/private/tmp/pip-build-env-e0okdiev/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 374, in prepare_metadata_for_build_wheel
           self.run_setup()
           ~~~~~~~~~~~~~~^^
-        File "/private/tmp/pip-build-env-n5c83lkc/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 512, in run_setup
+        File "/private/tmp/pip-build-env-e0okdiev/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 512, in run_setup
           super().run_setup(setup_script=setup_script)
           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/private/tmp/pip-build-env-n5c83lkc/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 317, in run_setup
+        File "/private/tmp/pip-build-env-e0okdiev/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 317, in run_setup
           exec(code, locals())
           ~~~~^^^^^^^^^^^^^^^^
         File "<string>", line 489, in <module>
         File "<string>", line 465, in setup_package
-        File "/private/tmp/pip-install-gehic3t5/numpy_2ab7a494ee3f42e1972662122efa5187/numpy/distutils/core.py", line 24, in <module>
+        File "/private/tmp/pip-install-cxjgs2p0/numpy_ed74c64cd6844a859aa1c04157e5d0a2/numpy/distutils/core.py", line 24, in <module>
           from numpy.distutils.command import config, config_compiler, \
           ...<2 lines>...
                install_clib
-        File "/private/tmp/pip-install-gehic3t5/numpy_2ab7a494ee3f42e1972662122efa5187/numpy/distutils/command/config.py", line 19, in <module>
+        File "/private/tmp/pip-install-cxjgs2p0/numpy_ed74c64cd6844a859aa1c04157e5d0a2/numpy/distutils/command/config.py", line 19, in <module>
           from numpy.distutils.mingw32ccompiler import generate_manifest
-        File "/private/tmp/pip-install-gehic3t5/numpy_2ab7a494ee3f42e1972662122efa5187/numpy/distutils/mingw32ccompiler.py", line 28, in <module>
-          from distutils.msvccompiler import get_build_version as get_build_msvc_version
-      ModuleNotFoundError: No module named 'distutils.msvccompiler'
-      [end of output]
-  
-  note: This error originates from a subprocess, and is likely not a problem with pip.
-error: metadata-generation-failed
-
-× Encountered error while generating package metadata.
-╰─> numpy
-
-note: This is an issue with the package mentioned above, not pip.
-hint: See above for details.
-Command failed with exit code 1
-
-
-==================================================
-```
-
-</details>
-
-## pytorch_alexnet_inference on linux-x86_64 default
-
-<details>
-<summary>Log for pytorch_alexnet_inference on linux-x86_64 default</summary>
-
-```
-  error: subprocess-exited-with-error
-  
-  × Preparing metadata (pyproject.toml) did not run successfully.
-  │ exit code: 1
-  ╰─> [31 lines of output]
-      Running from numpy source directory.
-      <string>:460: UserWarning: Unrecognized setuptools command, proceeding with generating Cython sources and expanding templates
-      Traceback (most recent call last):
-        File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b-bm-pytorch_alexnet_inference/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 389, in <module>
-          main()
-          ~~~~^^
-        File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b-bm-pytorch_alexnet_inference/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 373, in main
-          json_out["return_val"] = hook(**hook_input["kwargs"])
-                                   ~~~~^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b-bm-pytorch_alexnet_inference/lib/python3.15/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 175, in prepare_metadata_for_build_wheel
-          return hook(metadata_directory, config_settings)
-        File "/tmp/pip-build-env-72mlgttg/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 374, in prepare_metadata_for_build_wheel
-          self.run_setup()
-          ~~~~~~~~~~~~~~^^
-        File "/tmp/pip-build-env-72mlgttg/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 512, in run_setup
-          super().run_setup(setup_script=setup_script)
-          ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        File "/tmp/pip-build-env-72mlgttg/overlay/lib/python3.15/site-packages/setuptools/build_meta.py", line 317, in run_setup
-          exec(code, locals())
-          ~~~~^^^^^^^^^^^^^^^^
-        File "<string>", line 489, in <module>
-        File "<string>", line 465, in setup_package
-        File "/tmp/pip-install-jje74jzt/numpy_d47830e27d634f5d9e5e8e75c6647dd0/numpy/distutils/core.py", line 24, in <module>
-          from numpy.distutils.command import config, config_compiler, \
-          ...<2 lines>...
-               install_clib
-        File "/tmp/pip-install-jje74jzt/numpy_d47830e27d634f5d9e5e8e75c6647dd0/numpy/distutils/command/config.py", line 19, in <module>
-          from numpy.distutils.mingw32ccompiler import generate_manifest
-        File "/tmp/pip-install-jje74jzt/numpy_d47830e27d634f5d9e5e8e75c6647dd0/numpy/distutils/mingw32ccompiler.py", line 28, in <module>
+        File "/private/tmp/pip-install-cxjgs2p0/numpy_ed74c64cd6844a859aa1c04157e5d0a2/numpy/distutils/mingw32ccompiler.py", line 28, in <module>
           from distutils.msvccompiler import get_build_version as get_build_msvc_version
       ModuleNotFoundError: No module named 'distutils.msvccompiler'
       [end of output]
@@ -4534,11 +4524,11 @@ Command failed with exit code 1
 <summary>Log for raytrace on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_raytrace/run_benchmark.py", line 407 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -4550,23 +4540,23 @@ Traceback (most recent call last):
                            ^^^^^^^^^^^^^^^^^^^^^^^^
                            args.filename)
                            ^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -4594,15 +4584,15 @@ Python benchmark suite 1.11.0
 <summary>Log for regex_compile on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_regex_compile/run_benchmark.py", line 69 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -4610,23 +4600,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_regex_compile/run_benchmark.py", line 69, in <module>
     runner.bench_time_func('regex_compile', bench_regex_compile, regexes)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -4654,15 +4644,15 @@ Python benchmark suite 1.11.0
 <summary>Log for regex_v8 on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_regex_v8/run_benchmark.py", line 1790 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -4670,23 +4660,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_regex_v8/run_benchmark.py", line 1790, in <module>
     runner.bench_time_func('regex_v8', bench_regex_v8)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -4714,15 +4704,15 @@ Python benchmark suite 1.11.0
 <summary>Log for richards on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 531 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 531 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_richards/run_benchmark.py", line 423 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -4730,23 +4720,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_richards/run_benchmark.py", line 423, in <module>
     runner.bench_func('richards', richard.run, 1)
     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -4774,15 +4764,15 @@ Python benchmark suite 1.11.0
 <summary>Log for richards_super on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 531 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 531 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542 in bench_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_richards_super/run_benchmark.py", line 430 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -4790,23 +4780,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_richards_super/run_benchmark.py", line 430, in <module>
     runner.bench_func('richards_super', richard.run, 1)
     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 542, in bench_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -4834,15 +4824,15 @@ Python benchmark suite 1.11.0
 <summary>Log for scimark on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 249 in calibrate_loops
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 286 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 249 in calibrate_loops
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 286 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_scimark/run_benchmark.py", line 415 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -4850,23 +4840,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_scimark/run_benchmark.py", line 415, in <module>
     runner.bench_time_func(name, *args)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
     suite = self.spawn_worker(self.calibrate_loops, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -4894,15 +4884,15 @@ Python benchmark suite 1.11.0
 <summary>Log for spectral_norm on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_spectral_norm/run_benchmark.py", line 74 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -4910,23 +4900,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_spectral_norm/run_benchmark.py", line 74, in <module>
     runner.bench_time_func('spectral_norm', bench_spectral_norm)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -4954,14 +4944,14 @@ Python benchmark suite 1.11.0
 <summary>Log for sphinx on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
     suite = self.spawn_worker(self.calibrate_loops, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -5001,6 +4991,66 @@ RUNNING: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/f
 RUNNING: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/bin/python -m pyperformance run -o benchmark.json --manifest benchmarks.manifest --benchmarks spectral_norm --python cpython/python --inherit-environ PYTHON_JIT,PYPERF_PERF_RECORD_EXTRA_OPTS --same-loops loops.json --hook pystats
 RUNNING: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/bin/python -m pyperformance run -o benchmark.json --manifest benchmarks.manifest --benchmarks sphinx --python cpython/python --inherit-environ PYTHON_JIT,PYPERF_PERF_RECORD_EXTRA_OPTS --same-loops loops.json --hook pystats
 RUNNING: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/bin/python -m pyperformance run -o benchmark.json --manifest benchmarks.manifest --benchmarks sqlalchemy_declarative --python cpython/python --inherit-environ PYTHON_JIT,PYPERF_PERF_RECORD_EXTRA_OPTS --same-loops loops.json --hook pystatsPython benchmark suite 1.11.0
+
+
+==================================================
+```
+
+</details>
+
+## sqlalchemy_declarative on linux-x86_64 default
+
+<details>
+<summary>Log for sqlalchemy_declarative on linux-x86_64 default</summary>
+
+```
+      In file included from src/greenlet/greenlet.cpp:36:
+      src/greenlet/TPythonState.cpp: In member function ‘void greenlet::PythonState::operator<<(const PyThreadState*)’:
+      src/greenlet/TPythonState.cpp:137:31: error: ‘Py_C_RECURSION_LIMIT’ was not declared in this scope
+        137 |     this->c_recursion_depth = Py_C_RECURSION_LIMIT - tstate->c_recursion_remaining;
+            |                               ^~~~~~~~~~~~~~~~~~~~
+      src/greenlet/TPythonState.cpp:137:62: error: ‘const PyThreadState’ {aka ‘const struct _ts’} has no member named ‘c_recursion_remaining’; did you mean ‘py_recursion_remaining’?
+        137 |     this->c_recursion_depth = Py_C_RECURSION_LIMIT - tstate->c_recursion_remaining;
+            |                                                              ^~~~~~~~~~~~~~~~~~~~~
+            |                                                              py_recursion_remaining
+      src/greenlet/TPythonState.cpp: In member function ‘void greenlet::PythonState::unexpose_frames()’:
+      src/greenlet/TPythonState.cpp:179:51: error: invalid use of incomplete type ‘_PyInterpreterFrame’ {aka ‘struct _PyInterpreterFrame’}
+        179 |         _PyInterpreterFrame *prev_exposed = iframe->previous;
+            |                                                   ^~
+      /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Include/cpython/pyframe.h:25:8: note: forward declaration of ‘_PyInterpreterFrame’ {aka ‘struct _PyInterpreterFrame’}
+         25 | struct _PyInterpreterFrame;
+            |        ^~~~~~~~~~~~~~~~~~~
+      src/greenlet/TPythonState.cpp:181:23: error: invalid use of incomplete type ‘_PyInterpreterFrame’ {aka ‘struct _PyInterpreterFrame’}
+        181 |         memcpy(&iframe->previous, &iframe->frame_obj->_f_frame_data[0],
+            |                       ^~
+      /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Include/cpython/pyframe.h:25:8: note: forward declaration of ‘_PyInterpreterFrame’ {aka ‘struct _PyInterpreterFrame’}
+         25 | struct _PyInterpreterFrame;
+            |        ^~~~~~~~~~~~~~~~~~~
+      src/greenlet/TPythonState.cpp:181:42: error: invalid use of incomplete type ‘_PyInterpreterFrame’ {aka ‘struct _PyInterpreterFrame’}
+        181 |         memcpy(&iframe->previous, &iframe->frame_obj->_f_frame_data[0],
+            |                                          ^~
+      /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Include/cpython/pyframe.h:25:8: note: forward declaration of ‘_PyInterpreterFrame’ {aka ‘struct _PyInterpreterFrame’}
+         25 | struct _PyInterpreterFrame;
+            |        ^~~~~~~~~~~~~~~~~~~
+      src/greenlet/TPythonState.cpp: In member function ‘void greenlet::PythonState::operator>>(PyThreadState*)’:
+      src/greenlet/TPythonState.cpp:212:13: error: ‘PyThreadState’ {aka ‘struct _ts’} has no member named ‘c_recursion_remaining’; did you mean ‘py_recursion_remaining’?
+        212 |     tstate->c_recursion_remaining = Py_C_RECURSION_LIMIT - this->c_recursion_depth;
+            |             ^~~~~~~~~~~~~~~~~~~~~
+            |             py_recursion_remaining
+      src/greenlet/TPythonState.cpp:212:37: error: ‘Py_C_RECURSION_LIMIT’ was not declared in this scope
+        212 |     tstate->c_recursion_remaining = Py_C_RECURSION_LIMIT - this->c_recursion_depth;
+            |                                     ^~~~~~~~~~~~~~~~~~~~
+      error: command '/usr/bin/g++' failed with exit code 1
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for greenlet
+Failed to build greenlet
+error: failed-wheel-build-for-install
+
+× Failed to build installable wheels for some pyproject.toml based projects
+╰─> greenlet
+Command failed with exit code 1
 
 
 ==================================================
@@ -5128,10 +5178,10 @@ Command failed with exit code 1
 
 </details>
 
-## sqlalchemy_declarative on linux-x86_64 default
+## sqlalchemy_imperative on linux-x86_64 default
 
 <details>
-<summary>Log for sqlalchemy_declarative on linux-x86_64 default</summary>
+<summary>Log for sqlalchemy_imperative on linux-x86_64 default</summary>
 
 ```
       In file included from src/greenlet/greenlet.cpp:36:
@@ -5175,11 +5225,11 @@ Command failed with exit code 1
   
   note: This error originates from a subprocess, and is likely not a problem with pip.
   ERROR: Failed building wheel for greenlet
+Failed to build greenlet
 error: failed-wheel-build-for-install
 
 × Failed to build installable wheels for some pyproject.toml based projects
 ╰─> greenlet
-Failed to build greenlet
 Command failed with exit code 1
 
 
@@ -5295,66 +5345,6 @@ Command failed with exit code 1
   
   note: This error originates from a subprocess, and is likely not a problem with pip.
   ERROR: Failed building wheel for greenlet
-error: failed-wheel-build-for-install
-
-× Failed to build installable wheels for some pyproject.toml based projects
-╰─> greenlet
-Failed to build greenlet
-Command failed with exit code 1
-
-
-==================================================
-```
-
-</details>
-
-## sqlalchemy_imperative on linux-x86_64 default
-
-<details>
-<summary>Log for sqlalchemy_imperative on linux-x86_64 default</summary>
-
-```
-      In file included from src/greenlet/greenlet.cpp:36:
-      src/greenlet/TPythonState.cpp: In member function ‘void greenlet::PythonState::operator<<(const PyThreadState*)’:
-      src/greenlet/TPythonState.cpp:137:31: error: ‘Py_C_RECURSION_LIMIT’ was not declared in this scope
-        137 |     this->c_recursion_depth = Py_C_RECURSION_LIMIT - tstate->c_recursion_remaining;
-            |                               ^~~~~~~~~~~~~~~~~~~~
-      src/greenlet/TPythonState.cpp:137:62: error: ‘const PyThreadState’ {aka ‘const struct _ts’} has no member named ‘c_recursion_remaining’; did you mean ‘py_recursion_remaining’?
-        137 |     this->c_recursion_depth = Py_C_RECURSION_LIMIT - tstate->c_recursion_remaining;
-            |                                                              ^~~~~~~~~~~~~~~~~~~~~
-            |                                                              py_recursion_remaining
-      src/greenlet/TPythonState.cpp: In member function ‘void greenlet::PythonState::unexpose_frames()’:
-      src/greenlet/TPythonState.cpp:179:51: error: invalid use of incomplete type ‘_PyInterpreterFrame’ {aka ‘struct _PyInterpreterFrame’}
-        179 |         _PyInterpreterFrame *prev_exposed = iframe->previous;
-            |                                                   ^~
-      /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Include/cpython/pyframe.h:25:8: note: forward declaration of ‘_PyInterpreterFrame’ {aka ‘struct _PyInterpreterFrame’}
-         25 | struct _PyInterpreterFrame;
-            |        ^~~~~~~~~~~~~~~~~~~
-      src/greenlet/TPythonState.cpp:181:23: error: invalid use of incomplete type ‘_PyInterpreterFrame’ {aka ‘struct _PyInterpreterFrame’}
-        181 |         memcpy(&iframe->previous, &iframe->frame_obj->_f_frame_data[0],
-            |                       ^~
-      /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Include/cpython/pyframe.h:25:8: note: forward declaration of ‘_PyInterpreterFrame’ {aka ‘struct _PyInterpreterFrame’}
-         25 | struct _PyInterpreterFrame;
-            |        ^~~~~~~~~~~~~~~~~~~
-      src/greenlet/TPythonState.cpp:181:42: error: invalid use of incomplete type ‘_PyInterpreterFrame’ {aka ‘struct _PyInterpreterFrame’}
-        181 |         memcpy(&iframe->previous, &iframe->frame_obj->_f_frame_data[0],
-            |                                          ^~
-      /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Include/cpython/pyframe.h:25:8: note: forward declaration of ‘_PyInterpreterFrame’ {aka ‘struct _PyInterpreterFrame’}
-         25 | struct _PyInterpreterFrame;
-            |        ^~~~~~~~~~~~~~~~~~~
-      src/greenlet/TPythonState.cpp: In member function ‘void greenlet::PythonState::operator>>(PyThreadState*)’:
-      src/greenlet/TPythonState.cpp:212:13: error: ‘PyThreadState’ {aka ‘struct _ts’} has no member named ‘c_recursion_remaining’; did you mean ‘py_recursion_remaining’?
-        212 |     tstate->c_recursion_remaining = Py_C_RECURSION_LIMIT - this->c_recursion_depth;
-            |             ^~~~~~~~~~~~~~~~~~~~~
-            |             py_recursion_remaining
-      src/greenlet/TPythonState.cpp:212:37: error: ‘Py_C_RECURSION_LIMIT’ was not declared in this scope
-        212 |     tstate->c_recursion_remaining = Py_C_RECURSION_LIMIT - this->c_recursion_depth;
-            |                                     ^~~~~~~~~~~~~~~~~~~~
-      error: command '/usr/bin/g++' failed with exit code 1
-      [end of output]
-  
-  note: This error originates from a subprocess, and is likely not a problem with pip.
-  ERROR: Failed building wheel for greenlet
 Failed to build greenlet
 error: failed-wheel-build-for-install
 
@@ -5374,15 +5364,15 @@ Command failed with exit code 1
 <summary>Log for sqlglot_v2 on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 249 in calibrate_loops
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 286 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 249 in calibrate_loops
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 286 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_sqlglot_v2/run_benchmark.py", line 194 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -5390,23 +5380,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_sqlglot_v2/run_benchmark.py", line 194, in <module>
     runner.bench_time_func(f"sqlglot_v2_{benchmark}", BENCHMARKS[benchmark])
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
     suite = self.spawn_worker(self.calibrate_loops, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -5434,15 +5424,15 @@ Python benchmark suite 1.11.0
 <summary>Log for sqlglot_v2_optimize on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 249 in calibrate_loops
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 286 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 249 in calibrate_loops
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 286 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_sqlglot_v2/run_benchmark.py", line 194 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -5450,23 +5440,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_sqlglot_v2/run_benchmark.py", line 194, in <module>
     runner.bench_time_func(f"sqlglot_v2_{benchmark}", BENCHMARKS[benchmark])
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
     suite = self.spawn_worker(self.calibrate_loops, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -5494,15 +5484,15 @@ Python benchmark suite 1.11.0
 <summary>Log for sqlglot_v2_parse on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 249 in calibrate_loops
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 286 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 249 in calibrate_loops
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 286 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_sqlglot_v2/run_benchmark.py", line 194 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -5510,26 +5500,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_sqlglot_v2/run_benchmark.py", line 194, in <module>
     runner.bench_time_func(f"sqlglot_v2_{benchmark}", BENCHMARKS[benchmark])
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
-Command failed with exit code 1
-
-ERROR: No benchmark was run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
     suite = self.spawn_worker(self.calibrate_loops, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -5540,6 +5527,9 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
     raise RuntimeError("Benchmark died")
 RuntimeError: Benchmark died
+Command failed with exit code 1
+
+ERROR: No benchmark was run
 Python benchmark suite 1.11.0
 
 
@@ -5554,15 +5544,15 @@ Python benchmark suite 1.11.0
 <summary>Log for sqlglot_v2_transpile on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 249 in calibrate_loops
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 286 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 249 in calibrate_loops
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 286 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_sqlglot_v2/run_benchmark.py", line 194 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -5570,23 +5560,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_sqlglot_v2/run_benchmark.py", line 194, in <module>
     runner.bench_time_func(f"sqlglot_v2_{benchmark}", BENCHMARKS[benchmark])
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
     suite = self.spawn_worker(self.calibrate_loops, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -5614,15 +5604,15 @@ Python benchmark suite 1.11.0
 <summary>Log for sqlite_synth on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_sqlite_synth/run_benchmark.py", line 57 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -5630,23 +5620,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_sqlite_synth/run_benchmark.py", line 57, in <module>
     runner.bench_time_func('sqlite_synth', bench_sqlite)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -5674,15 +5664,15 @@ Python benchmark suite 1.11.0
 <summary>Log for sympy on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 249 in calibrate_loops
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 286 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 249 in calibrate_loops
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 286 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_sympy/run_benchmark.py", line 69 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -5690,23 +5680,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_sympy/run_benchmark.py", line 69, in <module>
     runner.bench_time_func(name, bench_sympy, func)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
     suite = self.spawn_worker(self.calibrate_loops, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -5734,15 +5724,15 @@ Python benchmark suite 1.11.0
 <summary>Log for telco on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_telco/run_benchmark.py", line 89 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -5750,23 +5740,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_telco/run_benchmark.py", line 89, in <module>
     runner.bench_time_func('telco', bench_telco, filename)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -5794,15 +5784,15 @@ Python benchmark suite 1.11.0
 <summary>Log for tomli_loads on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_tomli_loads/run_benchmark.py", line 30 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -5810,23 +5800,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_tomli_loads/run_benchmark.py", line 30, in <module>
     runner.bench_time_func('tomli_loads', bench_tomli_loads)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -5848,6 +5838,60 @@ Python benchmark suite 1.11.0
 
 </details>
 
+## tornado_http on linux-x86_64 default
+
+<details>
+<summary>Log for tornado_http on linux-x86_64 default</summary>
+
+```
+# /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/bin/python -u /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_tornado_http/run_benchmark.py --inherit-environ PYPERFORMANCE_RUNID,PYTHON_JIT,PYPERF_PERF_RECORD_EXTRA_OPTS --output /tmp/tmpog9y_uvf
+Traceback (most recent call last):
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_tornado_http/run_benchmark.py", line 102, in <module>
+    runner.bench_time_func('tornado_http', bench_tornado)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+    result = self._main(task)
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460, in _main
+    bench = self._worker(task)
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434, in _worker
+    run = task.create_run()
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299, in create_run
+    self.compute()
+    ~~~~~~~~~~~~^^
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363, in compute
+    WorkerTask.compute(self)
+    ~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 286, in compute
+    self.calibrate_loops()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 249, in calibrate_loops
+    self._compute_values(self.warmups, nvalue,
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+                         is_warmup=True,
+                         ^^^^^^^^^^^^^^^
+                         calibrate_loops=True)
+                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78, in _compute_values
+    raw_value = task_func(self, self.loops)
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494, in task_func
+    return time_func(loops, *args)
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_tornado_http/run_benchmark.py", line 60, in bench_tornado
+    server, sock = make_http_server(make_application())
+                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_tornado_http/run_benchmark.py", line 54, in make_http_server
+    server.add_sockets(sockets)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-50fa43b5271c-compat-64aaec271e6b/lib/python3.15/site-packages/tornado/tcpserver.py", line 204, in add_sockets
+    self._handlers[sock.fileno()] = add_accept_handler(
+                                    ~~~~~~~~~~~~~~~~~~^
+        sock, self._handle_connection
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+Command failed with exit code 1
+```
+
+</details>
+
 ## tornado_http on collect-stats pystats
 
 <details>
@@ -5858,9 +5902,9 @@ Python benchmark suite 1.11.0
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     )
     ^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/lib/python3.15/site-packages/tornado/netutil.py", line 247, in add_accept_handler
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/lib/python3.15/site-packages/tornado/netutil.py", line 247, in add_accept_handler
     io_loop = IOLoop.current()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/lib/python3.15/site-packages/tornado/ioloop.py", line 265, in current
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/lib/python3.15/site-packages/tornado/ioloop.py", line 265, in current
     loop = asyncio.get_event_loop()
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Lib/asyncio/events.py", line 715, in get_event_loop
     raise RuntimeError('There is no current event loop in thread %r.'
@@ -5870,23 +5914,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_tornado_http/run_benchmark.py", line 102, in <module>
     runner.bench_time_func('tornado_http', bench_tornado)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-73fa12076a1c-compat-64aaec271e6b/bin/python failed with exit code 1
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-979d679eee44-compat-64aaec271e6b/bin/python failed with exit code 1
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -5918,9 +5962,9 @@ Python benchmark suite 1.11.0
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     )
     ^
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/lib/python3.15/site-packages/tornado/netutil.py", line 247, in add_accept_handler
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/lib/python3.15/site-packages/tornado/netutil.py", line 247, in add_accept_handler
     io_loop = IOLoop.current()
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/lib/python3.15/site-packages/tornado/ioloop.py", line 265, in current
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/lib/python3.15/site-packages/tornado/ioloop.py", line 265, in current
     loop = asyncio.get_event_loop()
   File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Lib/asyncio/events.py", line 715, in get_event_loop
     raise RuntimeError('There is no current event loop in thread %r.'
@@ -5930,23 +5974,23 @@ Traceback (most recent call last):
   File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.14/site-packages/pyperformance/data-files/benchmarks/bm_tornado_http/run_benchmark.py", line 102, in <module>
     runner.bench_time_func('tornado_http', bench_tornado)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
     suite = self.spawn_worker(self.calibrate_loops, 0)
-  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/bin/python failed with exit code 1
+RuntimeError: /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-438ac46d6b0a-compat-64aaec271e6b/bin/python failed with exit code 1
 Traceback (most recent call last):
   File "/Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.14/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -5968,81 +6012,21 @@ Command failed with exit code 1
 
 </details>
 
-## tornado_http on linux-x86_64 default
-
-<details>
-<summary>Log for tornado_http on linux-x86_64 default</summary>
-
-```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_tornado_http/run_benchmark.py", line 54, in make_http_server
-    server.add_sockets(sockets)
-    ~~~~~~~~~~~~~~~~~~^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/tornado/tcpserver.py", line 204, in add_sockets
-    self._handlers[sock.fileno()] = add_accept_handler(
-                                    ~~~~~~~~~~~~~~~~~~^
-        sock, self._handle_connection
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/tornado/netutil.py", line 247, in add_accept_handler
-    io_loop = IOLoop.current()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/tornado/ioloop.py", line 265, in current
-    loop = asyncio.get_event_loop()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/Lib/asyncio/events.py", line 715, in get_event_loop
-    raise RuntimeError('There is no current event loop in thread %r.'
-                       % threading.current_thread().name)
-RuntimeError: There is no current event loop in thread 'MainThread'.
-Traceback (most recent call last):
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_tornado_http/run_benchmark.py", line 102, in <module>
-    runner.bench_time_func('tornado_http', bench_tornado)
-    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
-    result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
-    bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
-    bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
-    worker_bench, run = self.create_worker_bench()
-                        ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
-    suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 132, in create_suite
-    suite = self.spawn_worker(self.calibrate_loops, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
-    raise RuntimeError("%s failed with exit code %s"
-                       % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-f4b739f09304-compat-64aaec271e6b/bin/python failed with exit code 1
-Traceback (most recent call last):
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
-    result = bench.run(
-             ^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 189, in run
-    bench = _run_perf_script(
-            ^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/_benchmark.py", line 240, in _run_perf_script
-    raise RuntimeError("Benchmark died")
-RuntimeError: Benchmark died
-Command failed with exit code 1
-```
-
-</details>
-
 ## typing_runtime_protocols on collect-stats tier2
 
 <details>
 <summary>Log for typing_runtime_protocols on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 494 in task_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 78 in _compute_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_typing_runtime_protocols/run_benchmark.py", line 180 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -6050,23 +6034,23 @@ Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_typing_runtime_protocols/run_benchmark.py", line 180, in <module>
     runner.bench_time_func("typing_runtime_protocols", bench_protocols)
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -6094,13 +6078,13 @@ Python benchmark suite 1.11.0
 <summary>Log for unpickle_pure_python on collect-stats tier2</summary>
 
 ```
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 266 in compute_warmups_values
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 288 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 363 in compute
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_worker.py", line 299 in create_run
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 434 in _worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 460 in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499 in bench_time_func
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/data-files/benchmarks/bm_pickle/run_benchmark.py", line 285 in <module>
 
 Extension modules: math.integer, psutil._psutil_linux (total: 2)
@@ -6110,23 +6094,23 @@ Traceback (most recent call last):
     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
                            pickle, options, inner_loops=inner_loops)
                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 499, in bench_time_func
     result = self._main(task)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 465, in _main
     bench = self._manager()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_runner.py", line 678, in _manager
     bench = Manager(self).create_bench()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 243, in create_bench
     worker_bench, run = self.create_worker_bench()
                         ~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 142, in create_worker_bench
     suite = self.create_suite()
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 136, in create_suite
     suite = self.spawn_worker(0, 0)
-  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
+  File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/lib/python3.15/site-packages/pyperf/_manager.py", line 118, in spawn_worker
     raise RuntimeError("%s failed with exit code %s"
                        % (cmd[0], exitcode))
-RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-1e27de3cff7d-compat-64aaec271e6b/bin/python failed with exit code -6
+RuntimeError: /home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-b2c7f29baff8-compat-64aaec271e6b/bin/python failed with exit code -6
 Traceback (most recent call last):
   File "/home/actions-runner/actions_runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/lib/python3.11/site-packages/pyperformance/run.py", line 170, in run_benchmarks
     result = bench.run(
@@ -6163,34 +6147,34 @@ Requirement already satisfied: psutil>=5.9.0 in ./venv/lib/python3.14/site-packa
 Building wheels for collected packages: pyperformance
   Building wheel for pyperformance (pyproject.toml): started
   Building wheel for pyperformance (pyproject.toml): finished with status 'done'
-  Created wheel for pyperformance: filename=pyperformance-1.11.0-py3-none-any.whl size=9047326 sha256=bba769d354c0801b82c61c37424aac0f3919cf7767321e7a7a53537d9f877fcf
-  Stored in directory: /private/tmp/pip-ephem-wheel-cache-85y023fp/wheels/22/8c/87/064249febcf8cca484a24db14302cc3c9f5010efb7d943e9ce
+  Created wheel for pyperformance: filename=pyperformance-1.11.0-py3-none-any.whl size=9047326 sha256=b962ad896bdcbd538843a0b3dc396dca59465de2466eb49e26430a050c0ca9ff
+  Stored in directory: /private/tmp/pip-ephem-wheel-cache-rxza6rn8/wheels/22/8c/87/064249febcf8cca484a24db14302cc3c9f5010efb7d943e9ce
 Successfully built pyperformance
 Installing collected packages: pyperformance
 Successfully installed pyperformance-1.11.0
-##[group]Run venv/bin/python -m bench_runner run_benchmarks benchmark cpython/python.exe python aa8578dc54df2af9daa3353566359e602e5905cf all_and_excluded ,,, --run_id 20886568261
-[36;1mvenv/bin/python -m bench_runner run_benchmarks benchmark cpython/python.exe python aa8578dc54df2af9daa3353566359e602e5905cf all_and_excluded ,,, --run_id 20886568261[0m
+##[group]Run venv/bin/python -m bench_runner run_benchmarks benchmark cpython/python.exe python 63cc1257db468a368d64c0b968d203a0f4c7303a all_and_excluded ,jit,, --run_id 21103064804
+[36;1mvenv/bin/python -m bench_runner run_benchmarks benchmark cpython/python.exe python 63cc1257db468a368d64c0b968d203a0f4c7303a all_and_excluded ,jit,, --run_id 21103064804[0m
 shell: /bin/bash -e {0}
 env:
   PYPERFORMANCE_HASH: 56d12a8fd7cc1432835965d374929bfa7f6f7a07
   PYSTON_BENCHMARKS_HASH: 265655e7f03ace13ec1e00e1ba299179e69f8a00
-  flags: ,,,
+  flags: ,jit,,
   BENCHMARK_MACHINE_NICKNAME: macm4pro
   PKG_CONFIG_PATH: /opt/homebrew/opt/openssl@1.1/lib/pkgconfig
 ##[endgroup]
 Python benchmark suite 1.11.0
 
-Creating the virtual environment /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b
-# /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/python.exe -m venv --without-pip /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b
-# /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/bin/python -m ensurepip -v -U
-Using pip 25.3 from /tmp/tmp5dmrphos/pip-25.3-py3-none-any.whl/pip (python 3.15)
-Looking in links: /tmp/tmp5dmrphos
-Processing /tmp/tmp5dmrphos/pip-25.3-py3-none-any.whl
+Creating the virtual environment /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-ea29a6cd153c-compat-64aaec271e6b
+# /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/cpython/python.exe -m venv --without-pip /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-ea29a6cd153c-compat-64aaec271e6b
+# /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-ea29a6cd153c-compat-64aaec271e6b/bin/python -m ensurepip -v -U
+Using pip 25.3 from /tmp/tmpwan0ypgr/pip-25.3-py3-none-any.whl/pip (python 3.15)
+Looking in links: /tmp/tmpwan0ypgr
+Processing /tmp/tmpwan0ypgr/pip-25.3-py3-none-any.whl
 Installing collected packages: pip
-  changing mode of /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/bin/pip3 to 755
-  changing mode of /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/bin/pip3.15 to 755
+  changing mode of /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-ea29a6cd153c-compat-64aaec271e6b/bin/pip3 to 755
+  changing mode of /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-ea29a6cd153c-compat-64aaec271e6b/bin/pip3.15 to 755
 Successfully installed pip-25.3
-# /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/bin/python -m pip install -U 'setuptools>=18.5' wheel
+# /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-ea29a6cd153c-compat-64aaec271e6b/bin/python -m pip install -U 'setuptools>=18.5' wheel
 Collecting setuptools>=18.5
   Using cached setuptools-80.9.0-py3-none-any.whl.metadata (6.6 kB)
 Collecting wheel
@@ -6200,8 +6184,8 @@ Using cached wheel-0.45.1-py3-none-any.whl (72 kB)
 Installing collected packages: wheel, setuptools
 
 Successfully installed setuptools-80.9.0 wheel-0.45.1
-# /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/bin/python -m pip --version
-pip 25.3 from /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-200477f49fd1-compat-64aaec271e6b/lib/python3.15/site-packages/pip (python 3.15)
+# /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-ea29a6cd153c-compat-64aaec271e6b/bin/python -m pip --version
+pip 25.3 from /Users/meta-runner/actions-runner/_work/free-threading-benchmarking/free-threading-benchmarking/venv/cpython3.15-ea29a6cd153c-compat-64aaec271e6b/lib/python3.15/site-packages/pip (python 3.15)
 
 ==================================================
 ```
