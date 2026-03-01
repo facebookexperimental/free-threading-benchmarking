@@ -67,3 +67,12 @@
 - [📄table](bm-20260228-macm4pro-arm64-python-a1ec7467874207957519-3.15.0a6%2B-a1ec746-vs-3.13.0rc2.md)
 - [📈time plot](bm-20260228-macm4pro-arm64-python-a1ec7467874207957519-3.15.0a6%2B-a1ec746-vs-3.13.0rc2.svg)
 
+### vs. base
+
+- Geometric mean: 1.042x slower (HPT: reliability of 100.00%, 1.04x slower at 99th %ile)
+- Memory usage: 1.12x
+- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, pickle, pickle_dict, pickle_list, unpack_sequence, unpickle, unpickle_list
+- [🧠memory plot](bm-20260228-macm4pro-arm64-python-a1ec7467874207957519-3.15.0a6%2B-a1ec746-vs-base-mem.svg)
+- [📄table](bm-20260228-macm4pro-arm64-python-a1ec7467874207957519-3.15.0a6%2B-a1ec746-vs-base.md)
+- [📈time plot](bm-20260228-macm4pro-arm64-python-a1ec7467874207957519-3.15.0a6%2B-a1ec746-vs-base.svg)
+
