@@ -38,7 +38,6 @@
 
 - Geometric mean: 1.042x slower (HPT: reliability of 91.01%, 1.00x slower at 99th %ile)
 - Memory usage: 0.99x
-- missing benchmarks: 🔴 docutils
 - [🧠memory plot](bm-20251124-vultr-x86_64-Fidget%252dSpinner-jit_lower_trace_limi-3.15.0a2%2B-f96af45-vs-base-mem.svg)
 - [📄table](bm-20251124-vultr-x86_64-Fidget%252dSpinner-jit_lower_trace_limi-3.15.0a2%2B-f96af45-vs-base.md)
 - [📈time plot](bm-20251124-vultr-x86_64-Fidget%252dSpinner-jit_lower_trace_limi-3.15.0a2%2B-f96af45-vs-base.svg)
@@ -72,7 +71,6 @@
 
 - Geometric mean: 1.002x slower (HPT: reliability of 95.74%, 1.00x faster at 99th %ile)
 - Memory usage: 1.02x
-- new benchmarks: dask
 - [🧠memory plot](bm-20251124-macm4pro-arm64-Fidget%252dSpinner-jit_lower_trace_limi-3.15.0a2%2B-f96af45-vs-base-mem.svg)
 - [📄table](bm-20251124-macm4pro-arm64-Fidget%252dSpinner-jit_lower_trace_limi-3.15.0a2%2B-f96af45-vs-base.md)
 - [📈time plot](bm-20251124-macm4pro-arm64-Fidget%252dSpinner-jit_lower_trace_limi-3.15.0a2%2B-f96af45-vs-base.svg)
