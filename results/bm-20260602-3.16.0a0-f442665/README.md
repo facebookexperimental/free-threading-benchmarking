@@ -1,0 +1,35 @@
+# Results
+
+- fork: python/f4426654fd293a206e7d
+- version: 3.16.0a0
+- config: 
+- commit hash: [f442665](https://github.com/python/cpython/commit/f442665)
+- commit date: 2026-06-02T00:51:51+00:00
+- commit merge base: [71fc4c66d3e675a5481b6b76e6c707c9b6f1e0e0](https://github.com/python/cpython/commit/71fc4c66d3e675a5481b6b76e6c707c9b6f1e0e0)
+- ref: f4426654fd293a206e7d
+
+## linux x86_64 (vultr)
+
+- [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/26791967221)
+- cpu model: Intel(R) Xeon(R) E-2286G CPU @ 4.00GHz
+- platform: Linux-6.8.0-87-generic-x86_64-with-glibc2.39
+- [raw results](bm-20260602-vultr-x86_64-python-f4426654fd293a206e7d-3.16.0a0-f442665.json)
+
+### vs. 3.12.6
+
+- Geometric mean: 1.070x faster (HPT: reliability of 100.00%, 1.04x faster at 99th %ile)
+- Memory usage: 1.17x
+- missing benchmarks: 2to3, aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, flaskblogging, genshi_text, genshi_xml, gunicorn, mypy2, pickle, pickle_dict, pickle_list, python_startup, python_startup_no_site, sqlalchemy_declarative, sqlalchemy_imperative, sqlglot_normalize, sqlglot_optimize, sqlglot_parse, sqlglot_transpile, tornado_http, unpack_sequence, unpickle, unpickle_list
+- new benchmarks: connected_components, k_core, many_optionals, shortest_path, sphinx, sqlglot_v2_normalize, sqlglot_v2_optimize, sqlglot_v2_parse, sqlglot_v2_transpile, subparsers
+- [📄table](bm-20260602-vultr-x86_64-python-f4426654fd293a206e7d-3.16.0a0-f442665-vs-3.12.6.md)
+- [📈time plot](bm-20260602-vultr-x86_64-python-f4426654fd293a206e7d-3.16.0a0-f442665-vs-3.12.6.svg)
+
+### vs. 3.13.0rc2
+
+- Geometric mean: 1.030x faster (HPT: reliability of 99.84%, 1.00x faster at 99th %ile)
+- Memory usage: 1.16x
+- missing benchmarks: 2to3, aiohttp, asyncio_tcp, asyncio_tcp_ssl, chameleon, dask, flaskblogging, genshi_text, genshi_xml, gunicorn, pickle, pickle_dict, pickle_list, python_startup, python_startup_no_site, sqlglot_normalize, sqlglot_optimize, sqlglot_parse, sqlglot_transpile, tornado_http, unpack_sequence, unpickle, unpickle_list
+- new benchmarks: connected_components, k_core, many_optionals, shortest_path, sphinx, sqlglot_v2_normalize, sqlglot_v2_optimize, sqlglot_v2_parse, sqlglot_v2_transpile, subparsers
+- [📄table](bm-20260602-vultr-x86_64-python-f4426654fd293a206e7d-3.16.0a0-f442665-vs-3.13.0rc2.md)
+- [📈time plot](bm-20260602-vultr-x86_64-python-f4426654fd293a206e7d-3.16.0a0-f442665-vs-3.13.0rc2.svg)
+
