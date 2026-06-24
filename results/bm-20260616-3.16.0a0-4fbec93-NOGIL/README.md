@@ -41,3 +41,10 @@
 - [📄table](bm-20260616-vultr-x86_64-kumaraditya303-mrocache-3.16.0a0-4fbec93-vs-base.md)
 - [📈time plot](bm-20260616-vultr-x86_64-kumaraditya303-mrocache-3.16.0a0-4fbec93-vs-base.svg)
 
+### vs. default_base_vs_NOGIL
+
+- Geometric mean: 1.106x slower (HPT: reliability of 100.00%, 1.11x slower at 99th %ile)
+- Memory usage: 1.18x
+- [📄table](bm-20260616-vultr-x86_64-kumaraditya303-mrocache-3.16.0a0-4fbec93-vs-default_base_vs_NOGIL.md)
+- [📈time plot](bm-20260616-vultr-x86_64-kumaraditya303-mrocache-3.16.0a0-4fbec93-vs-default_base_vs_NOGIL.svg)
+
