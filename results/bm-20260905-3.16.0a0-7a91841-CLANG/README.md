@@ -1,0 +1,43 @@
+# Results
+
+- fork: python/7a918411a300ddeef06d
+- version: 3.16.0a0
+- config: CLANG
+- commit hash: [7a91841](https://github.com/python/cpython/commit/7a91841)
+- commit date: 2026-09-05T17:00:22Z
+- commit merge base: [e208bf0dda73b8e5a32af154f448e68ad11b26b7](https://github.com/python/cpython/commit/e208bf0dda73b8e5a32af154f448e68ad11b26b7)
+- ref: 7a918411a300ddeef06d
+
+## darwin arm64 (macm4pro)
+
+- [GitHub Action run](https://github.com/facebookexperimental/free-threading-benchmarking/actions/runs/34001092175)
+- cpu model: missing
+- platform: macOS-26.6.1-arm64-arm-64bit-Mach-O
+- [raw results](bm-20260905-macm4pro-arm64-python-7a918411a300ddeef06d-3.16.0a0-7a91841.json)
+
+### vs. 3.12.6
+
+- Geometric mean: 1.146x faster (HPT: reliability of 100.00%, 1.07x faster at 99th %ile)
+- Memory usage: 1.18x
+- missing benchmarks: chameleon, coverage, dask, djangocms, genshi_text, genshi_xml, gevent_hub, sqlalchemy_declarative, sqlalchemy_imperative, sqlglot_normalize, sqlglot_optimize, sqlglot_parse, sqlglot_transpile, tornado_http
+- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, pickle, pickle_dict, pickle_list, sqlglot_v2_normalize, sqlglot_v2_optimize, sqlglot_v2_parse, sqlglot_v2_transpile, unpack_sequence, unpickle, unpickle_list
+- [📄table](bm-20260905-macm4pro-arm64-python-7a918411a300ddeef06d-3.16.0a0-7a91841-vs-3.12.6.md)
+- [📈time plot](bm-20260905-macm4pro-arm64-python-7a918411a300ddeef06d-3.16.0a0-7a91841-vs-3.12.6.svg)
+
+### vs. 3.13.0rc2
+
+- Geometric mean: 1.059x faster (HPT: reliability of 99.20%, 1.00x faster at 99th %ile)
+- Memory usage: 1.13x
+- missing benchmarks: chameleon, coverage, dask, djangocms, genshi_text, genshi_xml, gevent_hub, sqlalchemy_declarative, sqlalchemy_imperative, sqlglot_normalize, sqlglot_optimize, sqlglot_parse, sqlglot_transpile, tornado_http
+- new benchmarks: asyncio_tcp, asyncio_tcp_ssl, pickle, pickle_dict, pickle_list, sqlglot_v2_normalize, sqlglot_v2_optimize, sqlglot_v2_parse, sqlglot_v2_transpile, unpack_sequence, unpickle, unpickle_list
+- [📄table](bm-20260905-macm4pro-arm64-python-7a918411a300ddeef06d-3.16.0a0-7a91841-vs-3.13.0rc2.md)
+- [📈time plot](bm-20260905-macm4pro-arm64-python-7a918411a300ddeef06d-3.16.0a0-7a91841-vs-3.13.0rc2.svg)
+
+### vs. base
+
+- Geometric mean: 1.000x slower (HPT: reliability of 60.82%, 1.00x slower at 99th %ile)
+- Memory usage: 0.98x
+- [🧠memory plot](bm-20260905-macm4pro-arm64-python-7a918411a300ddeef06d-3.16.0a0-7a91841-vs-base-mem.svg)
+- [📄table](bm-20260905-macm4pro-arm64-python-7a918411a300ddeef06d-3.16.0a0-7a91841-vs-base.md)
+- [📈time plot](bm-20260905-macm4pro-arm64-python-7a918411a300ddeef06d-3.16.0a0-7a91841-vs-base.svg)
+
