@@ -33,3 +33,11 @@
 - [📄table](bm-20261016-vultr-x86_64-daanx-750480840e28509fe6dc-3.16.0a1%2Bdev-7504808-vs-3.13.0rc2.md)
 - [📈time plot](bm-20261016-vultr-x86_64-daanx-750480840e28509fe6dc-3.16.0a1%2Bdev-7504808-vs-3.13.0rc2.svg)
 
+### vs. base
+
+- Geometric mean: 1.015x faster (HPT: reliability of 100.00%, 1.00x faster at 99th %ile)
+- Memory usage: 2.08x
+- [🧠memory plot](bm-20261016-vultr-x86_64-daanx-750480840e28509fe6dc-3.16.0a1%2Bdev-7504808-vs-base-mem.svg)
+- [📄table](bm-20261016-vultr-x86_64-daanx-750480840e28509fe6dc-3.16.0a1%2Bdev-7504808-vs-base.md)
+- [📈time plot](bm-20261016-vultr-x86_64-daanx-750480840e28509fe6dc-3.16.0a1%2Bdev-7504808-vs-base.svg)
+
