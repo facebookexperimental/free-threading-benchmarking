@@ -41,3 +41,10 @@
 - [📄table](bm-20261020-vultr-x86_64-DinoV-3c8be4f527078397cb43-3.16.0a1%2Bdev-3c8be4f-vs-base.md)
 - [📈time plot](bm-20261020-vultr-x86_64-DinoV-3c8be4f527078397cb43-3.16.0a1%2Bdev-3c8be4f-vs-base.svg)
 
+### vs. default_base_vs_NOGIL
+
+- Geometric mean: 1.107x slower (HPT: reliability of 100.00%, 1.10x slower at 99th %ile)
+- Memory usage: 1.23x
+- [📄table](bm-20261020-vultr-x86_64-DinoV-3c8be4f527078397cb43-3.16.0a1%2Bdev-3c8be4f-vs-default_base_vs_NOGIL.md)
+- [📈time plot](bm-20261020-vultr-x86_64-DinoV-3c8be4f527078397cb43-3.16.0a1%2Bdev-3c8be4f-vs-default_base_vs_NOGIL.svg)
+
