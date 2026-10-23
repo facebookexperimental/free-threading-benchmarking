@@ -33,3 +33,11 @@
 - [📄table](bm-20261022-vultr-x86_64-DinoV-72a0e105328febfcb481-3.16.0a1%2Bdev-72a0e10-vs-3.13.0rc2.md)
 - [📈time plot](bm-20261022-vultr-x86_64-DinoV-72a0e105328febfcb481-3.16.0a1%2Bdev-72a0e10-vs-3.13.0rc2.svg)
 
+### vs. base
+
+- Geometric mean: 1.004x slower (HPT: reliability of 92.08%, 1.00x slower at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20261022-vultr-x86_64-DinoV-72a0e105328febfcb481-3.16.0a1%2Bdev-72a0e10-vs-base-mem.svg)
+- [📄table](bm-20261022-vultr-x86_64-DinoV-72a0e105328febfcb481-3.16.0a1%2Bdev-72a0e10-vs-base.md)
+- [📈time plot](bm-20261022-vultr-x86_64-DinoV-72a0e105328febfcb481-3.16.0a1%2Bdev-72a0e10-vs-base.svg)
+
