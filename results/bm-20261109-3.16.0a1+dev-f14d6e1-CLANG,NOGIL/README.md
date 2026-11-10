@@ -33,3 +33,11 @@
 - [📄table](bm-20261109-macm4pro-arm64-nascheme-ft_ra_memory_order-3.16.0a1%2Bdev-f14d6e1-vs-3.13.0rc2.md)
 - [📈time plot](bm-20261109-macm4pro-arm64-nascheme-ft_ra_memory_order-3.16.0a1%2Bdev-f14d6e1-vs-3.13.0rc2.svg)
 
+### vs. base
+
+- Geometric mean: 1.004x slower (HPT: reliability of 100.00%, 1.00x slower at 99th %ile)
+- Memory usage: 1.00x
+- [🧠memory plot](bm-20261109-macm4pro-arm64-nascheme-ft_ra_memory_order-3.16.0a1%2Bdev-f14d6e1-vs-base-mem.svg)
+- [📄table](bm-20261109-macm4pro-arm64-nascheme-ft_ra_memory_order-3.16.0a1%2Bdev-f14d6e1-vs-base.md)
+- [📈time plot](bm-20261109-macm4pro-arm64-nascheme-ft_ra_memory_order-3.16.0a1%2Bdev-f14d6e1-vs-base.svg)
+
